@@ -1,9 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
 *{font-family: 'IBM Plex Sans', sans-serif;letter-spacing: 1px;}
+
 
 /* ** */
 button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15px !important;}
+.btn-tags{padding: 6px 12px !important;color:#453D2D;font-weight: 500;font-size: 10px;background-color:#F4A71C}
+.btn-tags-light{padding: 6px 12px !important;color:#453D2D;font-weight: 500;font-size: 10px;border:1px solid #a7a6a5}
+.vcs-btn, button.light{border:1px solid #F4A71C; color:#453D2D};
+
+.btn-tags:hover{border:1px solid #F4A71C !important;}
+.btn-tags-light:hover{background-color:#F4A71C;color:#ffffff;}
+.vcs-btn:hover, button.light:hover{color:#ffffff; background-color: #F4A71C !important;}
+
+.vertical-cr .bg-text, .services .bg-text, .courses .bg-text, .about .bg-text {font-weight: 700;font-size: 250px; color: #F0F2F2 !important;margin: 0px 0px -6.5% 11%;}
+.sec-4, .sec-6{padding:120px 0px !important; background-color: #1D1D1D;}
+
+
 
 /* Header */
 .header{padding: 15px 0px;z-index: 9999;}
@@ -25,6 +37,58 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .media h2{font-weight: 500;font-size: 60px;line-height: 100%;}
 .media span{color: #F4A71C;}
 
+.vertical-cr{padding-bottom: 120px;background-color: #E6E9E9;}
+.vertical-cr .carousel-item h2{font-weight: 700;font-size: 48px;color:#453D2D; margin-top:24px;}
+.vertical-cr h4{font-weight: 500;font-size: 18px;color:#453D2D; margin-top:16px;}
+.vertical-cr .meta{font-weight: 700;font-size: 16px;color:#777777; margin-top:16px;}
+.vertical-cr .carousel-indicators{font-size: 16px;color:#F4A71C; margin-top:16px; position: unset;}
+
+.sec-4 .row{width:70%;}
+.sec-4 .light{width:fit-content;margin-top: 40px !important;}
+.sec-4 h2{font-weight: 700;font-size: 48px;line-height: 56px;}
+.sec-4 .cards{margin-top:40px !important; color: #453D2D}
+.sec-4 .cards .col{padding: 40px; border-radius: 15px !important;}
+.sec-4 .design{background-image: linear-gradient(to bottom, #E2E2E2, #EAEAEADD, #D9D9D9EB, #C7C7C75C)}
+.sec-4 .code{background-image: linear-gradient(to bottom, #CE8F1E, #F5E4C4, #CE8F1E)}
+.sec-4 .cards h4{font-weight: 600;font-size: 24px;}
+.sec-4 .cards img{margin-top: 20px;}
+.sec-4 .cards h3{font-weight: 600;font-size: 22px;line-height: 27px;margin-top: 23px;}
+.sec-4 .cards p{font-weight: 400;font-size: 20px;}
+.sec-4 .cards p.env{font-size: 16px;margin-top: 30px;}
+/* .blury{color: transparent;text-shadow: 0 0 8px #ffffff;} */
+
+.services{padding-bottom: 120px;background-color: #D9D9D9;}
+.services h2{font-weight: 500;font-size: 48px; color: #777777;}
+.services .active h2{color:#1D1D1D}
+/* .services .active h2::after{background-image: url("./assets/images/Rectangle 23.png"); display:block;} */
+
+.sec-6 h2{font-weight: 700;font-size: 48px;line-height: 56px;padding-right: 10%;}
+.sec-6 .card-grad{background-image: linear-gradient(to bottom right, #FCC96E, #F2E1C2, #F4A71C); border-radius: 15px;color: #453D2D;padding: 30px 40px;}
+.sec-6 .grad-2{margin-bottom: -17%;margin-top: 17%;}
+.sec-6 .card-grad h3{font-weight: 500;font-size: 20px; border: 1px solid #F4A71C; padding: 10px; width: 24%;}
+.sec-6 .grad-3 h3{width: 17%;}
+.sec-6 .card-grad h4{font-weight: 600;font-size: 22px;color: #453D2D;margin-top: 20px;}
+.sec-6 .card-grad ul{margin-top: 20px;}
+.sec-6 .card-grad li{font-weight: 400;font-size: 18px;color: #777777;}
+
+.overlay{background-image: url('./assets/coding_gif.gif');background-repeat:no-repeat;background-position: center top 260px; background-size: contain;}
+/* .overlay{background-image: url('./assets/3ed8087bff04e4f45876f8fa464d5c5f.gif');background-repeat:no-repeat;background-position: center top 260px; background-size: contain;} */
+.courses{padding-bottom: 120px;background-image: url('./assets/images/transparent-chevron-bg\ 1.png');background-repeat:no-repeat;background-position: center top 260px; background-size: 79%;}
+.courses h2{font-weight: 700;font-size: 48px;line-height: 56px;}
+.courses ul{color:#777777; font-weight: 700;font-size: 20px; margin-top: 20px;}
+.courses ul li{padding:4px 0px}
+
+.about{margin-top:100px; padding-bottom: 120px; background-color: #1D1D1D;}
+.about .bg-text{color: #424242 !important;}
+.about h2{font-weight: 700;font-size: 48px;line-height: 56px;}
+
+
+
+
+
+
+
+
 
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -32,7 +96,7 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 /* ----------------------------------------------------------------------- VECTORS ----------------------------------------------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.bvc1,.bvc2,.bvc3,.bvc4,.bvc5,.bvc6{opacity: .8;animation-duration: 1.5s;animation-fill-mode: forwards;animation-delay: 0.3s;}
+.bvc1,.bvc2,.bvc3,.bvc4,.bvc5,.bvc6{opacity: .8;animation-duration: 1.5s;animation-fill-mode: forwards;}
 
 .bvc1{position: absolute; right:0px;width: 8%; top: 7%;}
 .bvc2{position: absolute; left:0;width: 8%; bottom: 2%;}
@@ -51,7 +115,10 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .banner:hover .bvc1{animation-name: animate-down;}
 .banner:hover .bvc2{animation-name: animate-up;}
 .banner:hover .bvc3,.banner:hover .bvc4,.banner:hover .bvc5,.banner:hover .bvc6{animation-name: animate-right;}
+.banner:hover .bn-txt{animation: tilt-text forwards;}
 
+@keyframes tilt-text{
+  to { font-style: italic;}}
 @keyframes animate-right {
   0% {  transform: translateX(0%) } 100% {  transform: translateX(50%);opacity:1;}
 }
