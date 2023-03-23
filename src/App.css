@@ -60,7 +60,6 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .services{padding-bottom: 120px;background-color: #D9D9D9;}
 .services h2{font-weight: 500;font-size: 48px; color: #777777;}
 .services .active h2{color:#1D1D1D}
-/* .services .active h2::after{background-image: url("./assets/images/Rectangle 23.png"); display:block;} */
 
 .sec-6 h2{font-weight: 700;font-size: 48px;line-height: 56px;padding-right: 10%;}
 .sec-6 .card-grad{background-image: linear-gradient(to bottom right, #FCC96E, #F2E1C2, #F4A71C); border-radius: 15px;color: #453D2D;padding: 30px 40px;}
@@ -72,7 +71,6 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .sec-6 .card-grad li{font-weight: 400;font-size: 18px;color: #777777;}
 
 .overlay{background-image: url('./assets/coding_gif.gif');background-repeat:no-repeat;background-position: center top 260px; background-size: contain;}
-/* .overlay{background-image: url('./assets/3ed8087bff04e4f45876f8fa464d5c5f.gif');background-repeat:no-repeat;background-position: center top 260px; background-size: contain;} */
 .courses{padding-bottom: 120px;background-image: url('./assets/images/transparent-chevron-bg\ 1.png');background-repeat:no-repeat;background-position: center top 260px; background-size: 79%;}
 .courses h2{font-weight: 700;font-size: 48px;line-height: 56px;}
 .courses ul{color:#777777; font-weight: 700;font-size: 20px; margin-top: 20px;}
@@ -81,6 +79,27 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .about{margin-top:100px; padding-bottom: 120px; background-color: #1D1D1D;}
 .about .bg-text{color: #424242 !important;}
 .about h2{font-weight: 700;font-size: 48px;line-height: 56px;}
+
+
+.footer{padding-top: 120px; background-color: #000000;}
+.footer h2{font-weight: 700;font-size: 48px;line-height: 56px;}
+.footer h5{font-weight: 600;font-size: 14px;}
+.footer p{font-weight: 400;font-size: 14px;}
+.footer .left-col{border-right: 1px solid #ffffff5b; padding-right: 55px;}
+.footer .contact-details{margin-top: 40px;}
+.socials svg{font-size: 20px; margin: 0px 13px;cursor:pointer}
+.socials svg:hover{color: #CE8F1E !important;}
+
+.footer .right-col{padding-left: 55px;}
+.footer-menu li{list-style: none;padding: 0px 14px; font-weight: 400;font-size: 16px;}
+
+
+.bg-dark{background-color: #000000 !important;}
+.ft-reviews{border-top: 1px solid #ffffff5b;}
+.ft-reviews img{width: 30%;}
+.ft-reviews a:hover{color: #CE8F1E !important;}
+.ft-social,.ft-terms,.ft-reviews{padding:30px 0px;}
+.terms p{font-weight: 300;}
 
 
 
