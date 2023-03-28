@@ -1,5 +1,8 @@
 import React from 'react'
 
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
 //Banner
 import bannervc1 from '../assets/images/Rectangle 45.png'
 import bannervc2 from '../assets/images/Rectangle 40.png'
@@ -20,12 +23,41 @@ import svec3 from '../assets/images/icon-brand 1.png'
 //about
 import aboutImg from '../assets/images/Rectangle 27.png'
 
+import test1 from '../assets/images/Rectangle 18(1).png'
+import test2 from '../assets/images/Rectangle 18(2).png'
+import test3 from '../assets/images/Rectangle 18(3).png'
+import quote from '../assets/images/quote.png'
+
 
 
 
 const Home = () => {
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1501 },
+      items: 3.5,
+      slidesToSlide: 1,
+    },
+    laptop: {
+      breakpoint: { max: 1500, min: 1200 },
+      items: 2.8,
+      slidesToSlide: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1199, min: 768 },
+      items: 2,
+      slidesToSlide: 1,
+    },
+    mobile: {
+      breakpoint: { max: 767, min: 0 },
+      items: 1,
+      slidesToSlide: 1,
+    },
+  };
   return (
     <>
+      {/* -----------------------------------------------------Banner--------------------------------------------------------- */}
+      {/* -------------------------------------------------------------------------------------------------------------------- */}
       <section className='banner text-light'>
         <div className="container">
           <div className="row">
@@ -36,12 +68,12 @@ const Home = () => {
             <img src={bannervc4} alt="" className='bvc4 p-0' />
             <img src={bannervc5} alt="" className='bvc5 p-0' />
             <img src={bannervc6} alt="" className='bvc6 p-0' />
-            <div className="col-5">
+            <div className="col-5 col-md-6">
               <h1>Take your <span className='bn-txt'>brand to new heights.</span></h1>
               <p>We are a digital agency focused on <strong>Brand</strong>, <strong>Web Design</strong> & <strong>Digital Marketing.</strong></p>
               <button className='btn rounded-pill text-light'>Get Started</button>
             </div>
-            <div className="col-7"></div>
+            <div className="col-7 col-md-6"></div>
           </div>
         </div>
       </section>
@@ -49,6 +81,8 @@ const Home = () => {
         <h2>A digital agency for <span>ambitious brands</span></h2>
       </section>
 
+      {/* -----------------------------------------------------WORK--------------------------------------------------------- */}
+      {/* -------------------------------------------------------------------------------------------------------------------- */}
       <section className='vertical-cr'>
         <h2 class="bg-text">work</h2>
         <div className="container">
@@ -56,10 +90,10 @@ const Home = () => {
             <div className="carousel-inner">
               <div className="carousel-item active">
                 <div className="row">
-                  <div className="col-6">
+                  <div className="col-12 col-md-6">
                     <img src={crImg1} className="w-100" alt="cr-1" />
                   </div>
-                  <div className="col-6">
+                  <div className="col-12 col-md-6">
                     <button class="btn rounded-pill btn-tags mt-2 ms-2">BRANDING</button>
                     <button class="btn rounded-pill btn-tags mt-2 ms-2">USER EXPERIENCE</button>
                     <button class="btn rounded-pill btn-tags mt-2 ms-2">USER INTERFACE</button>
@@ -132,10 +166,12 @@ const Home = () => {
         </div>
       </section>
 
+      {/* -----------------------------------------------------CODE/DESIGN--------------------------------------------------------- */}
+      {/* -------------------------------------------------------------------------------------------------------------------- */}
       <section className='sec-4 bg-dark text-light'>
         <div className="container">
           <div className="row text-center m-auto">
-            <div className="col-12">
+            <div className="col-12 p-0">
               {/* <h2 class="m-auto">We design & build frontend apps for brands who want to break barriers and accelerate growth.</h2> */}
               <h2 class="m-auto">We design & build </h2>
               <h2 class="m-auto">frontend apps for brands who want to break barriers and accelerate growth.</h2>
@@ -146,9 +182,6 @@ const Home = () => {
             <div className="col design me-3">
               <h4>Stand out</h4>
               <p>from the crowd</p>
-              {/* <div className='blury'>
-                <h2>UNIQUE</h2>
-              </div> */}
               <img src={cardImg} alt="" className="w-100" />
               <h3>DESIGN TO REMEMBER</h3>
               <p>UX/UI Designs</p>
@@ -166,12 +199,14 @@ const Home = () => {
         </div>
       </section>
 
-      <section className='services'>
+      {/* -----------------------------------------------------SERVICES--------------------------------------------------------- */}
+      {/* -------------------------------------------------------------------------------------------------------------------- */}
+      <section className='services' id="services">
         <h2 class="bg-text">services</h2>
         <div className="container">
           <div className="row">
-            <div className="col-8">
-              <div className="row mt-5">
+            <div className="col-12 col-md-8">
+              <div className="row sv-first">
                 <div className="col-1"><img src={svec1} alt="" /></div>
                 <div className="col-11">
                   <h2>Digital Marketing</h2>
@@ -184,7 +219,7 @@ const Home = () => {
                   <button class="btn rounded-pill btn-tags-light mt-2 ms-2">SOCIALS</button>
                 </div>
               </div>
-              <div className="row mt-5">
+              <div className="row">
                 <div className="col-1"><img src={svec2} alt="" /></div>
                 <div className="col-11">
                   <h2>Websites</h2>
@@ -197,7 +232,7 @@ const Home = () => {
                   <button class="btn rounded-pill btn-tags-light mt-2 ms-2">SOCIALS</button>
                 </div>
               </div>
-              <div className="row mt-5 active">
+              <div className="row active">
                 <div className="col-1"><img src={svec3} alt="" /></div>
                 <div className="col-11">
                   <h2>Branding</h2>
@@ -211,20 +246,22 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col-4 d-flex align-items-center">
+            <div className="col-12 col-md-4 d-flex align-items-center svc-img">
               <img src={servicesImg} alt="" className='w-100' />
             </div>
           </div>
         </div>
       </section>
 
+      {/* -----------------------------------------------------GRID CARD--------------------------------------------------------- */}
+      {/* -------------------------------------------------------------------------------------------------------------------- */}
       <section className='sec-6 text-light'>
         <div className="container">
           <div className="row">
-            <div className="col-6 d-flex align-items-end">
+            <div className="col-12 col-md-6 d-flex align-items-end">
               <h2>We trust our work process that makes us to achieve outstanding results.</h2>
             </div>
-            <div className="col-6">
+            <div className="col-12 col-md-6">
               <div className="row">
                 <div className="col card-grad grad-1 me-3">
                   <h3 class="text-center rounded-circle m-auto">1</h3>
@@ -254,11 +291,11 @@ const Home = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-5">
+            <div className="col-12 col-md-5">
               <p className='mt-3'>The first place a potential customer will notice you is on the web. So it is imperative that your website be professional, beautiful, and easily navigable. That's where we come in. We make sure your first impression is a lasting one. In a good way.</p>
               <button class="btn rounded-pill light m-auto text-light mt-3">Get a Quote</button>
             </div>
-            <div className="col-4">
+            <div className="col-12 col-md-4">
               <div className="card-grad grad-3 mt-3">
                 <h3 class="text-center rounded-circle m-auto">3</h3>
                 <h4 className='text-center'>Frontend Development</h4>
@@ -274,12 +311,14 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="overlay">
+      {/* -----------------------------------------------------COURSES--------------------------------------------------------- */}
+      {/* -------------------------------------------------------------------------------------------------------------------- */}
+      <div className="overlay" id="courses">
         <section className='courses'>
           <h3 class="bg-text">courses</h3>
           <div className="container">
             <div className="row">
-              <div className="col-6">
+              <div className="col-12 col-md-6">
                 <h2 className='mt-4'>Web Development</h2>
                 <ul>
                   <li>Front-end development</li>
@@ -295,7 +334,7 @@ const Home = () => {
                   <li>Email Marketing</li>
                 </ul>
               </div>
-              <div className="col-6 d-flex align-items-end">
+              <div className="col-12 col-md-6 d-flex align-items-end">
                 <div className='w-50 ms-auto'>
                   <h2>Visual Design</h2>
                   <ul>
@@ -312,18 +351,90 @@ const Home = () => {
         </section>
       </div>
 
-      <section className='about text-light'>
+      {/* -----------------------------------------------------ABOUT--------------------------------------------------------- */}
+      {/* -------------------------------------------------------------------------------------------------------------------- */}
+      <section className='about text-light' id="about">
         <h3 class="bg-text">about</h3>
         <div className="container">
           <div className="row">
-            <div className="col-6">
+            <div className="col-12 col-md-6">
               <h2>Developing digital everything for ambitious brands.</h2>
               <p className='mt-3'>We are a digital agency in Melbourne, helping organisations and eCommerce brands in building their brand with a user-centric designed website accompanied with multi-channel digital marketing strategies. We are a digital agency in Melbourne, helping organisations and eCommerce brands in building their brand with a user-centric designed website accompanied with multi-channel digital marketing strategies.</p>
               <button class="btn rounded-pill light m-auto text-light mt-3">More about us</button>
             </div>
-            <div className="col-6">
+            <div className="col-12 col-md-6 about-img">
               <img src={aboutImg} alt="" className='w-100' />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* -----------------------------------------------------TESTIMONIAL--------------------------------------------------------- */}
+      {/* -------------------------------------------------------------------------------------------------------------------- */}
+      <section className='testmonial'>
+        <h3 class="bg-text">testimonial</h3>
+        <div className="container-fluid">
+          <div className="row">
+              <h2>Results that speak<br /> for themselves.</h2>
+          </div>
+          <div className="row">
+              <Carousel responsive={responsive} arrows={true} showDots={false} infinite={true} slidesToScroll={1}>
+                <div className='tst-card'>
+                  <img src={test1} alt="" class="m-auto" />
+                  <div className="content">
+                    <img src={quote} alt="" />
+                    <p>Big or small, Blank Theory is the company to speak to when it comes to website and marketing needs. </p>
+                    <div className="name-bg">
+                      <h3>LEGEAR</h3>
+                      <h6>USA - Client</h6>
+                    </div>
+                  </div>
+                </div>
+                <div className='tst-card'>
+                  <img src={test2} alt="" />
+                  <div className="content">
+                    <img src={quote} alt="" />
+                    <p>Big or small, Blank Theory is the company to speak to when it comes to website and marketing needs. </p>
+                    <div className="name-bg">
+                      <h3>MONILLA</h3>
+                      <h6>Russia - Client</h6>
+                    </div>
+                  </div>
+                </div>
+                <div className='tst-card'>
+                  <img src={test3} alt="" />
+                  <div className="content">
+                    <img src={quote} alt="" />
+                    <p>Big or small, Blank Theory is the company to speak to when it comes to website and marketing needs. </p>
+                    <div className="name-bg">
+                      <h3>SOEL DEHA</h3>
+                      <h6>USA - Client</h6>
+                    </div>
+                  </div>
+                </div>
+                <div className='tst-card'>
+                  <img src={test2} alt="" />
+                  <div className="content">
+                    <img src={quote} alt="" />
+                    <p>Big or small, Blank Theory is the company to speak to when it comes to website and marketing needs. </p>
+                    <div className="name-bg">
+                      <h3>BRIANT YOUN</h3>
+                      <h6>USA - Client</h6>
+                    </div>
+                  </div>
+                </div>
+                <div className='tst-card'>
+                  <img src={test3} alt="" />
+                  <div className="content">
+                    <img src={quote} alt="" />
+                    <p>Big or small, Blank Theory is the company to speak to when it comes to website and marketing needs. </p>
+                    <div className="name-bg">
+                      <h3>LEGEAR</h3>
+                      <h6>USA - Client</h6>
+                    </div>
+                  </div>
+                </div>
+              </Carousel>
           </div>
         </div>
       </section>

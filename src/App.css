@@ -12,7 +12,7 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .btn-tags-light:hover{background-color:#F4A71C;color:#ffffff;}
 .vcs-btn:hover, button.light:hover{color:#ffffff; background-color: #F4A71C !important;}
 
-.vertical-cr .bg-text, .services .bg-text, .courses .bg-text, .about .bg-text {font-weight: 700;font-size: 250px; color: #F0F2F2 !important;margin: 0px 0px -6.5% 11%;}
+.vertical-cr .bg-text, .services .bg-text, .courses .bg-text, .about .bg-text, .testmonial .bg-text {font-weight: 700;font-size: 250px; color: #F0F2F2 !important;margin: 0px 0px -6.5% 11%;}
 .sec-4, .sec-6{padding:120px 0px !important; background-color: #1D1D1D;}
 
 
@@ -26,7 +26,7 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 
 /* Home */
 .banner{background-image: url('./assets/images/Rectangle\ 10.png'); background-repeat: no-repeat; background-position: center; background-size: cover;height: 100vh; align-items: center; display: flex;}
-.banner{ margin-top: -84px; z-index: 2;}
+.banner{ margin-top: -98px; z-index: 2;}
 .banner h1{font-weight: 700;font-size: 60px;line-height: 64px;z-index: 9999 !important;}
 .banner p{font-weight: 300;font-size: 17px;line-height: 21px; margin-top: 16px;}
 .banner button{background: #F4A71C; border:1px solid #F4A71C !important; margin-top: 20px;}
@@ -60,6 +60,7 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .services{padding-bottom: 120px;background-color: #D9D9D9;}
 .services h2{font-weight: 500;font-size: 48px; color: #777777;}
 .services .active h2{color:#1D1D1D}
+.services .col-12 .row{margin-top:40px;}
 
 .sec-6 h2{font-weight: 700;font-size: 48px;line-height: 56px;padding-right: 10%;}
 .sec-6 .card-grad{background-image: linear-gradient(to bottom right, #FCC96E, #F2E1C2, #F4A71C); border-radius: 15px;color: #453D2D;padding: 30px 40px;}
@@ -70,8 +71,9 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .sec-6 .card-grad ul{margin-top: 20px;}
 .sec-6 .card-grad li{font-weight: 400;font-size: 18px;color: #777777;}
 
-.overlay{background-image: url('./assets/coding_gif.gif');background-repeat:no-repeat;background-position: center top 260px; background-size: contain;}
-.courses{padding-bottom: 120px;background-image: url('./assets/images/transparent-chevron-bg\ 1.png');background-repeat:no-repeat;background-position: center top 260px; background-size: 79%;}
+/* .overlay{background-image: url('./assets/coding_gif.gif');background-repeat:no-repeat;background-position: center top 260px; background-size: contain;} */
+/* .courses{padding-bottom: 120px;background-image: url('./assets/images/transparent-chevron-bg\ 1.png');background-repeat:no-repeat;background-position: center top 260px; background-size: 79%;} */
+.courses{padding-bottom: 120px;background-image: url('./assets/images/transparent-chevron-bg\ 1.png');background-repeat:no-repeat;background-position: center; background-size: 79%;}
 .courses h2{font-weight: 700;font-size: 48px;line-height: 56px;}
 .courses ul{color:#777777; font-weight: 700;font-size: 20px; margin-top: 20px;}
 .courses ul li{padding:4px 0px}
@@ -79,6 +81,23 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .about{margin-top:100px; padding-bottom: 120px; background-color: #1D1D1D;}
 .about .bg-text{color: #424242 !important;}
 .about h2{font-weight: 700;font-size: 48px;line-height: 56px;}
+
+.testmonial h2{font-weight: 700;font-size: 48px;line-height: 56px;}
+.testmonial{padding-bottom: 120px;}
+.testmonial .content{margin: -200px 0px 0px -30px;}
+.testmonial .content{width: 60%;}
+.testmonial .content h3{font-weight: 600;font-size: 16px;}
+.testmonial .content h6{font-weight: 400;font-size: 14px;}
+.testmonial .content p{color:#ffffff;font-weight: 500;font-size: 16px;margin-top: 13px;position: relative;text-shadow: 2px 2px 3px #000000;}
+.testmonial .name-bg{background: #F4A71C; padding: 16px; position: relative;}
+.testmonial .react-multiple-carousel__arrow.react-multiple-carousel__arrow--left{display: none;}
+.testmonial .react-multiple-carousel__arrow.react-multiple-carousel__arrow--right{margin: -30% 3% 0px 0px;}
+.testmonial .react-multi-carousel-list {position: unset;padding-left: 35px;margin-top: 40px;}
+
+.testmonial .react-multiple-carousel__arrow {background: #ffffff !important;border: 1px dashed #000000 !important;}
+.testmonial .react-multiple-carousel__arrow::before {color: #F4A71C;}
+.testmonial .react-multiple-carousel__arrow:hover{background: #F0F2F2 !important;}
+.testmonial .row{padding-left: 16%;}
 
 
 .footer{padding-top: 120px; background-color: #000000;}
@@ -150,6 +169,113 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 
 
 
+
+
+/* ********************************************************************************************************************************************************** */
+/* ********************************************************************************************************************************************************** */
+/* -RESPONSIVENESS- */
+/* ********************************************************************************************************************************************************** */
+/* ********************************************************************************************************************************************************** */
+@media(min-width:1200px) and (max-width:1500px){
+  .vertical-cr .bg-text, .services .bg-text, .courses .bg-text, .about .bg-text, .testmonial .bg-text {font-size: 220px;margin-left:2%;}
+
+  /* .banner{height: 100vh !important;} */
+  .bvc1{right:0px;width: 8%; top: 7%;}
+  .bvc2{left:0;width: 8%; bottom: 30%;}
+  .bvc3{left:50%;width: 8%; top: 7%;}
+  .bvc4{left:32%;width: 12%; top: 32%;}
+  .bvc5{left:60%;width: 12%; top: 50%;}
+  .bvc6{left:27%;width: 12%; top: 60%;}
+
+  .overlay{background-position: center top 363px;}
+  .courses{padding-bottom: 0px;background-position: center top 363px;}
+
+  .testmonial .react-multiple-carousel__arrow.react-multiple-carousel__arrow--right {margin: -40% 3% 0px 0px;}
+  .testmonial .row{padding-left: 9%;}
+}
+
+@media(min-width:992px) and (max-width:1199px){
+  .banner .col-5{width: 58%;}
+  .bvc2{left:0;width: 8%; bottom: 14%;}
+}
+
+@media(min-width:768px) and (max-width:991px){
+  .banner .col-5{width: 78%;}
+}
+@media(max-width:991px){
+  .pc-menu{display: none !important;}
+  .mobile-menu{position: absolute !important;top: 92px; background: #000000a2;width: 100% !important;padding: 0px 20px 40px 20px;left: 0px;}
+  .mobile-menu .nav-btn{margin-left: 0px !important;}
+  .mobile-menu ul{display: unset !important;}
+  .mobile-menu ul li{padding: 20px 0px; list-style: none;}
+}
+@media(max-width:767px){
+  .container, .container-sm {max-width: 700px !important;padding: 0px 20px !important;}
+
+  .banner .col-5{width: 100%;}
+  .banner h1 {font-size: 40px;}
+  .bvc1{right:0px;width: 10%; top: 15%;}
+  .bvc2{left:0;width: 10%; bottom: 2%;}
+  .bvc3{left:50%;width: 14%; top: 18%;}
+  .bvc4{left:62%;width: 20%; top: 44%;}
+  .bvc5{left:60%;width: 20%; top: 80%;}
+  .bvc6{left:27%;width: 20%; top: 90%;}
+
+  .media h2, .services h2, .sec-6 h2, .courses h2, .about h2, .testmonial h2, .footer h2{font-size: 32px; line-height: 45px !important;}
+  .vertical-cr, .services, .courses, .about, .testmonial {padding-bottom: 40px;}
+  .sec-4, .sec-6 {padding: 40px 0px !important;}
+  .footer {padding-top: 40px !important;}
+
+  .sec-6 h2 {padding-right: 0%;}
+  .vertical-cr .bg-text, .services .bg-text, .courses .bg-text, .about .bg-text{font-size: 90px;margin: 0px 0px -6.5% 3%;}
+  .testmonial .bg-text {font-size: 65px;margin: 0px 0px -6.5% 3%;}
+  .btn-tags, .btn-tags-light{font-size: 12px !important}
+  .vertical-cr .carousel-item h2, .sec-4 h2  {font-size: 32px;}
+
+  .vertical-cr h4 {font-size: 17px;}
+
+  .vertical-cr .meta {font-size: 15px;}
+
+  .sec-4 .row {width: 100%;}
+  .sec-4 .cards .sec-4 .light {margin-top: 30px !important;}
+  .sec-4 .col{margin: 0px !important;}
+  .sec-4 .code{margin-top: 20px !important;}
+
+  .services .col-11 {padding-left: 35px;}
+  .services .col-12 .row:first-of-type{margin-top:15px;}
+  .services .col-12 .row, .services .svc-img{margin-top:30px;}
+  .services .bg-text {padding-top: 30px}
+  /* .sv-first{margin-top: 20px !important;} */
+
+  .sec-6 .grad-1,.sec-6 .grad-2{margin:16px !important;}
+  .sec-6 .grad-3{margin-top: 30px !important;}
+  .sec-6 .card-grad h3{font-size: 20px;}
+  .sec-6 .card-grad ul{margin-top: 20px;}
+  .sec-6 .card-grad li{font-weight: 400;font-size: 18px;color: #777777;}
+
+  .courses .col-12 .w-50{width: 100% !important;}
+  .about .about-img{padding-top: 30px !important;}
+
+  .testmonial .row {padding-left: 7%;}
+  .testmonial .react-multiple-carousel__arrow.react-multiple-carousel__arrow--right {margin: -124% 3% 0px 0px;}
+
+  .footer .contact-details {margin-top: 0px;}
+  .footer .col {flex: unset;}
+  .footer .right-col {padding-left: 10px;}
+  .footer .footer-logo {width: 100%;}
+  .footer .lets-go {width: 60%;}
+  .footer .col{margin-top: 20px;}
+
+  .footer-menu{display: none;}
+  .ft-social{padding-top: 0px !important}
+  .ft-reviews .terms p{text-align: center;}
+  .ft-reviews .terms p{margin-top: 20px !important;}
+
+  /* .footer-menu ul{flex-wrap: wrap;}
+  .footer-menu ul li{margin: 10px 0px;} */
+  .socials svg{margin: 0px 9px;}
+
+}
 
 
 
