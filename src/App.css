@@ -13,6 +13,7 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .vcs-btn:hover, button.light:hover{color:#ffffff; background-color: #F4A71C !important;}
 
 .vertical-cr .bg-text, .services .bg-text, .courses .bg-text, .about .bg-text, .testmonial .bg-text {font-weight: 700;font-size: 250px; color: #F0F2F2 !important;margin: 0px 0px -6.5% 11%;}
+
 .sec-4, .sec-6{padding:120px 0px !important; background-color: #1D1D1D;}
 
 
@@ -72,13 +73,25 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .sec-6 .card-grad li{font-weight: 400;font-size: 18px;color: #777777;}
 
 /* .overlay{background-image: url('./assets/coding_gif.gif');background-repeat:no-repeat;background-position: center top 260px; background-size: contain;} */
-/* .courses{padding-bottom: 120px;background-image: url('./assets/images/transparent-chevron-bg\ 1.png');background-repeat:no-repeat;background-position: center top 260px; background-size: 79%;} */
+.courses{padding-bottom: 120px;background-image: url('./assets/images/transparent-chevron-bg\ 1.png');background-repeat:no-repeat;background-position: center top 260px; background-size: 79%;}
 .courses{padding-bottom: 120px;background-image: url('./assets/images/transparent-chevron-bg\ 1.png');background-repeat:no-repeat;background-position: center; background-size: 79%;}
 .courses h2{font-weight: 700;font-size: 48px;line-height: 56px;}
 .courses ul{color:#777777; font-weight: 700;font-size: 20px; margin-top: 20px;}
 .courses ul li{padding:4px 0px}
 
-.about{margin-top:100px; padding-bottom: 120px; background-color: #1D1D1D;}
+/* courses new */
+.courses-new .bg-text {font-weight: 700;font-size: 250px; color: #F0F2F2 !important;margin: 0px 0px -4% 11%;}
+.courses-new h2{font-weight: 700;font-size: 48px;line-height: 56px;}
+.courses-new .dm{margin-top:45px}
+.courses-new ul{color:#777777; font-weight: 700;font-size: 20px; margin-top: 20px;}
+.overlay-new{background-image: url('./assets/coding_gif.gif');background-repeat:no-repeat;background-position: center; background-size: contain;}
+.arrow{background-image: url('./assets/images/transparent-chevron-bg\ 1.png');background-repeat:no-repeat;background-position: auto;background-size: cover;}
+.courses-new{padding-bottom: 120px;}
+.courses-new ul li{padding:4px 0px}
+
+
+
+.about{padding-bottom: 120px; background-color: #1D1D1D;}
 .about .bg-text{color: #424242 !important;}
 .about h2{font-weight: 700;font-size: 48px;line-height: 56px;}
 
@@ -256,6 +269,15 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
   .courses .col-12 .w-50{width: 100% !important;}
   .about .about-img{padding-top: 30px !important;}
 
+  /* ------- */
+  .courses-new .bg-text{font-size: 90px;margin: 0px 0px -6.5% 3%;}
+  .courses-new h2{font-size: 32px; line-height: 45px !important;}
+  .courses-new .col-12 .w-50{width: 100% !important;}
+  .courses-new{padding-bottom: 40px;}
+  .courses-new ul{font-size: 18px;margin-top: 15px;}
+  .courses-new .dm{margin-top:15px}
+  /* ------- */
+
   .testmonial .row {padding-left: 7%;}
   .testmonial .react-multiple-carousel__arrow.react-multiple-carousel__arrow--right {margin: -124% 3% 0px 0px;}
 
@@ -274,7 +296,6 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
   /* .footer-menu ul{flex-wrap: wrap;}
   .footer-menu ul li{margin: 10px 0px;} */
   .socials svg{margin: 0px 9px;}
-
 }
 
 
@@ -336,4 +357,15 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+
+
+
+
+/* Emergency css */
+/* img.custom-logo{
+  height: 50px !important;
+  width: 50px !important;
 } */

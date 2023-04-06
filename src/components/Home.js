@@ -313,20 +313,21 @@ const Home = () => {
 
       {/* -----------------------------------------------------COURSES--------------------------------------------------------- */}
       {/* -------------------------------------------------------------------------------------------------------------------- */}
-      <div className="overlay" id="courses">
-        <section className='courses'>
-          <h3 class="bg-text">courses</h3>
-          <div className="container">
+      <section className='courses-new'>
+        <h3 class="bg-text">courses</h3>
+        <div className="container">
+          <div className="overlay-new">
+            <div className="arrow p-0">
             <div className="row">
               <div className="col-12 col-md-6">
-                <h2 className='mt-4'>Web Development</h2>
+              <h2 className=''>Web Development</h2>
                 <ul>
                   <li>Front-end development</li>
                   <li>CMS Development </li>
                   <li>Ecommerce Development</li>
                   <li>Back-end Development</li>
                 </ul>
-                <h2 className='mt-5'>Digital Marketing</h2>
+                <h2 className='dm'>Digital Marketing</h2>
                 <ul>
                   <li>SEO</li>
                   <li>Content Marketing</li>
@@ -347,9 +348,10 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
       {/* -----------------------------------------------------ABOUT--------------------------------------------------------- */}
       {/* -------------------------------------------------------------------------------------------------------------------- */}

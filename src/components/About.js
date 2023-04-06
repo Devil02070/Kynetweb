@@ -1,37 +1,131 @@
 import React from 'react'
 // import Slider from 'react-slick';
-import Carousel from 'react-multi-carousel';
+// import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
-import test1 from '../assets/images/Rectangle 18(1).png'
-import test2 from '../assets/images/Rectangle 18(2).png'
-import test3 from '../assets/images/Rectangle 18(3).png'
-import quote from '../assets/images/quote.png'
+// import test1 from '../assets/images/Rectangle 18(1).png'
+// import test2 from '../assets/images/Rectangle 18(2).png'
+// import test3 from '../assets/images/Rectangle 18(3).png'
+// import quote from '../assets/images/quote.png'
 
 
 const About = () => {
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 4,
-      slidesToSlide: 1,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 3,
-      slidesToSlide: 1,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 2,
-      slidesToSlide: 1,
-    },
-  };
+  // const responsive = {
+  //   desktop: {
+  //     breakpoint: { max: 3000, min: 1024 },
+  //     items: 4,
+  //     slidesToSlide: 1,
+  //   },
+  //   tablet: {
+  //     breakpoint: { max: 1024, min: 464 },
+  //     items: 3,
+  //     slidesToSlide: 1,
+  //   },
+  //   mobile: {
+  //     breakpoint: { max: 464, min: 0 },
+  //     items: 2,
+  //     slidesToSlide: 1,
+  //   },
+  // };
   return (
     <>
-      <section className='testmonial'>
-          <h3 class="bg-text">testmonial</h3>
-          <div className="container-fluid">
+
+      {/* -----------------------------------------------------COURSES--------------------------------------------------------- */}
+      {/* -------------------------------------------------------------------------------------------------------------------- */}
+      <section className='courses-new'>
+        <h3 class="bg-text">courses</h3>
+        <div className="container">
+          <div className="overlay-new">
+            <div className="arrow p-0">
+            <div className="row">
+              <div className="col-12 col-md-6">
+              <h2 className=''>Web Development</h2>
+                <ul>
+                  <li>Front-end development</li>
+                  <li>CMS Development </li>
+                  <li>Ecommerce Development</li>
+                  <li>Back-end Development</li>
+                </ul>
+                <h2 className='mt-5'>Digital Marketing</h2>
+                <ul>
+                  <li>SEO</li>
+                  <li>Content Marketing</li>
+                  <li>Facebook Marketing</li>
+                  <li>Email Marketing</li>
+                </ul>
+              </div>
+              <div className="col-12 col-md-6 d-flex align-items-end">
+                <div className='w-50 ms-auto'>
+                  <h2>Visual Design</h2>
+                  <ul>
+                    <li>Website Design</li>
+                    <li>Mobile App Design</li>
+                    <li>Graphics Design</li>
+                    <li>Logo & Icon Design</li>
+                    <li>Dashboard Design</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* -----------------------------------------------------COURSES old--------------------------------------------------------- */}
+      {/* -------------------------------------------------------------------------------------------------------------------- */}
+      <div className="overlay" id="courses">
+        <section className='courses'>
+          <h3 class="bg-text">courses</h3>
+          <div className="container">
+            <div className="row">
+              <div className="col-12 col-md-6">
+                <h2 className='mt-4'>Web Development</h2>
+                <ul>
+                  <li>Front-end development</li>
+                  <li>CMS Development </li>
+                  <li>Ecommerce Development</li>
+                  <li>Back-end Development</li>
+                </ul>
+                <h2 className='mt-5'>Digital Marketing</h2>
+                <ul>
+                  <li>SEO</li>
+                  <li>Content Marketing</li>
+                  <li>Facebook Marketing</li>
+                  <li>Email Marketing</li>
+                </ul>
+              </div>
+              <div className="col-12 col-md-6 d-flex align-items-end">
+                <div className='w-50 ms-auto'>
+                  <h2>Visual Design</h2>
+                  <ul>
+                    <li>Website Design</li>
+                    <li>Mobile App Design</li>
+                    <li>Graphics Design</li>
+                    <li>Logo & Icon Design</li>
+                    <li>Dashboard Design</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+
+
+
+
+
+
+
+
+      {/* <section className='testmonial'>
+        <h3 class="bg-text">testmonial</h3>
+        <div className="container-fluid">
           <div className="row">
             <div className="col-2"></div>
             <div className="col-10">
@@ -70,8 +164,8 @@ const About = () => {
             </div>
           </div>
         </div>
-        </section>
-
+      </section>
+ */}
 
 
 
