@@ -16,6 +16,8 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 
 .sec-4, .sec-6{padding:120px 0px !important; background-color: #1D1D1D;}
 
+.txt-primary{color:#F4A71C}
+
 
 
 /* Header */
@@ -24,10 +26,13 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .nav-menu ul li{list-style:none;padding: 0px 25px;font-size: 14px;font-weight:500;line-height: 14px;}
 .nav-btn{border-color: #F4A71C !important;}
 .nav-btn:hover{background-color: #F4A71C !important;}
+.menu-item:hover{color: #F4A71C !important;}
+
+.header_sticky{position:fixed; width:100%;top:0px;background:#000000;border:none !important;border-bottom: 1px solid #F4A71C !important;}
 
 /* Home */
 .banner{background-image: url('./assets/images/Rectangle\ 10.png'); background-repeat: no-repeat; background-position: center; background-size: cover;height: 100vh; align-items: center; display: flex;}
-.banner{ margin-top: -98px; z-index: 2;}
+.banner{ margin-top: -103px; z-index: 2;}
 .banner h1{font-weight: 700;font-size: 60px;line-height: 64px;z-index: 9999 !important;}
 .banner p{font-weight: 300;font-size: 17px;line-height: 21px; margin-top: 16px;}
 .banner button{background: #F4A71C; border:1px solid #F4A71C !important; margin-top: 20px;}
@@ -132,6 +137,22 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .ft-reviews a:hover{color: #CE8F1E !important;}
 .ft-social,.ft-terms,.ft-reviews{padding:30px 0px;}
 .terms p{font-weight: 300;}
+
+/* Contact us page */
+.contact{margin-top:-103px; padding: 100px 0pc 120px 0px; background: #453D2D;}
+.contact .bg-text {font-weight: 700;font-size: 160px; color: #f0f2f256 !important;margin: 0px 0px -6.5% 11%;}
+
+.contact-detials{display: flex;justify-content: center;align-items: center;flex-wrap: wrap;}
+.contact-detials h2{font-size: 48px; font-weight: 700; line-height: 56px;}
+.contact-detials h3{font-size: 22px; font-weight: 600; line-height: 35px;}
+.contact-detials p{font-size: 18px; font-weight: 300; line-height: 30px;}
+
+.contact-form{padding:40px; border-radius: 15px;background: #00000098;}
+/* .contact-form{padding:40px; border-radius: 15px;background: #ce901e3b;} */
+.btn_submit{padding:12px 24px; background: #F4A71C}
+.contact-form input::placeholder, .contact-form textarea::placeholder{color:#ffffff}
+
+#project, #training{display: none;}
 
 
 

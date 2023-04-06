@@ -13,12 +13,14 @@ import Footer from './components/Footer'
 // Pages
 import Home from './components/Home'
 import About from './components/About'
+import Contact from './components/Contact'
 
 const Routing =()=>{
   return(
     <Routes>
       <Route exact path='/' element={<Home />}></Route>
       <Route exact path='/about' element={<About/>}></Route>
+      <Route exact path='/contact_us' element={<Contact/>}></Route>
     </Routes>
   )
 }

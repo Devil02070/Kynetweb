@@ -54,11 +54,21 @@ const Home = () => {
       slidesToSlide: 1,
     },
   };
+
+  const handleScroll=()=>{
+    const header_sc = document.getElementById('header');
+    if (document.documentElement.scrollTop >= 50) {
+      header_sc.classList.add('header_sticky');
+    }else{
+      header_sc.classList.remove('header_sticky');
+    }
+  }
+  window.addEventListener("scroll", handleScroll);
   return (
     <>
       {/* -----------------------------------------------------Banner--------------------------------------------------------- */}
       {/* -------------------------------------------------------------------------------------------------------------------- */}
-      <section className='banner text-light'>
+      <section className='banner text-light' id="banner">
         <div className="container">
           <div className="row">
             <img src={bannervc1} alt="" className='bvc1 p-0' />
