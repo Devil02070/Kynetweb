@@ -3,17 +3,19 @@ import {Routes, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
-//Scroller-animation
-import './assets/js/Animatescroll'
+//Scroller-animation and js
+import './assets/js/Animatescroll';
+import './assets/js/main';
 
 //Header-Footer
 import Navbar from './components/Navbar';
-import Footer from './components/Footer'
+import Footer from './components/Footer';
 
 // Pages
-import Home from './components/Home'
-import About from './components/About'
+import Home from './components/Home';
+import About from './components/About';
 import Contact from './components/Contact'
+
 
 const Routing =()=>{
   return(
@@ -31,9 +33,8 @@ function App() {
       <Navbar />
       <Routing />
       <Footer />
-      
     </>
-  );
+  )
 }
 
 export default App;

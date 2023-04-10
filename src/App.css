@@ -142,17 +142,24 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .contact{margin-top:-103px; padding: 100px 0pc 120px 0px; background: #453D2D;}
 .contact .bg-text {font-weight: 700;font-size: 160px; color: #f0f2f256 !important;margin: 0px 0px -6.5% 11%;}
 
-.contact-detials{display: flex;justify-content: center;align-items: center;flex-wrap: wrap;}
-.contact-detials h2{font-size: 48px; font-weight: 700; line-height: 56px;}
+/* .contact-detials{display: flex;align-items: center;flex-wrap: wrap;} */
+.contact-detials{display: flex;flex-wrap: wrap; padding-top: 130px;}
+.contact-detials h2{font-size: 48px; font-weight: 700; line-height: 56px; width:92%;}
 .contact-detials h3{font-size: 22px; font-weight: 600; line-height: 35px;}
 .contact-detials p{font-size: 18px; font-weight: 300; line-height: 30px;}
 
 .contact-form{padding:40px; border-radius: 15px;background: #00000098;}
 /* .contact-form{padding:40px; border-radius: 15px;background: #ce901e3b;} */
-.btn_submit{padding:12px 24px; background: #F4A71C}
 .contact-form input::placeholder, .contact-form textarea::placeholder{color:#ffffff}
+.btn_submit{padding:12px 24px; background: #F4A71C}
 
-#project, #training{display: none;}
+.contact-tabs button{border: none;background-color: #ffffff;}
+.contact-tabs .active, .contact-tabs button:hover{background:#F4A71C; color:#ffffff}
+
+.tab-content{display:none}
+.tab-content.active{display:block !important}
+
+/* #project, #training{display: none;} */
 
 
 
@@ -238,13 +245,16 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 }
 @media(max-width:991px){
   .pc-menu{display: none !important;}
-  .mobile-menu{position: absolute !important;top: 92px; background: #000000a2;width: 100% !important;padding: 0px 20px 40px 20px;left: 0px;}
+  /* .mobile-menu{position: absolute !important;top: 92px; background: #000000a2;width: 100% !important;padding: 0px 20px 40px 20px;left: 0px;} */
+  .mobile-menu{position: absolute !important;top: 92px; background: #000000;width: 100% !important;padding: 0px 20px 40px 20px;left: 0px;}
   .mobile-menu .nav-btn{margin-left: 0px !important;}
   .mobile-menu ul{display: unset !important;}
   .mobile-menu ul li{padding: 20px 0px; list-style: none;}
 }
 @media(max-width:767px){
   .container, .container-sm {max-width: 700px !important;padding: 0px 20px !important;}
+
+  .nav-logo img{width: 100%;}
 
   .banner .col-5{width: 100%;}
   .banner h1 {font-size: 40px;}
@@ -317,6 +327,17 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
   /* .footer-menu ul{flex-wrap: wrap;}
   .footer-menu ul li{margin: 10px 0px;} */
   .socials svg{margin: 0px 9px;}
+
+
+  /* Contact us page */
+  .contact{margin-top:-103px; padding: 100px 0px 40px 0px; background: #453D2D;}
+  .contact .bg-text {font-size: 60px; margin: 0px 0px -6.5% 3%;}
+  .contact-detials{padding-top: 30px;}
+  .contact-detials h2{font-size: 32px; line-height: 45px; width:100%;}
+  .contact-detials h3{font-size: 20px; line-height: 30px;}
+  .contact-detials p{font-size: 17px; line-height: 28px;}
+  .contact-form{padding:30px;}
+  .btn_submit{margin-left: 0px !important;}
 }
 
 

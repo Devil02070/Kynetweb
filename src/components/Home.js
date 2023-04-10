@@ -55,15 +55,6 @@ const Home = () => {
     },
   };
 
-  const handleScroll=()=>{
-    const header_sc = document.getElementById('header');
-    if (document.documentElement.scrollTop >= 50) {
-      header_sc.classList.add('header_sticky');
-    }else{
-      header_sc.classList.remove('header_sticky');
-    }
-  }
-  window.addEventListener("scroll", handleScroll);
   return (
     <>
       {/* -----------------------------------------------------Banner--------------------------------------------------------- */}

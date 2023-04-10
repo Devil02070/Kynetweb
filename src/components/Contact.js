@@ -6,21 +6,6 @@ import { FiMapPin } from 'react-icons/fi'
 
 const Contact = () => {
 
-    // let project = document.getElementById('project-tab');
-    // // const pj_content = document.getElementById('project');
-
-    // project.addEventListener('click', function(){
-    //     console.log('hii');
-    //     // if(pj_content.style.display === 'none'){
-    //         // pj_content.style.display === 'block';
-    //         // console.log('hello');
-    //     // }
-    // //     }else{
-    // //         pj_content.style.display === 'none';
-    // //     }
-    // });
-
-
     return (
         <>
             {/* -----------------------------------------------------ABOUT--------------------------------------------------------- */}
@@ -30,10 +15,9 @@ const Contact = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-md-6 contact-detials">
-                            <div>
-                                <div className='w-10 pb-5'>
-                                    <h2 className='txt-primary'>Have a Project?</h2>
-                                    <h2 className='txt-primary'>We Would Love to Help</h2>
+                            <div className='w-100'>
+                                <div className='pb-5'>
+                                    <h2 className='txt-primary' id="contact-heading">Have a Project? We Would Love to Help</h2>
                                 </div>
                                 <div className='w-100'>
                                     <div className="row">
@@ -65,58 +49,61 @@ const Contact = () => {
                                             <p>Contact@kynetweb.com</p>
                                         </div>
                                     </div>
-
-
                                 </div>
                             </div>
                         </div>
                         <div className="col-12 col-md-6 pt-5">
-                            <div className="tabs text-end py-2">
-                                <button className='rounded-pill px-4 py-1' id="project-tab">Project</button>
-                                <button className='rounded-pill px-4 py-1 mx-2' id="training-tab">Training</button>
-                                <button className='rounded-pill px-4 py-1' id="other-tab">Other</button>
+                            <div className="tabs text-end py-2 contact-tabs">
+                                <button className='rounded-pill px-4 py-1 tab-btn active' id="project-tab">Project</button>
+                                <button className='rounded-pill px-4 py-1 mx-2 tab-btn' id="training-tab">Training</button>
+                                <button className='rounded-pill px-4 py-1 tab-btn' id="other-tab">Other</button>
                             </div>
-                            <form action="" className='contact-form' id="other">
-                                <div className="row">
-                                    <div className="col"><input type="text" className='form-control my-4 p-3 bg-transparent text-light' placeholder="Name" /></div>
-                                    <div className="col"><input type="text" className='form-control my-4 p-3 bg-transparent text-light' placeholder="Email" /></div>
+
+                            {/* ------------------PROJECT------------ */}
+                            <form action="" className='contact-form tab-content active' id="project" style={{ display: 'none' }}>
+                                <div className="row flex-wrap mb-3">
+                                    <label htmlFor="">I'm interested in....</label>
+                                    <div className="col-5 border m-2 text-center align-items-center d-flex px-3 py-3"><input type="checkbox" name='project_detail' /><span className='ms-3'>UX/UI Design</span></div>
+                                    <div className="col-5 border m-2 text-center align-items-center d-flex px-3 py-3"><input type="checkbox" name='project_detail' /><span className='ms-3'>Web Development</span></div>
+                                    <div className="col-5 border m-2 text-center align-items-center d-flex px-3 py-3"><input type="checkbox" name='project_detail' /><span className='ms-3'>Branding</span></div>
+                                    <div className="col-5 border m-2 text-center align-items-center d-flex px-3 py-3"><input type="checkbox" name='project_detail' /><span className='ms-3'>Web Designing</span></div>
+                                    <div className="col-5 border m-2 text-center align-items-center d-flex px-3 py-3"><input type="checkbox" name='project_detail' /><span className='ms-3'>Other</span></div>
                                 </div>
                                 <div className="row">
-                                    <div className="col"><input type="text" className='form-control my-4 p-3 bg-transparent text-light' placeholder="Mobile" /></div>
-                                    <div className="col"><input type="text" className='form-control my-4 p-3 bg-transparent text-light' placeholder="Reason for Contact" /></div>
+                                    <div className="col"><input type="text" className='form-control mb-4 p-3 bg-transparent text-light' placeholder="Name" /></div>
+                                    <div className="col"><input type="text" className='form-control mb-4 p-3 bg-transparent text-light' placeholder="Email" /></div>
                                 </div>
-                                <textarea name="" id="" cols="30" rows="10" className='form-control my-4 p-3 bg-transparent text-light' placeholder="Message"></textarea>
+                                <textarea name="" id="" cols="30" rows="10" className='form-control mb-4 p-3 bg-transparent text-light' placeholder="Message"></textarea>
                                 <input type="submit" className='btn btn_submit rounded-pill ms-3 text-light' value="Send Request" />
                             </form>
 
-                            <form action="" className='contact-form' id="project">
-                                <div className="row flex-wrap">
+                            {/* ------------------TRAINING------------ */}
+                            <form action="" className='contact-form tab-content' id="training" style={{ display: 'none' }}>
+                                <div className="row flex-wrap mb-4">
                                     <label htmlFor="">I'm interested in....</label>
-                                    <div className="col border m-2 text-center align-items-center d-flex p-2"><input type="radio" name='project_detail' />UX/UI Design</div>
-                                    <div className="col border m-2 text-center align-items-center d-flex p-2"><input type="radio" name='project_detail' />Website Development</div>
-                                    <div className="col border m-2 text-center align-items-center d-flex p-2"><input type="radio" name='project_detail' />Branding</div>
-                                    <div className="col border m-2 text-center align-items-center d-flex p-2"><input type="radio" name='project_detail' />Website Designing</div>
+                                    <div className="col-5 border m-2 text-center align-items-center d-flex p-2"><input type="radio" name='project_detail' /><span className='ms-3'>UX/UI Design</span></div>
+                                    <div className="col-5 border m-2 text-center align-items-center d-flex p-2"><input type="radio" name='project_detail' /><span className='ms-3'>Web Development</span></div>
+                                    <div className="col-5 border m-2 text-center align-items-center d-flex p-2"><input type="radio" name='project_detail' /><span className='ms-3'>Web Designing</span></div>
                                 </div>
                                 <div className="row">
-                                    <div className="col"><input type="text" className='form-control my-4 p-3 bg-transparent text-light' placeholder="Name" /></div>
-                                    <div className="col"><input type="text" className='form-control my-4 p-3 bg-transparent text-light' placeholder="Email" /></div>
+                                    <div className="col"><input type="text" className='form-control mb-4 p-3 bg-transparent text-light' placeholder="Name" /></div>
+                                    <div className="col"><input type="text" className='form-control mb-4 p-3 bg-transparent text-light' placeholder="Email" /></div>
                                 </div>
-                                <textarea name="" id="" cols="30" rows="10" className='form-control my-4 p-3 bg-transparent text-light' placeholder="Message"></textarea>
+                                <textarea name="" id="" cols="30" rows="10" className='form-control mb-4 p-3 bg-transparent text-light' placeholder="Message"></textarea>
                                 <input type="submit" className='btn btn_submit rounded-pill ms-3 text-light' value="Send Request" />
                             </form>
 
-                            <form action="" className='contact-form' id="training">
-                            <div className="row flex-wrap">
-                                    <label htmlFor="">I'm interested in....</label>
-                                    <div className="col border m-2 text-center align-items-center d-flex p-2"><input type="radio" name='project_detail' />UX/UI Design</div>
-                                    <div className="col border m-2 text-center align-items-center d-flex p-2"><input type="radio" name='project_detail' />Website Development</div>
-                                    <div className="col border m-2 text-center align-items-center d-flex p-2"><input type="radio" name='project_detail' />Website Designing</div>
+                            {/* ------------------OTHER------------ */}
+                            <form action="" className='contact-form tab-content' id="other">
+                                <div className="row">
+                                    <div className="col"><input type="text" className='form-control mb-4 p-3 bg-transparent text-light' placeholder="Name" /></div>
+                                    <div className="col"><input type="text" className='form-control mb-4 p-3 bg-transparent text-light' placeholder="Email" /></div>
                                 </div>
                                 <div className="row">
-                                    <div className="col"><input type="text" className='form-control my-4 p-3 bg-transparent text-light' placeholder="Name" /></div>
-                                    <div className="col"><input type="text" className='form-control my-4 p-3 bg-transparent text-light' placeholder="Email" /></div>
+                                    <div className="col"><input type="text" className='form-control mb-4 p-3 bg-transparent text-light' placeholder="Mobile" /></div>
+                                    <div className="col"><input type="text" className='form-control mb-4 p-3 bg-transparent text-light' placeholder="Reason for Contact" /></div>
                                 </div>
-                                <textarea name="" id="" cols="30" rows="10" className='form-control my-4 p-3 bg-transparent text-light' placeholder="Message"></textarea>
+                                <textarea name="" id="" cols="30" rows="10" className='form-control mb-4 p-3 bg-transparent text-light' placeholder="Message"></textarea>
                                 <input type="submit" className='btn btn_submit rounded-pill ms-3 text-light' value="Send Request" />
                             </form>
                         </div>
