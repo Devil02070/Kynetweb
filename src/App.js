@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect}from 'react';
 import {Routes, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -28,6 +28,9 @@ const Routing =()=>{
 }
 
 function App() {
+  useEffect(()=>{
+    Routing();
+  })
   return (
     <>
       <Navbar />

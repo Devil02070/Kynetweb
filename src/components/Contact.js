@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { AiOutlineMail } from 'react-icons/ai'
 import { BsTelephone } from 'react-icons/bs'
@@ -6,6 +6,45 @@ import { FiMapPin } from 'react-icons/fi'
 
 const Contact = () => {
 
+    useEffect(() => {
+        // Contact Tabs------------------------------------------------------------------------------------------------
+        // ------------------------------------------------------------------------------------------------------------
+        const tabs = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(tab => {
+                    tab.classList.remove('active');
+                });
+                tabContents.forEach(content => {
+                    content.classList.remove('active');
+                });
+
+                tab.classList.add('active');
+                const index = Array.from(tabs).indexOf(tab);
+                tabContents[index].classList.add('active');
+            });
+        });
+
+        // Change heading on click--------------------------------------------------------------------------------------
+        // -------------------------------------------------------------------------------------------------------------
+        let project = document.getElementById('project-tab');
+        let training = document.getElementById('training-tab');
+        let other = document.getElementById('other-tab');
+
+        const heading = document.getElementById('contact-heading');
+
+        project.addEventListener('click', function () {
+            heading.innerHTML = "Have a Project? We Would Love to Help";
+        });
+        training.addEventListener('click', function () {
+            heading.innerHTML = "Achieve Your Goals with Expert Coaching";
+        });
+        other.addEventListener('click', function () {
+            heading.innerHTML = "Reach Out to Us";
+        });
+    }, []);
     return (
         <>
             {/* -----------------------------------------------------ABOUT--------------------------------------------------------- */}
