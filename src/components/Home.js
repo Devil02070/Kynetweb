@@ -28,6 +28,10 @@ import test2 from '../assets/images/Rectangle 18(2).png'
 import test3 from '../assets/images/Rectangle 18(3).png'
 import quote from '../assets/images/quote.png'
 
+// import media from '../assets/Untitled.mp4'
+import media from '../assets/home-media.mp4'
+
+import {ImPlay3} from 'react-icons/im'
 
 
 
@@ -55,6 +59,17 @@ const Home = () => {
     },
   };
 
+  let myVideo = document.getElementById("sitemedia");
+  console.log(myVideo)
+
+  const playPause= ()=>{
+    if (myVideo.paused) {
+      myVideo.play();
+    } else {
+      myVideo.pause();
+    }
+  }
+
   return (
     <>
       {/* -----------------------------------------------------Banner--------------------------------------------------------- */}
@@ -78,9 +93,16 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section class="media text-light text-center d-flex">
+
+      {/* MEDIA */}
+      <section className='media-overlay'>
         <h2>A digital agency for <span>ambitious brands</span></h2>
+        <video autoPlay muted loop className="media1 text-light text-center" src={media} id="sitemedia"></video>
+        <button onClick={playPause} className="media-play-btn bg-transparent rounded-circle"><ImPlay3 className='pause-icon'/></button>
       </section>
+      {/* <section className="media text-light text-center d-flex">
+        <h2>A digital agency for <span>ambitious brands</span></h2>
+      </section> */}
 
       {/* -----------------------------------------------------WORK--------------------------------------------------------- */}
       {/* -------------------------------------------------------------------------------------------------------------------- */}
@@ -111,10 +133,10 @@ const Home = () => {
               </div>
               <div className="carousel-item">
                 <div className="row">
-                  <div className="col-6">
+                  <div className="col-12 col-md-6">
                     <img src={crImg1} className="w-100" alt="cr-1" />
                   </div>
-                  <div className="col-6">
+                  <div className="col-12 col-md-6">
                     <button class="btn rounded-pill btn-tags mt-2 ms-2">BRANDING</button>
                     <button class="btn rounded-pill btn-tags mt-2 ms-2">USER EXPERIENCE</button>
                     <button class="btn rounded-pill btn-tags mt-2 ms-2">USER INTERFACE</button>
@@ -131,10 +153,10 @@ const Home = () => {
               </div>
               <div className="carousel-item">
                 <div className="row">
-                  <div className="col-6">
+                  <div className="col-12 col-md-6">
                     <img src={crImg1} className="w-100" alt="cr-1" />
                   </div>
-                  <div className="col-6">
+                  <div className="col-12 col-md-6">
                     <button class="btn rounded-pill btn-tags mt-2 ms-2">BRANDING</button>
                     <button class="btn rounded-pill btn-tags mt-2 ms-2">USER EXPERIENCE</button>
                     <button class="btn rounded-pill btn-tags mt-2 ms-2">USER INTERFACE</button>
@@ -319,36 +341,36 @@ const Home = () => {
         <div className="container">
           <div className="overlay-new">
             <div className="arrow p-0">
-            <div className="row">
-              <div className="col-12 col-md-6">
-              <h2 className=''>Web Development</h2>
-                <ul>
-                  <li>Front-end development</li>
-                  <li>CMS Development </li>
-                  <li>Ecommerce Development</li>
-                  <li>Back-end Development</li>
-                </ul>
-                <h2 className='dm'>Digital Marketing</h2>
-                <ul>
-                  <li>SEO</li>
-                  <li>Content Marketing</li>
-                  <li>Facebook Marketing</li>
-                  <li>Email Marketing</li>
-                </ul>
-              </div>
-              <div className="col-12 col-md-6 d-flex align-items-end">
-                <div className='w-50 ms-auto'>
-                  <h2>Visual Design</h2>
+              <div className="row">
+                <div className="col-12 col-md-6">
+                  <h2 className=''>Web Development</h2>
                   <ul>
-                    <li>Website Design</li>
-                    <li>Mobile App Design</li>
-                    <li>Graphics Design</li>
-                    <li>Logo & Icon Design</li>
-                    <li>Dashboard Design</li>
+                    <li>Front-end development</li>
+                    <li>CMS Development </li>
+                    <li>Ecommerce Development</li>
+                    <li>Back-end Development</li>
+                  </ul>
+                  <h2 className='dm'>Digital Marketing</h2>
+                  <ul>
+                    <li>SEO</li>
+                    <li>Content Marketing</li>
+                    <li>Facebook Marketing</li>
+                    <li>Email Marketing</li>
                   </ul>
                 </div>
+                <div className="col-12 col-md-6 d-flex align-items-end">
+                  <div className='w-50 ms-auto'>
+                    <h2>Visual Design</h2>
+                    <ul>
+                      <li>Website Design</li>
+                      <li>Mobile App Design</li>
+                      <li>Graphics Design</li>
+                      <li>Logo & Icon Design</li>
+                      <li>Dashboard Design</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
@@ -378,66 +400,66 @@ const Home = () => {
         <h3 class="bg-text">testimonial</h3>
         <div className="container-fluid">
           <div className="row">
-              <h2>Results that speak<br /> for themselves.</h2>
+            <h2>Results that speak<br /> for themselves.</h2>
           </div>
           <div className="row">
-              <Carousel responsive={responsive} arrows={true} showDots={false} infinite={true} slidesToScroll={1}>
-                <div className='tst-card'>
-                  <img src={test1} alt="" class="m-auto" />
-                  <div className="content">
-                    <img src={quote} alt="" />
-                    <p>Big or small, Blank Theory is the company to speak to when it comes to website and marketing needs. </p>
-                    <div className="name-bg">
-                      <h3>LEGEAR</h3>
-                      <h6>USA - Client</h6>
-                    </div>
+            <Carousel responsive={responsive} arrows={true} showDots={false} infinite={true} slidesToScroll={1}>
+              <div className='tst-card'>
+                <img src={test1} alt="" class="m-auto" />
+                <div className="content">
+                  <img src={quote} alt="" />
+                  <p>Big or small, Blank Theory is the company to speak to when it comes to website and marketing needs. </p>
+                  <div className="name-bg">
+                    <h3>LEGEAR</h3>
+                    <h6>USA - Client</h6>
                   </div>
                 </div>
-                <div className='tst-card'>
-                  <img src={test2} alt="" />
-                  <div className="content">
-                    <img src={quote} alt="" />
-                    <p>Big or small, Blank Theory is the company to speak to when it comes to website and marketing needs. </p>
-                    <div className="name-bg">
-                      <h3>MONILLA</h3>
-                      <h6>Russia - Client</h6>
-                    </div>
+              </div>
+              <div className='tst-card'>
+                <img src={test2} alt="" />
+                <div className="content">
+                  <img src={quote} alt="" />
+                  <p>Big or small, Blank Theory is the company to speak to when it comes to website and marketing needs. </p>
+                  <div className="name-bg">
+                    <h3>MONILLA</h3>
+                    <h6>Russia - Client</h6>
                   </div>
                 </div>
-                <div className='tst-card'>
-                  <img src={test3} alt="" />
-                  <div className="content">
-                    <img src={quote} alt="" />
-                    <p>Big or small, Blank Theory is the company to speak to when it comes to website and marketing needs. </p>
-                    <div className="name-bg">
-                      <h3>SOEL DEHA</h3>
-                      <h6>USA - Client</h6>
-                    </div>
+              </div>
+              <div className='tst-card'>
+                <img src={test3} alt="" />
+                <div className="content">
+                  <img src={quote} alt="" />
+                  <p>Big or small, Blank Theory is the company to speak to when it comes to website and marketing needs. </p>
+                  <div className="name-bg">
+                    <h3>SOEL DEHA</h3>
+                    <h6>USA - Client</h6>
                   </div>
                 </div>
-                <div className='tst-card'>
-                  <img src={test2} alt="" />
-                  <div className="content">
-                    <img src={quote} alt="" />
-                    <p>Big or small, Blank Theory is the company to speak to when it comes to website and marketing needs. </p>
-                    <div className="name-bg">
-                      <h3>BRIANT YOUN</h3>
-                      <h6>USA - Client</h6>
-                    </div>
+              </div>
+              <div className='tst-card'>
+                <img src={test2} alt="" />
+                <div className="content">
+                  <img src={quote} alt="" />
+                  <p>Big or small, Blank Theory is the company to speak to when it comes to website and marketing needs. </p>
+                  <div className="name-bg">
+                    <h3>BRIANT YOUN</h3>
+                    <h6>USA - Client</h6>
                   </div>
                 </div>
-                <div className='tst-card'>
-                  <img src={test3} alt="" />
-                  <div className="content">
-                    <img src={quote} alt="" />
-                    <p>Big or small, Blank Theory is the company to speak to when it comes to website and marketing needs. </p>
-                    <div className="name-bg">
-                      <h3>LEGEAR</h3>
-                      <h6>USA - Client</h6>
-                    </div>
+              </div>
+              <div className='tst-card'>
+                <img src={test3} alt="" />
+                <div className="content">
+                  <img src={quote} alt="" />
+                  <p>Big or small, Blank Theory is the company to speak to when it comes to website and marketing needs. </p>
+                  <div className="name-bg">
+                    <h3>LEGEAR</h3>
+                    <h6>USA - Client</h6>
                   </div>
                 </div>
-              </Carousel>
+              </div>
+            </Carousel>
           </div>
         </div>
       </section>

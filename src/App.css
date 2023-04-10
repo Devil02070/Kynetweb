@@ -39,9 +39,20 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .banner button:hover{border:1px solid #ffffff !important;}
 .banner p strong{font-weight: 800; box-shadow: 0px -10px 0px 0px #F4A71C inset;}
 
-.media{height: 80vh !important;align-items: center;justify-content: center;background-color: #453D2D;}
+/* .media{height: 80vh !important;align-items: center;justify-content: center;background-color: #453D2D;}
 .media h2{font-weight: 500;font-size: 60px;line-height: 100%;}
-.media span{color: #F4A71C;}
+.media span{color: #F4A71C;} */
+
+/* .media-overlay{background-color: #453D2D;position: relative;text-align: center;} */
+.media-overlay{background-color: #453D2D;position: relative;display: flex; align-items: center;justify-content: center; text-align: center;}
+.media-overlay h2{font-weight: 500;font-size: 60px;line-height: 100%; z-index: 9999 !important;position: absolute; color: #ffffff;}
+.media-overlay span{color: #F4A71C;}
+.media1{height: 80vh !important;align-items: center;justify-content: center;object-fit: cover;width: 100%;opacity: .4;}
+.media-play-btn {position: absolute;z-index: 9999;padding: 30px !important; opacity: .2;}
+/* .media-overlay h2{font-weight: 500;font-size: 60px;line-height: 100%; z-index: 9999 !important;position: absolute;top: 40%;left: 20%; color: #ffffff;} */
+/* .media-play-btn {position: absolute;top: 38%;left:46.5%;z-index: 9999;padding: 30px !important; opacity: .2;} */
+.media-play-btn:hover {opacity: 1;}
+.pause-icon{font-size: 40px !important;color: #D9D9D9;}
 
 .vertical-cr{padding-bottom: 120px;background-color: #E6E9E9;}
 .vertical-cr .carousel-item h2{font-weight: 700;font-size: 48px;color:#453D2D; margin-top:24px;}
@@ -147,6 +158,7 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .contact-detials h2{font-size: 48px; font-weight: 700; line-height: 56px; width:92%;}
 .contact-detials h3{font-size: 22px; font-weight: 600; line-height: 35px;}
 .contact-detials p{font-size: 18px; font-weight: 300; line-height: 30px;}
+.contact-icon{font-size: 25px;}
 
 .contact-form{padding:40px; border-radius: 15px;background: #00000098;}
 /* .contact-form{padding:40px; border-radius: 15px;background: #ce901e3b;} */
@@ -158,6 +170,7 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 
 .tab-content{display:none}
 .tab-content.active{display:block !important}
+
 
 /* #project, #training{display: none;} */
 
@@ -175,7 +188,8 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 /* ----------------------------------------------------------------------- VECTORS ----------------------------------------------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.bvc1,.bvc2,.bvc3,.bvc4,.bvc5,.bvc6{opacity: .8;animation-duration: 1.5s;animation-fill-mode: forwards;}
+.bvc1,.bvc2,.bvc3,.bvc4,.bvc5,.bvc6{opacity: .8;animation-duration: 1.5s;animation-fill-mode: forwards;transition: transform 2s ease-in-out;}
+/* .banner{transition: transform 2s ease-in-out;} */
 
 .bvc1{position: absolute; right:0px;width: 8%; top: 7%;}
 .bvc2{position: absolute; left:0;width: 8%; bottom: 2%;}
@@ -186,9 +200,15 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .bvc6{position: absolute; left:27%;width: 12%; top: 80%;}
 
 /* ON SCREEN LOAD */
-/* .bvc1{animation-duration: 1.5s;animation-name: animate-down;animation-delay: 0.5s;animation-fill-mode: forwards;}
+/* .bvc1{animation-duration: 1.5s;animation-name: animate-down;animation-delay: 0.5s;animation-fill-mode: forwards;}T
 .bvc2{animation-duration: 1.5s;animation-name: animate-up;animation-delay: 0.5s;animation-fill-mode: forwards;}
 .bvc3, .bvc4, .bvc5, .bvc6 {animation-duration: 1.5s;animation-name: animate-right;animation-delay: 0.5s;animation-fill-mode: forwards;} */
+
+.lets-go{animation:thumb .4s linear infinite}
+@keyframes thumb{
+  /* 100%{transform:rotate(360deg)} */
+  0%{transform:scale(1)} 100%{transform:scale(1.02)}
+}
 
 /* ON HOVER */
 .banner:hover .bvc1{animation-name: animate-down;}
@@ -208,6 +228,9 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
   0% {  transform: translateY(0%) } 100% {  transform: translateY(-50%) }
 }
 
+
+.nav-logo img{transition: transform .6s ease-in-out;}
+.nav-logo img:hover{ transform: scale(1.1)}
 
 
 
@@ -336,8 +359,12 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
   .contact-detials h2{font-size: 32px; line-height: 45px; width:100%;}
   .contact-detials h3{font-size: 20px; line-height: 30px;}
   .contact-detials p{font-size: 17px; line-height: 28px;}
-  .contact-form{padding:30px;}
+  .contact-form{padding:20px;}
   .btn_submit{margin-left: 0px !important;}
+  .tabs .px-4 {padding-right: 20px !important;padding-left: 20px !important;}
+  .contact-form .row{display: block;}
+  .contact-form .col-5{width:95%;}
+  .contact-form .col{width:100%;}
 }
 
 
