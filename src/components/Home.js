@@ -10,6 +10,8 @@ import bannervc3 from '../assets/images/Rectangle 44.png'
 import bannervc4 from '../assets/images/Rectangle 41.png'
 import bannervc5 from '../assets/images/Rectangle 42.png'
 import bannervc6 from '../assets/images/Rectangle 43.png'
+
+// import arrow from '../assets/images/Line 10.png'
 //carousal
 import crImg1 from '../assets/images/Group 47.png'
 // Cards
@@ -29,9 +31,10 @@ import test3 from '../assets/images/Rectangle 18(3).png'
 import quote from '../assets/images/quote.png'
 
 // import media from '../assets/Untitled.mp4'
-import media from '../assets/home-media.mp4'
+// import media from '../assets/home-media.mp4'
+import media from '../assets/media3.mp4'
 
-import {ImPlay3} from 'react-icons/im'
+import { ImPlay3 } from 'react-icons/im'
 
 
 
@@ -62,7 +65,7 @@ const Home = () => {
   let myVideo = document.getElementById("sitemedia");
   console.log(myVideo)
 
-  const playPause= ()=>{
+  const playPause = () => {
     if (myVideo.paused) {
       myVideo.play();
     } else {
@@ -84,6 +87,7 @@ const Home = () => {
             <img src={bannervc4} alt="" className='bvc4 p-0' />
             <img src={bannervc5} alt="" className='bvc5 p-0' />
             <img src={bannervc6} alt="" className='bvc6 p-0' />
+            {/* <img src={arrow} alt="" className='toper' /> */}
             <div className="col-5 col-md-6">
               <h1>Take your <span className='bn-txt'>brand to new heights.</span></h1>
               <p>We are a digital agency focused on <strong>Brand</strong>, <strong>Web Design</strong> & <strong>Digital Marketing.</strong></p>
@@ -98,7 +102,7 @@ const Home = () => {
       <section className='media-overlay'>
         <h2>A digital agency for <span>ambitious brands</span></h2>
         <video autoPlay muted loop className="media1 text-light text-center" src={media} id="sitemedia"></video>
-        <button onClick={playPause} className="media-play-btn bg-transparent rounded-circle"><ImPlay3 className='pause-icon'/></button>
+        <button onClick={playPause} className="media-play-btn bg-transparent rounded-circle"><ImPlay3 className='pause-icon' /></button>
       </section>
       {/* <section className="media text-light text-center d-flex">
         <h2>A digital agency for <span>ambitious brands</span></h2>
@@ -230,8 +234,8 @@ const Home = () => {
           <div className="row">
             <div className="col-12 col-md-8">
               <div className="row sv-first">
-                <div className="col-1"><img src={svec1} alt="" /></div>
-                <div className="col-11">
+                <div className="col-12 col-md-1"><img src={svec1} alt="" /></div>
+                <div className="col-12 col-md-11">
                   <h2>Digital Marketing</h2>
                   <button class="btn rounded-pill btn-tags-light mt-2 ms-2">BRANDING</button>
                   <button class="btn rounded-pill btn-tags-light mt-2 ms-2">USER EXPERIENCE</button>
@@ -243,8 +247,8 @@ const Home = () => {
                 </div>
               </div>
               <div className="row">
-                <div className="col-1"><img src={svec2} alt="" /></div>
-                <div className="col-11">
+                <div className="col-1 col-md-1"><img src={svec2} alt="" /></div>
+                <div className="col-11 col-md-11">
                   <h2>Websites</h2>
                   <button class="btn rounded-pill btn-tags-light mt-2 ms-2">BRANDING</button>
                   <button class="btn rounded-pill btn-tags-light mt-2 ms-2">USER EXPERIENCE</button>
@@ -256,8 +260,8 @@ const Home = () => {
                 </div>
               </div>
               <div className="row active">
-                <div className="col-1"><img src={svec3} alt="" /></div>
-                <div className="col-11">
+                <div className="col-1 col-md-1"><img src={svec3} alt="" /></div>
+                <div className="col-11 col-md-11">
                   <h2>Branding</h2>
                   <button class="btn rounded-pill btn-tags-light mt-2 ms-2">BRANDING</button>
                   <button class="btn rounded-pill btn-tags-light mt-2 ms-2">USER EXPERIENCE</button>
