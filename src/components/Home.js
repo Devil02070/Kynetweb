@@ -89,7 +89,7 @@ const Home = () => {
             <img src={bannervc6} alt="" className='bvc6 p-0' />
             {/* <img src={arrow} alt="" className='toper' /> */}
             <div className="col-5 col-md-6">
-              <h1>Take your <span className='bn-txt'>brand to new heights.</span></h1>
+              <h1 className="main-heading">Take your <span className='bn-txt'>brand to new heights.</span></h1>
               <p>We are a digital agency focused on <strong>Brand</strong>, <strong>Web Design</strong> & <strong>Digital Marketing.</strong></p>
               <button className='btn rounded-pill text-light'>Get Started</button>
             </div>
@@ -104,9 +104,6 @@ const Home = () => {
         <video autoPlay muted loop className="media1 text-light text-center" src={media} id="sitemedia"></video>
         <button onClick={playPause} className="media-play-btn bg-transparent rounded-circle"><ImPlay3 className='pause-icon' /></button>
       </section>
-      {/* <section className="media text-light text-center d-flex">
-        <h2>A digital agency for <span>ambitious brands</span></h2>
-      </section> */}
 
       {/* -----------------------------------------------------WORK--------------------------------------------------------- */}
       {/* -------------------------------------------------------------------------------------------------------------------- */}
@@ -181,17 +178,10 @@ const Home = () => {
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            {/* <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span className="carousel-control-next-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Next</span>
-            </button> */}
           </div>
         </div>
       </section>
+
 
       {/* -----------------------------------------------------CODE/DESIGN--------------------------------------------------------- */}
       {/* -------------------------------------------------------------------------------------------------------------------- */}
@@ -205,7 +195,7 @@ const Home = () => {
               <button class="btn rounded-pill light m-auto text-light">Let's Talk</button>
             </div>
           </div>
-          <div className="row m-auto cards text-center">
+          <div className="row m-auto cards text-center card-row">
             <div className="col design me-3">
               <h4>Stand out</h4>
               <p>from the crowd</p>
@@ -282,7 +272,7 @@ const Home = () => {
 
       {/* -----------------------------------------------------GRID CARD--------------------------------------------------------- */}
       {/* -------------------------------------------------------------------------------------------------------------------- */}
-      <section className='sec-6 text-light'>
+      {/* <section className='sec-6 text-light'>
         <div className="container">
           <div className="row">
             <div className="col-12 col-md-6 d-flex align-items-end">
@@ -291,7 +281,7 @@ const Home = () => {
             <div className="col-12 col-md-6">
               <div className="row">
                 <div className="col card-grad grad-1 me-3">
-                  <h3 class="text-center rounded-circle m-auto">1</h3>
+                  <span className='number'>1</span>
                   <h4 className='text-center'>Ideate</h4>
                   <ul>
                     <li>Questionnaire</li>
@@ -302,7 +292,7 @@ const Home = () => {
                   </ul>
                 </div>
                 <div className="col card-grad grad-2 me-3">
-                  <h3 class="text-center rounded-circle m-auto">2</h3>
+                <span className='number'>2</span>
                   <h4 className='text-center'>Design</h4>
                   <ul>
                     <li>User Research</li>
@@ -324,7 +314,7 @@ const Home = () => {
             </div>
             <div className="col-12 col-md-4">
               <div className="card-grad grad-3 mt-3">
-                <h3 class="text-center rounded-circle m-auto">3</h3>
+              <span className='number'>3</span>
                 <h4 className='text-center'>Frontend Development</h4>
                 <ul>
                   <li>HTML / CSS</li>
@@ -332,6 +322,60 @@ const Home = () => {
                   <li>Quality Check</li>
                   <li>Speed Optimization</li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+      <section className='sec-6 text-light'>
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-md-6 pt-5">
+              <h2>We trust our work process that makes us to achieve outstanding results.</h2>
+              <p className='mt-3 w-75'>The first place a potential customer will notice you is on the web. So it is imperative that your website be professional, beautiful, and easily navigable. That's where we come in. We make sure your first impression is a lasting one. In a good way.</p>
+              <button class="btn rounded-pill light m-auto text-light mt-3">Get a Quote</button>
+            </div>
+            <div className="col-12 col-md-6">
+              <div className="row card-floating">
+                <div className="col card-grad grad-1 me-4">
+                  <span className='number'>1</span>
+                  <h4 className='text-center'>Ideate</h4>
+                  <ul>
+                    <li>Questionnaire</li>
+                    <li>Research</li>
+                    <li>Consulting</li>
+                    <li>Planning</li>
+                    <li>Build Strategy</li>
+                  </ul>
+                </div>
+                <div className="col card-grad grad-2 me-3">
+                  <span className='number'>2</span>
+                  <h4 className='text-center'>Design</h4>
+                  <ul>
+                    <li>User Research</li>
+                    <li>Target Audience</li>
+                    <li>Interviews</li>
+                    <li>User Experience Flows</li>
+                    <li>User Interface Design</li>
+                    <li>Prototyping</li>
+                    <li>Testing</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="row card-extended">
+                <div className="col-12 col-md-8">
+                  <div className="card-grad grad-3 mt-4">
+                    <span className='number'>3</span>
+                    <h4 className='text-center'>Frontend Development</h4>
+                    <ul>
+                      <li>HTML / CSS</li>
+                      <li>Responsive to all screens</li>
+                      <li>Quality Check</li>
+                      <li>Speed Optimization</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="col-12 col-md-8"></div>
               </div>
             </div>
           </div>

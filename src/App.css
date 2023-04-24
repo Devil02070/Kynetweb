@@ -27,6 +27,7 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .nav-btn{border-color: #F4A71C !important;}
 .nav-btn:hover{background-color: #F4A71C !important;}
 .menu-item:hover{color: #F4A71C !important;}
+.nav-logo img{width: 80%;}
 
 .header_sticky{position:fixed; width:100%;top:0px;background:#000000;border:none !important;border-bottom: 1px solid #F4A71C !important;}
 
@@ -75,7 +76,7 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .sec-4 .cards h3{font-weight: 600;font-size: 22px;line-height: 27px;margin-top: 23px;}
 .sec-4 .cards p{font-weight: 400;font-size: 20px;}
 .sec-4 .cards p.env{font-size: 16px;margin-top: 30px;}
-/* .blury{color: transparent;text-shadow: 0 0 8px #ffffff;} */
+.sec-4 .card-row{width:65%}
 
 .services{padding-bottom: 120px;background-color: #D9D9D9;}
 .services h2{font-weight: 500;font-size: 48px; color: #777777;}
@@ -83,13 +84,17 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .services .col-12 .row{margin-top:40px;}
 
 .sec-6 h2{font-weight: 700;font-size: 48px;line-height: 56px;padding-right: 10%;}
-.sec-6 .card-grad{background-image: linear-gradient(to bottom right, #FCC96E, #F2E1C2, #F4A71C); border-radius: 15px;color: #453D2D;padding: 30px 40px;}
+/* .sec-6 .card-grad{background-image: linear-gradient(to bottom right, #FCC96E, #F2E1C2, #F4A71C); border-radius: 15px;color: #453D2D;padding: 30px 40px;} */
+.sec-6 .card-grad{box-shadow: 0 0 6px #fcc96e7d; background: #ffffff00; border-radius: 15px;color: #453D2D;padding: 30px 40px;backdrop-filter: blur(10px);}
 .sec-6 .grad-2{margin-bottom: -17%;margin-top: 17%;}
-.sec-6 .card-grad h3{font-weight: 500;font-size: 20px; border: 1px solid #F4A71C; padding: 10px; width: 24%;}
 .sec-6 .grad-3 h3{width: 17%;}
-.sec-6 .card-grad h4{font-weight: 600;font-size: 22px;color: #453D2D;margin-top: 20px;}
+.sec-6 .card-grad h4{font-weight: 600;font-size: 22px;color: #F4A71C;margin-top: 20px;}
 .sec-6 .card-grad ul{margin-top: 20px;}
-.sec-6 .card-grad li{font-weight: 400;font-size: 18px;color: #777777;}
+.sec-6 .card-grad li{font-weight: 400;font-size: 18px;color: #ffffff;}
+.number{color: #ffffff;border: 2px solid #F4A71C;margin: 0 auto;height: 50px;width: 50px;border-radius: 100%;display: flex;align-items: center;justify-content: center;font-size: 20px;font-weight: 700;}
+.card-extended{position:relative;left:-20%}
+.sec-6{background-image: url('./assets/images/Triangle.png'); background-repeat: no-repeat; background-position: 50% 46%;}
+.card-extended{background-image: url('./assets/images/Oval.png'); background-repeat: no-repeat; background-position: 67% 80%;}
 
 /* .overlay{background-image: url('./assets/coding_gif.gif');background-repeat:no-repeat;background-position: center top 260px; background-size: contain;} */
 .courses{padding-bottom: 120px;background-image: url('./assets/images/transparent-chevron-bg\ 1.png');background-repeat:no-repeat;background-position: center top 260px; background-size: 79%;}
@@ -182,17 +187,13 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 
 
 
-
-
-
-
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /* ----------------------------------------------------------------------- VECTORS ----------------------------------------------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.bvc1,.bvc2,.bvc3,.bvc4,.bvc5,.bvc6{opacity: .8;animation-duration: 1.5s;animation-fill-mode: forwards;transition: transform 2s ease-in-out;}
-/* .banner{transition: transform 2s ease-in-out;} */
+
+.bvc1,.bvc2,.bvc3,.bvc4,.bvc5,.bvc6,.bn-txt{opacity: .8;transition: all 1.5s ease;}
 
 .bvc1{position: absolute; right:0px;width: 8%; top: 7%;}
 .bvc2{position: absolute; left:0;width: 8%; bottom: 2%;}
@@ -202,38 +203,43 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .bvc5{position: absolute; left:60%;width: 12%; top: 70%;}
 .bvc6{position: absolute; left:27%;width: 12%; top: 80%;}
 
+/* code/design */
+.design, .code, .card-grad {animation-name: floating;animation-duration: 6s;animation-iteration-count: infinite;animation-timing-function: ease-in-out;}
+.code {animation-duration: 7s;}
+.nav-logo img{transition: transform .6s ease-in-out;}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }   
+}
+
 /* ON SCREEN LOAD */
-/* .bvc1{animation-duration: 1.5s;animation-name: animate-down;animation-delay: 0.5s;animation-fill-mode: forwards;}T
+/* .bvc1{animation-duration: 1.5s;animation-name: animate-down;animation-delay: 0.5s;animation-fill-mode: forwards;}
 .bvc2{animation-duration: 1.5s;animation-name: animate-up;animation-delay: 0.5s;animation-fill-mode: forwards;}
 .bvc3, .bvc4, .bvc5, .bvc6 {animation-duration: 1.5s;animation-name: animate-right;animation-delay: 0.5s;animation-fill-mode: forwards;} */
 
-.lets-go{animation:thumb .4s linear infinite}
+/* .main-heading{animation: animate-right 1.5s 0.5s forwards;} */
+.lets-go{animation:thumb 0.4s linear infinite}
+
+/* @keyframes animate-right{
+  100%{display:block;transform: translateX(40px)}
+} */
 @keyframes thumb{
-  /* 100%{transform:rotate(360deg)} */
   0%{transform:scale(1)} 100%{transform:scale(1.02)}
 }
 
 /* ON HOVER */
-.banner:hover .bvc1{animation-name: animate-down;}
-.banner:hover .bvc2{animation-name: animate-up;}
-.banner:hover .bvc3,.banner:hover .bvc4,.banner:hover .bvc5,.banner:hover .bvc6{animation-name: animate-right;}
-.banner:hover .bn-txt{animation: tilt-text forwards;}
+.banner:hover .bvc1{transform: translateY(50%)}
+.banner:hover .bvc2{transform: translateY(-50%)}
+.banner:hover .bvc3,.banner:hover .bvc4,.banner:hover .bvc5,.banner:hover .bvc6{transform: translateX(50%)}
+.banner:hover .bn-txt{transform: skewX(40deg)}
 
-@keyframes tilt-text{
-  to { font-style: italic;}}
-@keyframes animate-right {
-  0% {  transform: translateX(0%) } 100% {  transform: translateX(50%);opacity:1;}
-}
-@keyframes animate-down {
-  0% {  transform: translateY(0%) } 100% {  transform: translateY(50%) }
-}
-@keyframes animate-up {
-  0% {  transform: translateY(0%) } 100% {  transform: translateY(-50%) }
-}
+.services h2:hover{color:#000000;cursor:pointer}
 
 
-.nav-logo img{transition: transform .6s ease-in-out;}
 .nav-logo img:hover{ transform: scale(1.1)}
+
 
 @media (max-width:600px){
   /* ON SCREEN LOAD */
@@ -375,75 +381,3 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
   .contact-form .col-5{width:95%;}
   .contact-form .col{width:100%;}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-
-
-
-
-
-/* Emergency css */
-/* img.custom-logo{
-  height: 50px !important;
-  width: 50px !important;
-} */
