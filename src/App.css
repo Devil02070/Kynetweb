@@ -160,27 +160,21 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 /* Contact us page */
 .contact{margin-top:-103px; padding: 100px 0pc 120px 0px; background: #453D2D;}
 .contact .bg-text {font-weight: 700;font-size: 160px; color: #f0f2f256 !important;margin: 0px 0px -6.5% 11%;}
-
-/* .contact-detials{display: flex;align-items: center;flex-wrap: wrap;} */
 .contact-detials{display: flex;flex-wrap: wrap; padding-top: 130px;}
 .contact-detials h2{font-size: 48px; font-weight: 700; line-height: 56px; width:92%;}
 .contact-detials h3{font-size: 22px; font-weight: 600; line-height: 35px;}
 .contact-detials p{font-size: 18px; font-weight: 300; line-height: 30px;}
 .contact-icon{font-size: 25px;}
-
 .contact-form{padding:40px; border-radius: 15px;background: #00000098;}
-/* .contact-form{padding:40px; border-radius: 15px;background: #ce901e3b;} */
 .contact-form input::placeholder, .contact-form textarea::placeholder{color:#ffffff}
 .btn_submit{padding:12px 24px; background: #F4A71C}
-
 .contact-tabs button{border: none;background-color: #ffffff;}
 .contact-tabs .active, .contact-tabs button:hover{background:#F4A71C; color:#ffffff}
-
 .tab-content{display:none}
 .tab-content.active{display:block !important}
 
-
-/* #project, #training{display: none;} */
+/* Inner pages */
+.page-banner{margin-top:-103px !important;padding: 100px 0px 40px 0px !important;}
 
 
 
@@ -329,12 +323,13 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
   .services .bg-text {padding-top: 30px}
   /* .sv-first{margin-top: 20px !important;} */
 
-  .sec-6 .grad-1,.sec-6 .grad-2{margin:16px !important;}
+  .sec-6 .grad-1,.sec-6 .grad-2{margin:15px 0px 0px 0px !important;}
   .sec-6 .grad-3{margin-top: 30px !important;}
   .sec-6 .card-grad h3{font-size: 20px;}
   .sec-6 .card-grad ul{margin-top: 20px;}
   .sec-6 .card-grad li{font-weight: 400;font-size: 18px;color: #777777;}
-
+  .card-extended{position:unset}
+  
   .courses .col-12 .w-50{width: 100% !important;}
   .about .about-img{padding-top: 30px !important;}
 

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-import lineImg from '../assets/images/Line 12(1).png'
-import Logo from '../assets/images/Group 19.png'
-import letsGo from '../assets/images/Group 123.png'
-import reviews from '../assets/images/reviews.png'
+import lineImg from '../../assets/images/Line 12(1).png'
+import Logo from '../../assets/images/Group 19.png'
+import letsGo from '../../assets/images/Group 123.png'
+import reviews from '../../assets/images/reviews.png'
 
 // ICONS
 // import {AiOutlineInstagram} from 'react-icons/ai'

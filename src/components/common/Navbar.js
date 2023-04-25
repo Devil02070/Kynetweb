@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 // import logo from '../assets/images/logo.png';
-import logo from '../assets/images/image 1 (1).png';
+import logo from '../../assets/images/image 1 (1).png';
 import { RxHamburgerMenu } from 'react-icons/rx';
 
 const Navbar = () => {
@@ -21,16 +21,11 @@ const Navbar = () => {
                                 </button>
                                 <div class="pc-menu">
                                     <ul className='d-flex justify-content-end m-0'>
-                                        {/* <Link to='#about' className="text-light text-decoration-none menu-item"><li>About</li></Link> */}
-                                        {/* <Link to='/cs' className="text-light text-decoration-none menu-item"><li>Case Studies</li></Link>
+                                        <Link to='/about' className="text-light text-decoration-none menu-item"><li>About</li></Link>
+                                        <Link to='/case_studies' className="text-light text-decoration-none menu-item"><li>Case Studies</li></Link>
                                         <Link to='#services' className="text-light text-decoration-none menu-item"><li>Services</li></Link>
                                         <Link to='#courses' className="text-light text-decoration-none menu-item"><li>Courses</li></Link>
-                                        <Link to='/insights' className="text-light text-decoration-none menu-item"><li>Insights</li></Link> */}
-                                        <a href='/#about' className="text-light text-decoration-none menu-item"><li>About</li></a>
-                                        <a href='/' className="text-light text-decoration-none menu-item"><li>Case Studies</li></a>
-                                        <a href='/#services' className="text-light text-decoration-none menu-item"><li>Services</li></a>
-                                        <a href='/#courses' className="text-light text-decoration-none menu-item"><li>Courses</li></a>
-                                        <a href='/' className="text-light text-decoration-none menu-item"><li>Insights</li></a>
+                                        <Link to='/insights' className="text-light text-decoration-none menu-item"><li>Insights</li></Link>
                                       
                                         <Link to='/contact_us' className="text-light text-decoration-none menu-item"><button className='btn border rounded-pill text-light ms-3 nav-btn'>Contact</button></Link>
                                     </ul>
@@ -40,17 +35,17 @@ const Navbar = () => {
                     </div>
                     <div class="collapse navbar-collapse justify-content-end mobile-menu" id="navbarSupportedContent">
                         <ul className=' m-0'>
-                            {/* <Link to='/#about' className="text-light text-decoration-none"><li>About</li></Link>
-                            <Link to='/cs' className="text-light text-decoration-none"><li>Case Studies</li></Link>
+                            <Link to='/about' className="text-light text-decoration-none"><li>About</li></Link>
+                            <Link to='/case_studies' className="text-light text-decoration-none"><li>Case Studies</li></Link>
                             <Link to='/#services' className="text-light text-decoration-none"><li>Services</li></Link>
                             <Link to='/#courses' className="text-light text-decoration-none"><li>Courses</li></Link>
-                            <Link to='/insights' className="text-light text-decoration-none"><li>Insights</li></Link> */}
+                            <Link to='/insights' className="text-light text-decoration-none"><li>Insights</li></Link>
 
-                            <a href='/#about' className="text-light text-decoration-none"><li>About</li></a>
+                            {/* <a href='/#about' className="text-light text-decoration-none"><li>About</li></a>
                             <a href='/' className="text-light text-decoration-none"><li>Case Studies</li></a>
                             <a href='/#services' className="text-light text-decoration-none"><li>Services</li></a>
                             <a href='/#courses' className="text-light text-decoration-none"><li>Courses</li></a>
-                            <a href='/' className="text-light text-decoration-none"><li>Insights</li></a>
+                            <a href='/' className="text-light text-decoration-none"><li>Insights</li></a> */}
                             <Link to='/contact_us' className="text-light text-decoration-none"><button className='btn border rounded-pill text-light ms-3 nav-btn'>Contact</button></Link>
                         </ul>
                     </div>

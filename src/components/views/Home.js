@@ -1,38 +1,35 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 //Banner
-import bannervc1 from '../assets/images/Rectangle 45.png'
-import bannervc2 from '../assets/images/Rectangle 40.png'
-import bannervc3 from '../assets/images/Rectangle 44.png'
-import bannervc4 from '../assets/images/Rectangle 41.png'
-import bannervc5 from '../assets/images/Rectangle 42.png'
-import bannervc6 from '../assets/images/Rectangle 43.png'
+import bannervc1 from '../../assets/images/Rectangle 45.png'
+import bannervc2 from '../../assets/images/Rectangle 40.png'
+import bannervc3 from '../../assets/images/Rectangle 44.png'
+import bannervc4 from '../../assets/images/Rectangle 41.png'
+import bannervc5 from '../../assets/images/Rectangle 42.png'
+import bannervc6 from '../../assets/images/Rectangle 43.png'
 
-// import arrow from '../assets/images/Line 10.png'
 //carousal
-import crImg1 from '../assets/images/Group 47.png'
+import crImg1 from '../../assets/images/Group 47.png'
 // Cards
-import cardImg from '../assets/images/image 12.png'
-import cardImg2 from '../assets/images/image 13.png'
+import cardImg from '../../assets/images/image 12.png'
+import cardImg2 from '../../assets/images/image 13.png'
 //services
-import servicesImg from '../assets/images/Group 59.png'
-import svec1 from '../assets/images/Group(2).png'
-import svec2 from '../assets/images/icon-websites.png'
-import svec3 from '../assets/images/icon-brand 1.png'
+import servicesImg from '../../assets/images/Group 59.png'
+import svec1 from '../../assets/images/Group(2).png'
+import svec2 from '../../assets/images/icon-websites.png'
+import svec3 from '../../assets/images/icon-brand 1.png'
 //about
-import aboutImg from '../assets/images/Rectangle 27.png'
+import aboutImg from '../../assets/images/Rectangle 27.png'
 
-import test1 from '../assets/images/Rectangle 18(1).png'
-import test2 from '../assets/images/Rectangle 18(2).png'
-import test3 from '../assets/images/Rectangle 18(3).png'
-import quote from '../assets/images/quote.png'
+import test1 from '../../assets/images/Rectangle 18(1).png'
+import test2 from '../../assets/images/Rectangle 18(2).png'
+import test3 from '../../assets/images/Rectangle 18(3).png'
+import quote from '../../assets/images/quote.png'
 
-// import media from '../assets/Untitled.mp4'
-// import media from '../assets/home-media.mp4'
-import media from '../assets/media3.mp4'
+import media from '../../assets/media3.mp4'
 
 import { ImPlay3 } from 'react-icons/im'
 
@@ -62,16 +59,17 @@ const Home = () => {
     },
   };
 
-  let myVideo = document.getElementById("sitemedia");
-  console.log(myVideo)
-
-  const playPause = () => {
+  const playPause = async () => {
+    let myVideo = document.getElementById("sitemedia");
     if (myVideo.paused) {
       myVideo.play();
     } else {
       myVideo.pause();
     }
   }
+  useEffect(() => {
+    playPause();
+  }, [])
 
   return (
     <>
@@ -223,7 +221,7 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 col-md-8">
-              <div className="row sv-first">
+              <div className="row sv-first active">
                 <div className="col-12 col-md-1"><img src={svec1} alt="" /></div>
                 <div className="col-12 col-md-11">
                   <h2>Digital Marketing</h2>
@@ -249,7 +247,7 @@ const Home = () => {
                   <button class="btn rounded-pill btn-tags-light mt-2 ms-2">SOCIALS</button>
                 </div>
               </div>
-              <div className="row active">
+              <div className="row">
                 <div className="col-1 col-md-1"><img src={svec3} alt="" /></div>
                 <div className="col-11 col-md-11">
                   <h2>Branding</h2>
@@ -336,7 +334,7 @@ const Home = () => {
               <button class="btn rounded-pill light m-auto text-light mt-3">Get a Quote</button>
             </div>
             <div className="col-12 col-md-6">
-              <div className="row card-floating">
+              <div className="row">
                 <div className="col card-grad grad-1 me-4">
                   <span className='number'>1</span>
                   <h4 className='text-center'>Ideate</h4>

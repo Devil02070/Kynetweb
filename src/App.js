@@ -8,13 +8,14 @@ import './assets/js/Animatescroll';
 import './assets/js/main';
 
 //Header-Footer
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Navbar from './components/common/Navbar';
+import Footer from './components/common/Footer';
 
 // Pages
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact'
+import Home from './components/views/Home';
+import About from './components/views/About';
+import CaseStudies from './components/views/CaseStudies';
+import Contact from './components/views/Contact'
 
 
 const Routing =()=>{
@@ -22,6 +23,7 @@ const Routing =()=>{
     <Routes>
       <Route exact path='/' element={<Home />}></Route>
       <Route exact path='/about' element={<About/>}></Route>
+      <Route exact path='/case_studies' element={<CaseStudies/>}></Route>
       <Route exact path='/contact_us' element={<Contact/>}></Route>
     </Routes>
   )
