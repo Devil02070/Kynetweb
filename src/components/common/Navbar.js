@@ -27,7 +27,7 @@ const Navbar = () => {
                                         <Link to='#courses' className="text-light text-decoration-none menu-item"><li>Courses</li></Link>
                                         <Link to='/insights' className="text-light text-decoration-none menu-item"><li>Insights</li></Link>
                                       
-                                        <Link to='/contact_us' className="text-light text-decoration-none menu-item"><button className='btn border rounded-pill text-light ms-3 nav-btn'>Contact</button></Link>
+                                        <Link to='/contact_us' className="text-light text-decoration-none menu-item mtb"><button className='btn border rounded-pill text-light ms-3 nav-btn'>Contact</button></Link>
                                     </ul>
                                 </div>
                             </nav>
