@@ -1,8 +1,33 @@
 import React from 'react'
 import 'react-multi-carousel/lib/styles.css';
 
+// import { useEffect, useRef, useState } from 'react';
+
+import emp1 from '../../assets/images/umang-fun.jpg'
+import emp2 from '../../assets/images/eliza-fun.jpg'
 import aboutImg from '../../assets/images/Rectangle 27.png'
 const About = () => {
+  // const sectionRef = useRef(null);
+  // const [isVisible, setIsVisible] = useState(false);
+
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     ([entry]) => {
+  //       setIsVisible(entry.isIntersecting);
+  //     },
+  //     { threshold: 0.5 } // Change this threshold value as needed
+  //   );
+
+  //   if (sectionRef.current) {
+  //     observer.observe(sectionRef.current);
+  //   }
+
+  //   return () => {
+  //     if (sectionRef.current) {
+  //       observer.unobserve(sectionRef.current);
+  //     }
+  //   };
+  // }, [sectionRef]);
   return (
     <>
       {/* -----------------------------------------------------ABOUT--------------------------------------------------------- */}
@@ -21,6 +46,46 @@ const About = () => {
           </div>
         </div>
       </section>
+
+       {/* -----------------------------------------------------TEAM--------------------------------------------------------- */}
+      {/* -------------------------------------------------------------------------------------------------------------------- */}
+      <section className="py-120 team">
+        <div className="container">
+          <h2 className='inner'>Our digital team is experienced, curious & eager to work on your project.</h2>
+          {/* <div ref={sectionRef} className={`row team-row ${isVisible ? 'visible' : ''}`} > */}
+          <div className="row team-row"  >
+            <div className="st-card">
+              <img src={emp1} alt="" className='w-100'/>
+              <h4 className='mt-3'>name</h4>
+              <p classNamae='role mt-3'>role</p>
+            </div>
+            <div className="st-card">
+              <img src={emp2} alt="" className='w-100'/>
+              <h4 className='mt-3'>name</h4>
+              <p classNamae='role mt-3'>role</p>
+            </div>
+            <div className="st-card">
+              <img src={emp1} alt="" className='w-100'/>
+              <h4 className='mt-3'>name</h4>
+              <p classNamae='role mt-3'>role</p>
+            </div>
+            <div className="st-card">
+              <img src={emp2} alt="" className='w-100'/>
+              <h4 className='mt-3'>name</h4>
+              <p classNamae='role mt-3'>role</p>
+            </div>
+            <div className="st-card">
+              <img src={emp1} alt="" className='w-100'/>
+              <h4 className='mt-3'>name</h4>
+              <p classNamae='role mt-3'>role</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
       <section className="loader">
         <div className="line line1"></div>
         <div className="line line2"></div>
