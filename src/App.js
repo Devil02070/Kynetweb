@@ -15,20 +15,20 @@ import Footer from './components/common/Footer';
 import Home from './components/views/Home';
 import About from './components/views/About';
 import CaseStudies from './components/views/CaseStudies';
-import Services from './components/views/Services';
+import Services from './components/views/Services'
 import Contact from './components/views/Contact'
 
 
-const Routing =()=>{
-  return(
+function Routing() {
+  return (
     <Routes>
       <Route exact path='/' element={<Home />}></Route>
-      <Route exact path='/about' element={<About/>}></Route>
-      <Route exact path='/case_studies' element={<CaseStudies/>}></Route>
-      <Route exact path='/services' element={<Services/>}></Route>
-      <Route exact path='/contact_us' element={<Contact/>}></Route>
+      <Route exact path='/about' element={<About />}></Route>
+      <Route exact path='/case_studies' element={<CaseStudies />}></Route>
+      <Route exact path='/services' element={<Services />}></Route>
+      <Route exact path='/contact_us' element={<Contact />}></Route>
     </Routes>
-  )
+  );
 }
 
 function App() {

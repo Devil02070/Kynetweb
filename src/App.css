@@ -174,12 +174,26 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 
 /* Inner pages */
 .py-120{padding-top:120px;padding-bottom:120px}
-.page-banner{margin-top:-103px !important;padding: 100px 0px 100px 0px !important; background-color: #1D1D1D;}
+.pb-120{padding-bottom:120px;}
+.page-banner{margin-top:-103px !important;padding: 100px 0px 100px 0px !important; background-color: #1D1D1D;height:100vh}
+.cs{height:auto !important}
 .page-banner .bg-text{font-size: 160px !important; letter-spacing: -5px; font-weight: 700;color: #424242 !important;margin: 0px 0px -6.5% 11%;}
+.text-md-dark{color: #424242;font-size: 160px; font-weight: 700;margin: 0px 0px -4.5% -11%;}
+.text-md-light{color: #ffffff;font-size: 160px; font-weight: 700;margin: 0px 0px -4.5% -11%;}
+
 h2.inner{font-size: 48px; font-weight: 700; line-height: 56px;}
-h3.inner{font-weight: 600;font-size: 16px;}
+h3.inner{font-weight: 600;font-size: 16px;} 
 p.role{font-weight: 300;font-size: 16px;}
 .w-47{width:44%; margin: auto;}
+.bg-secondary{background-color: #D9D9D9 !important;}
+/* .bg-dark h2.inner{color:#F4A71C} */
+
+.bg-vector{background:#F4A71C;position:absolute;opacity:.2;}
+.ip-bvc1{height: 19px;width:8%;top:11%;right:24%}
+.ip-bvc2{height: 40px;width:5%;top:25%;left:0%}
+.ip-bvc3{height: 50px;width:5%;top:40%;right:0%}
+.ip-bvc4{height: 20px;width:12%;top:65%;left:40%}
+.ip-bvc5{height: 40px;width:11%;top:85%;right:5%}
 
 .team h2{width:60%}
 .team-row{flex-wrap:wrap; padding-top:30px;}
@@ -191,7 +205,6 @@ p.role{font-weight: 300;font-size: 16px;}
 .page-heading{padding-top:65px}
 .tags-light{border: 1px solid #e0dfdf;border-radius: 20px;width: auto; font-size: 12px;margin:5px}
 .cs-card .row{padding-top: 25px;}
-.cs-card{position:relative}
 
 
 
@@ -223,7 +236,8 @@ p.role{font-weight: 300;font-size: 16px;}
 .nav-logo img{transition: transform .6s ease-in-out;}
 
 /* ON SCREEN LOAD */
-.loader .line{height:calc(100% / 9); background:#585040; animation:back 1s 0s forwards; width:100%;}
+/* .loader .line{height:calc(100% / 9); background:#585040; animation:back 1s 0s forwards; width:100%;} */
+.loader .line{height:calc(100% / 9); background:#153235; animation:back 1s 0s forwards; width:100%;}
 
 .loader .line1{animation-delay: .1s;z-index:999999;position:fixed;top:0px}
 .loader .line2{animation-delay: .15s;z-index:999999;position:fixed;top:calc(100% / 9)}

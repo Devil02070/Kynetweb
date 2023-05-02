@@ -8,7 +8,7 @@ const CaseStudies = () => {
       {/* -----------------------------------------------------ABOUT--------------------------------------------------------- */}
       {/* -------------------------------------------------------------------------------------------------------------------- */}
       <section className='cs page-banner bg-dark animate-up text-light' id="cs">
-        <h3 class="bg-text text-md">Case Studies</h3>
+        <h3 class="bg-text">Case Studies</h3>
         <div className="container page-heading">
           <div className="row">
             <div className="col-12 col-md-12 w-50 m-0 p-0">
@@ -115,23 +115,12 @@ const CaseStudies = () => {
         <div className="line line2"></div>
         <div className="line line3"></div>
         <div className="line line4"></div>
-        <div className="line line5 text-light d-flex justify-content-center fs-1">About</div>
+        <div className="line line5 text-light d-flex justify-content-center fs-1">Case Study</div>
         <div className="line line6"></div>
         <div className="line line7"></div>
         <div className="line line8"></div>
         <div className="line line9"></div>
       </section>
-
-
-      <div id="container">
-        <div id="inner">
-          <div class="demo-img">
-            <div class="demo-overlay">
-
-            </div>
-          </div>
-        </div>
-      </div>
 
 
     </>
