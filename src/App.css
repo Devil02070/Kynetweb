@@ -15,7 +15,8 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .nav-btn:hover{background-color: #F4A71C !important;border-color: #F4A71C !important;}
 
 
-.vertical-cr .bg-text, .services .bg-text, .courses .bg-text, .about .bg-text, .testmonial .bg-text {font-weight: 700;font-size: 250px; color: #F0F2F2 !important;margin: 0px 0px -6.5% 11%;}
+/* .vertical-cr .bg-text, .services .bg-text, .courses .bg-text, .about .bg-text, .testmonial .bg-text, .cs .bg-text {font-weight: 700;font-size: 250px; color: #F0F2F2 !important;margin: 0px 0px -6.5% 11%;} */
+.bg-text{font-weight: 700;font-size: 250px; color: #F0F2F2 !important;margin: 0px 0px -6.5% 11%; letter-spacing: -5px;}
 .sec-4, .sec-6{padding:120px 0px !important; background-color: #1D1D1D;}
 .txt-primary{color:#F4A71C}
 
@@ -78,12 +79,11 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .sec-4 .card-row{width:65%}
 
 .services{padding-bottom: 120px;background-color: #D9D9D9;}
-.services h2{font-weight: 500;font-size: 48px; color: #777777;}
+.services h2.sv{font-weight: 500;font-size: 48px; color: #777777;}
 .services .active h2{color:#1D1D1D}
 .services .col-12 .row{margin-top:40px;}
 
 .sec-6 h2{font-weight: 700;font-size: 48px;line-height: 56px;padding-right: 10%;}
-/* .sec-6 .card-grad{background-image: linear-gradient(to bottom right, #FCC96E, #F2E1C2, #F4A71C); border-radius: 15px;color: #453D2D;padding: 30px 40px;} */
 .sec-6 .card-grad{box-shadow: 0 0 6px #fcc96e7d; background: #ffffff00; border-radius: 15px;color: #453D2D;padding: 30px 40px;backdrop-filter: blur(10px);}
 .sec-6 .grad-2{margin-bottom: -17%;margin-top: 17%;}
 .sec-6 .grad-3 h3{width: 17%;}
@@ -103,7 +103,7 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .courses ul li{padding:4px 0px}
 
 /* courses new */
-.courses-new .bg-text {font-weight: 700;font-size: 250px; color: #F0F2F2 !important;margin: 0px 0px -4% 11%;}
+.courses-new .bg-text {margin: 0px 0px -4% 11%;}
 .courses-new h2{font-weight: 700;font-size: 48px;line-height: 56px;}
 .courses-new .dm{margin-top:45px}
 .courses-new ul{color:#777777; font-weight: 700;font-size: 20px; margin-top: 20px;}
@@ -115,7 +115,7 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 
 
 .about{padding-bottom: 120px; background-color: #1D1D1D;}
-.about .bg-text{color: #424242 !important;}
+.about .bg-text, .cs .bg-text{color: #424242 !important;}
 .about h2{font-weight: 700;font-size: 48px;line-height: 56px;}
 
 .testmonial h2{font-weight: 700;font-size: 48px;line-height: 56px;}
@@ -158,7 +158,7 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 
 /* Contact us page */
 .contact{margin-top:-103px; padding: 100px 0pc 120px 0px; background: #453D2D;}
-.contact .bg-text {font-weight: 700;font-size: 160px; color: #f0f2f256 !important;margin: 0px 0px -6.5% 11%;}
+.contact .bg-text {font-weight: 700;font-size: 160px; color: #f0f2f256 !important;margin: 0px 0px -6.5% 11%;letter-spacing: -5px;}
 .contact-detials{display: flex;flex-wrap: wrap; padding-top: 130px;}
 .contact-detials h2{font-size: 48px; font-weight: 700; line-height: 56px; width:92%;}
 .contact-detials h3{font-size: 22px; font-weight: 600; line-height: 35px;}
@@ -173,26 +173,26 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .tab-content.active{display:block !important}
 
 /* Inner pages */
-.page-banner{margin-top:-103px !important;padding: 100px 0px 100px 0px !important;}
 .py-120{padding-top:120px;padding-bottom:120px}
+.page-banner{margin-top:-103px !important;padding: 100px 0px 100px 0px !important; background-color: #1D1D1D;}
+.page-banner .bg-text{font-size: 160px !important; letter-spacing: -5px; font-weight: 700;color: #424242 !important;margin: 0px 0px -6.5% 11%;}
 h2.inner{font-size: 48px; font-weight: 700; line-height: 56px;}
 h3.inner{font-weight: 600;font-size: 16px;}
 p.role{font-weight: 300;font-size: 16px;}
+.w-47{width:44%; margin: auto;}
 
 .team h2{width:60%}
 .team-row{flex-wrap:wrap; padding-top:30px;}
 .team-row .st-card{width:25% !important;padding: 15px;}
 .team .container{overflow: hidden;}
-/* .team-row {
-  opacity: 0;
-  transform: translatex(-100%);
-  transition: opacity 1.5s ease, transform 1.5s ease;
-}
 
-.team-row.visible {
-  opacity: 1;
-  transform: translateX(0);
-} */
+/* cs */
+.projects{padding-top:50px}
+.page-heading{padding-top:65px}
+.tags-light{border: 1px solid #e0dfdf;border-radius: 20px;width: auto; font-size: 12px;margin:5px}
+.cs-card .row{padding-top: 25px;}
+.cs-card{position:relative}
+
 
 
 
@@ -223,21 +223,23 @@ p.role{font-weight: 300;font-size: 16px;}
 .nav-logo img{transition: transform .6s ease-in-out;}
 
 /* ON SCREEN LOAD */
-.loader .line{height:calc(100% / 7); background:#585040; animation:back 1s 0s forwards; width:100%;}
+.loader .line{height:calc(100% / 9); background:#585040; animation:back 1s 0s forwards; width:100%;}
 
 .loader .line1{animation-delay: .1s;z-index:999999;position:fixed;top:0px}
-.loader .line2{animation-delay: .2s;z-index:999999;position:fixed;top:calc(100% / 7)}
-.loader .line3{animation-delay: .3s;z-index:999999;position:fixed;top:calc(100% / 7 *2)}
-.loader .line4{animation-delay: .4s;z-index:999999;position:fixed;top:calc(100% / 7 *3);overflow: hidden;}
-.loader .line5{animation-delay: .5s;z-index:999999;position:fixed;top:calc(100% / 7 *4)}
-.loader .line6{animation-delay: .6s;z-index:999999;position:fixed;top:calc(100% / 7 *5)}
-.loader .line7{animation-delay: .7s;z-index:999999;position:fixed;top:calc(100% / 7 *6)}
+.loader .line2{animation-delay: .15s;z-index:999999;position:fixed;top:calc(100% / 9)}
+.loader .line3{animation-delay: .2s;z-index:999999;position:fixed;top:calc(100% / 9 *2)}
+.loader .line4{animation-delay: .25s;z-index:999999;position:fixed;top:calc(100% / 9 *3)}
+.loader .line5{animation-delay: .3s;z-index:999999;position:fixed;top:calc(100% / 9 *4);overflow: hidden;}
+.loader .line6{animation-delay: .35s;z-index:999999;position:fixed;top:calc(100% / 9 *5)}
+.loader .line7{animation-delay: .4s;z-index:999999;position:fixed;top:calc(100% / 9 *6)}
+.loader .line8{animation-delay: .45s;z-index:999999;position:fixed;top:calc(100% / 9 *7)}
+.loader .line9{animation-delay: .5s;z-index:999999;position:fixed;top:calc(100% / 9 *8)}
 @keyframes back{
   0%{width:100%;}
   100%{width:0%; z-index:-1}
 }
 
-.about .row{animation:moveup 2.2s 0.1s forwards}
+.animate-up .row{animation:moveup 2.2s 0.1s forwards}
 @keyframes moveup{
   0%{margin-top:40%;opacity:0}
   100%{margin-top:0%;opacity:1}
