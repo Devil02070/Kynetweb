@@ -17,6 +17,7 @@ import About from './components/views/About';
 import CaseStudies from './components/views/CaseStudies';
 import Services from './components/views/Services'
 import Contact from './components/views/Contact'
+import Courses from './components/views/Courses'
 
 
 function Routing() {
@@ -26,6 +27,7 @@ function Routing() {
       <Route exact path='/about' element={<About />}></Route>
       <Route exact path='/case_studies' element={<CaseStudies />}></Route>
       <Route exact path='/services' element={<Services />}></Route>
+      <Route exact path='/courses' element={<Courses />}></Route>
       <Route exact path='/contact_us' element={<Contact />}></Route>
     </Routes>
   );

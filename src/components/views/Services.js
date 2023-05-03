@@ -7,16 +7,15 @@ const Services = () => {
         <>
             <section className='bg-dark page-banner animate-up text-light' >
                 <h3 class="bg-text">services</h3>
+                <div className="vectors">
+                    <div className='bg-vector ip-bvc1 p-0'></div>
+                    <div className='bg-vector ip-bvc2 p-0'></div>
+                    <div className='bg-vector ip-bvc3 p-0'></div>
+                    <div className='bg-vector ip-bvc4 p-0'></div>
+                    <div className='bg-vector ip-bvc5 p-0'></div>
+                </div>
                 <div className="container page-heading">
                     <div className="row">
-                        <div className="vectors">
-                            <div className='bg-vector ip-bvc1 p-0'></div>
-                            <div className='bg-vector ip-bvc2 p-0'></div>
-                            <div className='bg-vector ip-bvc3 p-0'></div>
-                            <div className='bg-vector ip-bvc4 p-0'></div>
-                            <div className='bg-vector ip-bvc5 p-0'></div>
-                        </div>
-
                         <div className="col-12 col-md-6">
                             <h2 className='inner'>Take your brand to new heights.</h2>
                             <p className='mt-3'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi doloremque nulla sequi omnis nobis itaque cumque fugiat officia perspiciatis tempora nihil veniam, architecto fugit minima minus impedit odit quibusdam nam, et sint earum? Beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iure reiciendis quibusdam ducimus nostrum autem unde recusandae animi minus ea, repellendus sequi eos. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, error! Eaque unde, at eveniet ipsam molestias aliquam quae a suscipit perspiciatis voluptatibus, repellendus consequatur! Officia nesciunt recusandae atque assumenda laudantium.</p>
@@ -28,8 +27,8 @@ const Services = () => {
                 </div>
             </section>
             <section className='bg-secondary pb-120'>
-                <h3 class="bg-text text-md">websites</h3>
                 <div className="container">
+                    <h3 class="text-md-light">websites</h3>
                     <div className="row">
                         <div className="col-12 col-md-6 pe-4">
                             <h2 className='inner '>User-centric websites that will engage & convert.</h2>
@@ -47,7 +46,7 @@ const Services = () => {
             </section>
             <section className='bg-dark pb-120 text-light'>
                 <div className="container">
-                <h3 class="text-md-dark">digital marketing</h3>
+                    <h3 class="text-md-dark">digital marketing</h3>
                     <div className="row">
                         <div className="col-12 col-md-6 text-end pt-5 mt-5">
                             <img src={demo2} alt="" className='w-100' />
@@ -64,8 +63,8 @@ const Services = () => {
                 </div>
             </section>
             <section className='bg-secondary pb-120'>
-                <h3 class="bg-text text-md">branding</h3>
                 <div className="container">
+                    <h3 class="text-md-light">branding</h3>
                     <div className="row">
                         <div className="col-12 col-md-6 pe-4">
                             <h2 className='inner '>Creating and defining authentic brands.</h2>

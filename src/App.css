@@ -178,8 +178,8 @@ button{padding: 12px 24px !important; font-weight: 500 !important; font-size: 15
 .page-banner{margin-top:-103px !important;padding: 100px 0px 100px 0px !important; background-color: #1D1D1D;height:100vh}
 .cs{height:auto !important}
 .page-banner .bg-text{font-size: 160px !important; letter-spacing: -5px; font-weight: 700;color: #424242 !important;margin: 0px 0px -6.5% 11%;}
-.text-md-dark{color: #424242;font-size: 160px; font-weight: 700;margin: 0px 0px -4.5% -11%;}
-.text-md-light{color: #ffffff;font-size: 160px; font-weight: 700;margin: 0px 0px -4.5% -11%;}
+.text-md-dark{color: #424242;font-size: 160px; font-weight: 700;margin: 0px 0px -4.5% -7%;}
+.text-md-light{color: #ffffff;font-size: 160px; font-weight: 700;margin: 0px 0px -4.5% -7%;}
 
 h2.inner{font-size: 48px; font-weight: 700; line-height: 56px;}
 h3.inner{font-weight: 600;font-size: 16px;} 
@@ -187,6 +187,7 @@ p.role{font-weight: 300;font-size: 16px;}
 .w-47{width:44%; margin: auto;}
 .bg-secondary{background-color: #D9D9D9 !important;}
 /* .bg-dark h2.inner{color:#F4A71C} */
+.w-32{width:32%}
 
 .bg-vector{background:#F4A71C;position:absolute;opacity:.2;}
 .ip-bvc1{height: 19px;width:8%;top:11%;right:24%}
@@ -205,6 +206,37 @@ p.role{font-weight: 300;font-size: 16px;}
 .page-heading{padding-top:65px}
 .tags-light{border: 1px solid #e0dfdf;border-radius: 20px;width: auto; font-size: 12px;margin:5px}
 .cs-card .row{padding-top: 25px;}
+.cs-card:hover{cursor:pointer}
+.view-cs-btn{display: none;}
+.cs-card.active .view-cs-btn{display: block;}
+.card-img img{transition:all .5s; box-shadow: 10px 10px 15px 0px #1CD6F4 ;}
+.card-img img:hover{transform:translate(-10px,-10px);box-shadow: -10px -10px 15px 0px #1CD6F4 ;}
+
+.mrq-text{font-size: 60px;font-weight: 500; padding: 0px 20px;}
+.dash{background-color: #F4A71C;padding:5px 25px}
+.scroll-main{overflow-x: hidden !important;position: relative;padding-bottom: 110px;}
+.scroll-main::before{
+  content: "";
+  position: absolute;
+  z-index: 999999;
+  top: 0;
+  bottom: 0;
+  box-shadow: 0 0 60px 85px #D9D9D9;
+}
+.scroll-main::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right:0px;
+  box-shadow: 0 0 60px 85px #D9D9D9;
+  /* box-shadow: 0 0 70px 105px #D9D9D9; */
+}
+.gap{background:#ffffff;padding:2px 0px}
+
+/* Courses */
+.course-card{box-shadow: 0px 0px 10px 0px #D9D9D9;border-radius: 5px; padding: 32px;}
+.courses-scroll{background-color: #ebebeb;}
 
 
 
@@ -255,13 +287,27 @@ p.role{font-weight: 300;font-size: 16px;}
 
 .animate-up .row{animation:moveup 2.2s 0.1s forwards}
 @keyframes moveup{
-  0%{margin-top:40%;opacity:0}
-  100%{margin-top:0%;opacity:1}
+  0%{transform:translate(0,40%);opacity:0}
+  100%{transform:translate(0,0%);opacity:1}
+  /* 0%{margin-top:40%;opacity:0}
+  100%{margin-top:0%;opacity:1} */
 }
 
 .lets-go{animation:thumb 0.4s linear infinite}
 @keyframes thumb{
   0%{transform:scale(1)} 100%{transform:scale(1.02)}
+}
+
+.scroll-left {white-space: nowrap;animation: marquee-left 20s linear infinite;}
+.scroll-right {white-space: nowrap;animation: marquee-right 20s linear infinite;position: absolute;right:0px}
+
+@keyframes marquee-left {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-30%);}
+}
+@keyframes marquee-right {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(18%);}
 }
 
 /* ON HOVER */

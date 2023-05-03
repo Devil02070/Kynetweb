@@ -80,7 +80,7 @@ const Contact = () => {
             {/* -----------------------------------------------------ABOUT--------------------------------------------------------- */}
             {/* -------------------------------------------------------------------------------------------------------------------- */}
             <section className='text-light contact'>
-                <h3 class="bg-text">Contact Us</h3>
+                <h3 class="bg-text">contact us</h3>
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-md-6 contact-detials">

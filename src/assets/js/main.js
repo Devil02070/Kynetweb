@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     window.addEventListener("scroll", handleScroll);
 
+
     // // Contact Tabs------------------------------------------------------------------------------------------------
     // // ------------------------------------------------------------------------------------------------------------
     // const tabs = document.querySelectorAll('.tab-btn');

@@ -1,14 +1,32 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 import aboutImg from '../../assets/images/Rectangle 27.png'
 // import cc2 from '../../assets/images/est.png'
 const CaseStudies = () => {
+  useEffect(()=>{
+    const cards = document.querySelectorAll('.cs-card');
+    cards.forEach(card => {
+        card.addEventListener('mouseover', () => {
+        cards.forEach(card => {
+            card.classList.remove('active');
+        });
+        card.classList.add('active');
+        });
+    });
+  },[])
   return (
     <>
       {/* -----------------------------------------------------ABOUT--------------------------------------------------------- */}
       {/* -------------------------------------------------------------------------------------------------------------------- */}
       <section className='cs page-banner bg-dark animate-up text-light' id="cs">
-        <h3 class="bg-text">Case Studies</h3>
+        <h3 className="bg-text">case studies</h3>
+        <div className="vectors">
+          <div className='bg-vector ip-bvc1 p-0'></div>
+          <div className='bg-vector ip-bvc2 p-0'></div>
+          <div className='bg-vector ip-bvc3 p-0'></div>
+          <div className='bg-vector ip-bvc4 p-0'></div>
+          <div className='bg-vector ip-bvc5 p-0'></div>
+        </div>
         <div className="container page-heading">
           <div className="row">
             <div className="col-12 col-md-12 w-50 m-0 p-0">
@@ -38,11 +56,11 @@ const CaseStudies = () => {
                   <p>type</p>
                 </div>
                 <div className="col-12 col-md-6 text-end">
-                  <button class="btn rounded-pill light m-auto text-light mt-3">View Case Study</button>
+                  <button class="btn rounded-pill light m-auto text-light mt-3 view-cs-btn">View Case Study</button>
                 </div>
               </div>
             </div>
-             <div className="box w-47 cs-card">
+            <div className="box w-47 cs-card">
               <div className="card-img">
                 <img src={aboutImg} alt="" className='w-100' />
               </div>
@@ -59,13 +77,15 @@ const CaseStudies = () => {
                   <p>type</p>
                 </div>
                 <div className="col-12 col-md-6 text-end">
-                  <button class="btn rounded-pill light m-auto text-light mt-3">View Case Study</button>
+                  <button class="btn rounded-pill light m-auto text-light mt-3 view-cs-btn">View Case Study</button>
                 </div>
               </div>
             </div>
-            
+
             <div className="box w-47 cs-card">
-              <img src={aboutImg} alt="" className='w-100' />
+              <div className="card-img">
+                <img src={aboutImg} alt="" className='w-100' />
+              </div>
               <div className="row">
                 <span class="tags-light">BRANDING</span>
                 <span class="tags-light">USER EXPERIENCE</span>
@@ -80,13 +100,15 @@ const CaseStudies = () => {
                   <p>type</p>
                 </div>
                 <div className="col-12 col-md-6 text-end">
-                  <button class="btn rounded-pill light m-auto text-light mt-3">View Case Study</button>
+                  <button class="btn rounded-pill light m-auto text-light mt-3 view-cs-btn">View Case Study</button>
                 </div>
               </div>
 
             </div>
             <div className="box w-47 cs-card">
-              <img src={aboutImg} alt="" className='w-100' />
+              <div className="card-img">
+                <img src={aboutImg} alt="" className='w-100' />
+              </div>
               <div className="row">
                 <span class="tags-light">BRANDING</span>
                 <span class="tags-light">WEBSITE DESIGN</span>
@@ -101,7 +123,7 @@ const CaseStudies = () => {
                   <p>type</p>
                 </div>
                 <div className="col-12 col-md-6">
-                  <button class="btn rounded-pill light m-auto text-light mt-3">View Case Study</button>
+                  <button class="btn rounded-pill light m-auto text-light mt-3 view-cs-btn">View Case Study</button>
                 </div>
               </div>
             </div>
