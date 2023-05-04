@@ -59,7 +59,7 @@ const About = () => {
 
       {/* -----------------------------------------------------TEAM--------------------------------------------------------- */}
       {/* -------------------------------------------------------------------------------------------------------------------- */}
-      <section className="py-120 team bg-secondary">
+      <section className="py-120 team">
         <div className="container">
           <h2 className='inner'>Our digital team is experienced, curious & eager to work on your project.</h2>
           {/* <div ref={sectionRef} className={`row team-row ${inView ? 'visible' : ''}`} > */}
@@ -112,7 +112,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className='scroll-main bg-secondary'>
+      <section className='scroll-main'>
         <div className="scroll-left d-flex align-items-center py-2">
           <div className='mrq-text'>Videographers</div><div className='dash'></div>
           <div className='mrq-text'>Developers</div><div className='dash'></div>

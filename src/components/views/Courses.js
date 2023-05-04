@@ -32,6 +32,7 @@ const Courses = () => {
                     <div className="row d-flex flex-wrap gap-4">
                         <div className="course-card w-32">
                             <img src={icon} alt="" />
+                            {/* <div className="csl-img d-flex align-items-center justify-content-center"><h3>html</h3></div> */}
                             <h4 className='mt-2'>Course Name</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aspernatur saepe ut incidunt dolorum fugit assumenda nostrum, nobis architecto voluptas.</p>
                         </div>
