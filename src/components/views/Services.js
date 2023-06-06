@@ -26,7 +26,7 @@ const Services = () => {
                     </div>
                 </div>
             </section>
-            <section className='bg-secondary pb-120'>
+            <section className='bg-secondary pb-120 websites'>
                 <div className="container">
                     <h3 class="text-md-light">websites</h3>
                     <div className="row">
@@ -38,22 +38,22 @@ const Services = () => {
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eveniet itaque voluptatem asperiores tempore ad veritatis, reprehenderit nemo rem, nam aut, nostrum excepturi nihil modi sapiente quaerat maiores quae doloremque!</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eveniet itaque voluptatem asperiores tempore ad veritatis, reprehenderit nemo rem, nam aut, nostrum excepturi nihil modi sapiente quaerat maiores quae doloremque!</p>
                         </div>
-                        <div className="col-12 col-md-6 text-end pt-5 mt-5">
+                        <div className="col-12 col-md-6 text-end pt-5 mt-5 pm-0">
                             <img src={demo2} alt="" className='w-100' />
                         </div>
                     </div>
                 </div>
             </section>
-            <section className='bg-dark pb-120 text-light'>
+            <section className='bg-dark pb-120 text-light dig-mkt'>
                 <div className="container">
                     <h3 class="text-md-dark">digital marketing</h3>
                     <div className="row">
-                        <div className="col-12 col-md-6 text-end pt-5 mt-5">
+                        <div className="col-12 col-md-6 text-end pt-5 mt-5 pm-0">
                             <img src={demo2} alt="" className='w-100' />
                         </div>
                         <div className="col-12 col-md-6 ps-4">
                             <h2 className='inner '>Elevating your brand through impactful digital marketing strategies.</h2>
-                            <p className='pt-3 fs-5'>Cut through the noise and define your brand in this vast and infinite digital landscape with the help of a Melbourne digital marketing agency. Our team is aligned with your objectives and goals, and crafts campaigns to reach your audience and impact their lives.</p>
+                            <p className=''>Cut through the noise and define your brand in this vast and infinite digital landscape with the help of a Melbourne digital marketing agency. Our team is aligned with your objectives and goals, and crafts campaigns to reach your audience and impact their lives.</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eveniet itaque voluptatem asperiores tempore ad veritatis, reprehenderit nemo rem, nam aut, nostrum excepturi nihil modi sapiente quaerat maiores quae doloremque!</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eveniet itaque voluptatem asperiores tempore ad veritatis, reprehenderit nemo rem, nam aut, nostrum excepturi nihil modi sapiente quaerat maiores quae doloremque!</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eveniet itaque voluptatem asperiores tempore ad veritatis, reprehenderit nemo rem, nam aut, nostrum excepturi nihil modi sapiente quaerat maiores quae doloremque!</p>
@@ -62,7 +62,7 @@ const Services = () => {
                     </div>
                 </div>
             </section>
-            <section className='bg-secondary pb-120'>
+            <section className='bg-secondary pb-120 branding'>
                 <div className="container">
                     <h3 class="text-md-light">branding</h3>
                     <div className="row">
@@ -74,7 +74,7 @@ const Services = () => {
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eveniet itaque voluptatem asperiores tempore ad veritatis, reprehenderit nemo rem, nam aut, nostrum excepturi nihil modi sapiente quaerat maiores quae doloremque!</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati eveniet itaque voluptatem asperiores tempore ad veritatis, reprehenderit nemo rem, nam aut, nostrum excepturi nihil modi sapiente quaerat maiores quae doloremque!</p>
                         </div>
-                        <div className="col-12 col-md-6 text-end pt-5 mt-5">
+                        <div className="col-12 col-md-6 text-end pt-5 mt-5 pm-0">
                             <img src={demo2} alt="" className='w-100' />
                         </div>
                     </div>

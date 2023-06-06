@@ -1,6 +1,10 @@
 import React, {useEffect} from 'react'
 
-import aboutImg from '../../assets/images/Rectangle 27.png'
+// import aboutImg from '../../assets/images/Rectangle 27.png'
+import project1 from '../../assets/images/pj1.png'
+import project2 from '../../assets/images/pj2.png'
+import project3 from '../../assets/images/pj3.png'
+import project4 from '../../assets/images/pj4.png'
 // import cc2 from '../../assets/images/est.png'
 const CaseStudies = () => {
   useEffect(()=>{
@@ -29,7 +33,7 @@ const CaseStudies = () => {
         </div>
         <div className="container page-heading">
           <div className="row">
-            <div className="col-12 col-md-12 w-50 m-0 p-0">
+            <div className="col-12 col-md-12 w-50 m-0 p-0 wm-100">
               <h2 className='inner'>Creative outcomes that drive real results.</h2>
               <p className='mt-3'>Here are some of the clients we have worked with and what we have achieved.</p>
             </div>
@@ -39,7 +43,7 @@ const CaseStudies = () => {
           <div className="row d-flex gap-5">
             <div className="box w-47 cs-card">
               <div className="card-img">
-                <img src={aboutImg} alt="" className='w-100' />
+                <img src={project1} alt="" className='w-100' />
               </div>
               <div className="row">
                 <span class="tags-light">BRANDING</span>
@@ -51,18 +55,18 @@ const CaseStudies = () => {
                 <span class="tags-light">SOCIALS</span>
               </div>
               <div className="row">
-                <div className="col-12 col-md-6">
-                  <h3>Project Name</h3>
+                <div className="col-12 col-md-7">
+                  <h3>Hi And Dry</h3>
                   <p>type</p>
                 </div>
-                <div className="col-12 col-md-6 text-end">
+                <div className="col-12 col-md-5 text-end">
                   <button class="btn rounded-pill light m-auto text-light mt-3 view-cs-btn">View Case Study</button>
                 </div>
               </div>
             </div>
             <div className="box w-47 cs-card">
               <div className="card-img">
-                <img src={aboutImg} alt="" className='w-100' />
+                <img src={project2} alt="" className='w-100' />
               </div>
               <div className="row">
                 <span class="tags-light">BRANDING</span>
@@ -72,11 +76,11 @@ const CaseStudies = () => {
                 <span class="tags-light">GOOGLE ADS</span>
               </div>
               <div className="row">
-                <div className="col-12 col-md-6">
-                  <h3>Project Name</h3>
+                <div className="col-12 col-md-7">
+                  <h3>Alessi Realty Group</h3>
                   <p>type</p>
                 </div>
-                <div className="col-12 col-md-6 text-end">
+                <div className="col-12 col-md-5 text-end">
                   <button class="btn rounded-pill light m-auto text-light mt-3 view-cs-btn">View Case Study</button>
                 </div>
               </div>
@@ -84,7 +88,7 @@ const CaseStudies = () => {
 
             <div className="box w-47 cs-card">
               <div className="card-img">
-                <img src={aboutImg} alt="" className='w-100' />
+                <img src={project3} alt="" className='w-100' />
               </div>
               <div className="row">
                 <span class="tags-light">BRANDING</span>
@@ -95,11 +99,11 @@ const CaseStudies = () => {
               </div>
               <div className="row">
 
-                <div className="col-12 col-md-6">
-                  <h3>Project Name</h3>
+                <div className="col-12 col-md-7">
+                  <h3>LehighValley Roofers</h3>
                   <p>type</p>
                 </div>
-                <div className="col-12 col-md-6 text-end">
+                <div className="col-12 col-md-5 text-end">
                   <button class="btn rounded-pill light m-auto text-light mt-3 view-cs-btn">View Case Study</button>
                 </div>
               </div>
@@ -107,7 +111,7 @@ const CaseStudies = () => {
             </div>
             <div className="box w-47 cs-card">
               <div className="card-img">
-                <img src={aboutImg} alt="" className='w-100' />
+                <img src={project4} alt="" className='w-100' />
               </div>
               <div className="row">
                 <span class="tags-light">BRANDING</span>
@@ -118,16 +122,38 @@ const CaseStudies = () => {
               </div>
               <div className="row">
 
-                <div className="col-12 col-md-6">
-                  <h3>Project Name</h3>
+                <div className="col-12 col-md-7">
+                  <h3>Hamilton Machenical Services</h3>
                   <p>type</p>
                 </div>
-                <div className="col-12 col-md-6">
+                <div className="col-12 col-md-5 text-end">
                   <button class="btn rounded-pill light m-auto text-light mt-3 view-cs-btn">View Case Study</button>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className='scroll-main'>
+        <div className="scroll-left d-flex align-items-center py-2">
+          <div className='mrq-text'>Videographers</div><div className='dash'></div>
+          <div className='mrq-text'>Developers</div><div className='dash'></div>
+          <div className='mrq-text'>Content Planners</div><div className='dash'></div>
+          <div className='mrq-text'>Copywriters</div><div className='dash'></div>
+          <div className='mrq-text'>Designers</div><div className='dash'></div>
+          <div className='mrq-text'>Videographers</div><div className='dash'></div>
+          <div className='mrq-text'>Developers</div><div className='dash'></div>
+        </div>
+        <div className="gap"></div>
+        <div className="scroll-right d-flex align-items-center py-1">
+          <div className='mrq-text'>Videographers</div><div className='dash'></div>
+          <div className='mrq-text'>Developers</div><div className='dash'></div>
+          <div className='mrq-text'>Content Planners</div><div className='dash'></div>
+          <div className='mrq-text'>Copywriters</div><div className='dash'></div>
+          <div className='mrq-text'>Designers</div><div className='dash'></div>
+          <div className='mrq-text'>Videographers</div><div className='dash'></div>
+          <div className='mrq-text'>Developers</div><div className='dash'></div>
         </div>
       </section>
 

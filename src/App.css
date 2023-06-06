@@ -204,38 +204,27 @@ p.role{font-weight: 300;font-size: 16px;}
 /* cs */
 .projects{padding-top:50px}
 .page-heading{padding-top:65px}
-.tags-light{border: 1px solid #e0dfdf;border-radius: 20px;width: auto; font-size: 12px;margin:5px}
+/* .tags-light{border: 1px solid #e0dfdf;border-radius: 20px;width: auto; font-size: 12px;margin:5px} */
+.tags-light{border: 1px solid #F4A71C;border-radius: 20px;width: auto; font-size: 10px;padding:2px 10px;margin:5px; background:#F4A71C; color:#000000}
 .cs-card .row{padding-top: 25px;}
 .cs-card:hover{cursor:pointer}
 .view-cs-btn{display: none;}
 .cs-card.active .view-cs-btn{display: block;}
-.card-img img{transition:all .5s; box-shadow: 10px 10px 15px 0px #75D1F9;}
-.card-img img:hover{transform:translate(-10px,-10px);box-shadow: -10px -10px 15px 0px #75D1F9 ;}
+/* .card-img img{transition:all .5s; box-shadow: 10px 10px 15px 0px #F9B975;} */
+.card-img img{transition:all .5s; box-shadow: 5px 5px 16px -2px #F9B975;}
+.card-img img:hover{transform:translate(-10px,-10px);box-shadow: -5px -5px 16px -2px #F9B975 ;}
 
 .mrq-text{font-size: 60px;font-weight: 500; padding: 0px 20px;}
 .dash{background-color: #F4A71C;padding:5px 25px}
 .scroll-main{overflow-x: hidden !important;position: relative;padding-bottom: 110px;}
-.scroll-main::before{
-  content: "";
-  position: absolute;
-  z-index: 999999;
-  top: 0;
-  bottom: 0;
-  box-shadow: 0 0 60px 85px #f8f8f8;
-}
-.scroll-main::after{
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right:0px;
-  box-shadow: 0 0 60px 85px #f8f8f8;
-  /* box-shadow: 0 0 70px 105px #D9D9D9; */
-}
+.scroll-main::before,.scroll-main::after{  content: ""; position: absolute; z-index: 99; top: 0; bottom: 0; box-shadow: 0 0 60px 85px #f8f8f8;}
+.scroll-main::after{content: ""; position: absolute; top: 0; bottom: 0; right:0px; box-shadow: 0 0 60px 85px #f8f8f8; /* box-shadow: 0 0 70px 105px #D9D9D9; */}
 .gap{background:#ffffff;padding:2px 0px}
 
-/* Courses */
+/* Courses
 .course-card{box-shadow: 0px 0px 10px 0px #D9D9D9;border-radius: 5px; padding: 32px;transform: skew(0deg, -7deg);transition:all 1s ease}
+.course-card:hover{transform: skew(0deg, -7deg);transform: scale(1.15);position: relative;background: #ffffff;box-shadow: 0px 0px 20px 0px #D9D9D9;background: #75D1F9;z-index: 9999;cursor:pointer;} */
+.course-card{box-shadow: 0px 0px 10px 0px #D9D9D9;border-radius: 5px; padding: 32px;transition:all 1s ease}
 .course-card:hover{transform: skew(0deg, -7deg);transform: scale(1.15);position: relative;background: #ffffff;box-shadow: 0px 0px 20px 0px #D9D9D9;background: #75D1F9;z-index: 9999;cursor:pointer;}
 .csl-img{height:100px; width:100px; background: #1CD6F4; border-radius: 100%;}
 .courses-scroll, .scroll-main{background-color: #f8f8f8;}
@@ -270,8 +259,8 @@ p.role{font-weight: 300;font-size: 16px;}
 .nav-logo img{transition: transform .6s ease-in-out;}
 
 /* ON SCREEN LOAD */
-/* .loader .line{height:calc(100% / 9); background:#585040; animation:back 1s 0s forwards; width:100%;} */
-.loader .line{height:calc(100% / 9); background:#153235; animation:back 1s 0s forwards; width:100%;}
+.loader .line{height:calc(100% / 9); background:#585040; animation:back 1s 0s forwards; width:100%;}
+/* .loader .line{height:calc(100% / 9); background:#153235; animation:back 1s 0s forwards; width:100%;} */
 
 .loader .line1{animation-delay: .1s;z-index:999999;position:fixed;top:0px}
 .loader .line2{animation-delay: .15s;z-index:999999;position:fixed;top:calc(100% / 9)}
@@ -368,7 +357,7 @@ p.role{font-weight: 300;font-size: 16px;}
 }
 @media(max-width:991px){
   .pc-menu{display: none !important;}
-  .mobile-menu{position: absolute !important;top: 92px; background: #000000;width: 100% !important;padding: 0px 20px 40px 20px;left: 0px;}
+  .mobile-menu{position: absolute !important;top: 92px; background: #000000;width: 100% !important;padding: 0px 20px 40px 20px;left: 0px; z-index: 999; border-bottom:2px solid #F4A71C}
   .mobile-menu .nav-btn{margin-left: 0px !important;}
   .mobile-menu ul{display: unset !important;}
   .mobile-menu ul li{padding: 20px 0px; list-style: none;}
@@ -387,13 +376,13 @@ p.role{font-weight: 300;font-size: 16px;}
   .bvc5{left:60%;width: 20%; top: 80%;}
   .bvc6{left:27%;width: 20%; top: 90%;}
 
-  .media h2, .services h2, .sec-4 h2, .sec-6 h2, .courses h2, .about h2, .testmonial h2, .footer h2{font-size: 32px; line-height: 38px !important;}
+  .media h2, .services h2, .sec-4 h2, .sec-6 h2, .courses h2, .about h2, .testmonial h2, .footer h2, h2.inner{font-size: 32px; line-height: 38px !important;}
   .vertical-cr, .services, .courses, .about, .testmonial {padding-bottom: 40px;}
   .sec-4, .sec-6 {padding: 40px 0px !important;}
   .footer {padding-top: 40px !important;}
 
   .sec-6 h2 {padding-right: 0%;}
-  .vertical-cr .bg-text, .services .bg-text, .courses .bg-text, .about .bg-text{font-size: 90px;margin: 0px 0px -6.5% 3%;}
+  .vertical-cr .bg-text, .services .bg-text, .courses .bg-text, .about .bg-text, .page-banner .bg-text{font-size: 90px !important;margin: 0px 0px -6.5% 3%;}
   .testmonial .bg-text {font-size: 65px;margin: 0px 0px -6.5% 3%;}
   .btn-tags, .btn-tags-light{font-size: 12px !important}
   .vertical-cr .carousel-item h2, .sec-4 h2  {font-size: 32px;}
@@ -450,6 +439,31 @@ p.role{font-weight: 300;font-size: 16px;}
   .ft-reviews .col {flex: unset;}
 
   .socials svg{margin: 0px 9px;}
+
+  /* INNER PAGES */
+  .py-120 {padding-top: 40px;padding-bottom: 40px;}
+  .wm-100, .w-47{width:100% !important}
+
+  .team h2{width:100%; padding-top:80px}
+  .team-row .st-card {width: 33% !important;}
+  .mrq-text {font-size: 20px;}
+  .scroll-main::before, .scroll-main::after {box-shadow: 0 0 20px 20px #f8f8f8;}
+  .scroll-main {padding-bottom: 55px;}
+  .dash {padding: 3px 15px;}
+
+  .cs .bg-text{font-size: 70px !important;}
+  .projects{padding-top:40px !important}
+
+  .text-md-light, .text-md-dark {font-size: 70px; margin: 0px 0px -8.5% -6%;}
+  .pb-120.websites {padding-bottom: 40px;padding-top: 180px !important;}
+  .dig-mkt, .branding {padding:40px 0px !important;}
+  .pm-0{padding:20px 20px 0px 20px !important; margin:0px !important}
+  .dig-mkt h2.inner{padding-top:20px}
+  .ps-4{padding-left:16px !important}
+
+  .courses{padding: 180px 16px 40px 16px;}
+  .course-card {transform: unset;}
+  .w-32 {width: 100%;}
 
 
   /* Contact us page */

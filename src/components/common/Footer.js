@@ -45,7 +45,7 @@ const Footer = () => {
                                 <div className="col-6"><img src={Logo} alt="" className='footer-logo'/></div>
                                 <div className="col-6 text-end"><img src={letsGo} alt="" className='lets-go'/></div>
                             </div>
-                            <div className="row mt-5">
+                            {/* <div className="row mt-5">
                                 <div className="col-12 footer-menu">
                                     <ul className='d-flex m-0 p-0'>
                                         <Link to='/' className="text-light text-decoration-none"><li>Home</li></Link>
@@ -57,7 +57,7 @@ const Footer = () => {
                                         <Link to='/contact_us' className="text-light text-decoration-none"><li>Contact Us</li></Link>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> */}
 
                         </div>
                     </div>

@@ -6,6 +6,21 @@ import logo from '../../assets/images/image 1 (1).png';
 import { RxHamburgerMenu } from 'react-icons/rx';
 
 const Navbar = () => {
+    // const [isDropdownVisible, setDropdownVisible] = useState(false);
+    // useEffect(()=>{
+    //     const menu_items = document.querySelectorAll('.menu-item');
+    //     menu_items.forEach(menu=>{
+    //         menu.addEventListener('click', ()=>{
+    //             console.log("menu clicked");
+    //         })
+    //     })
+    // },[])
+    
+   
+    // useEffect(()=>{
+    //     const menu = document.getElementBy
+    // })
+
     return (
         <>
             <section className='header text-light border' id="header">
@@ -33,8 +48,9 @@ const Navbar = () => {
                             </nav>
                         </div>
                     </div>
-                    <div class="collapse navbar-collapse justify-content-end mobile-menu" id="navbarSupportedContent">
-                        <ul className=' m-0'>
+                    {/* {isDropdownVisible && ( */}
+                    <div className="collapse navbar-collapse justify-content-end mobile-menu" id="navbarSupportedContent">
+                        <ul className='m-0'>
                             <Link to='/about' className="text-light text-decoration-none"><li>About</li></Link>
                             <Link to='/case_studies' className="text-light text-decoration-none"><li>Case Studies</li></Link>
                             <Link to='/services' className="text-light text-decoration-none"><li>Services</li></Link>
@@ -49,6 +65,7 @@ const Navbar = () => {
                             <Link to='/contact_us' className="text-light text-decoration-none"><button className='btn border rounded-pill text-light ms-3 nav-btn'>Contact</button></Link>
                         </ul>
                     </div>
+                    {/* )} */}
                 </div>
             </section>
             <hr className='m-0 text-light' />

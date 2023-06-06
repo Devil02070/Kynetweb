@@ -27,7 +27,7 @@ const Courses = () => {
                 </div>
             </section>
 
-            <section className='py-120'>
+            <section className='py-120 courses'>
                 <div className="container">
                     <div className="row d-flex flex-wrap gap-4">
                         <div className="course-card w-32">
