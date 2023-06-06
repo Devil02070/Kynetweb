@@ -42,7 +42,7 @@ const Footer = () => {
                         </div>
                         <div className="col right-col">
                             <div className="row align-items-center">
-                                <div className="col-6"><img src={Logo} alt="" className='footer-logo'/></div>
+                                <div className="col-6"><Link to="/"><img src={Logo} alt="" className='footer-logo'/></Link></div>
                                 <div className="col-6 text-end"><img src={letsGo} alt="" className='lets-go'/></div>
                             </div>
                             {/* <div className="row mt-5">
@@ -66,7 +66,7 @@ const Footer = () => {
             <section className='ft-social bg-dark text-light'>
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-6 col-md-2"><button className="btn rounded-pill light text-light mt-3">Get in touch</button></div>
+                        <div className="col-6 col-md-2"><Link to="/contact_us"><button className="btn rounded-pill light text-light mt-3">Get in touch</button></Link></div>
                         <div className="col-6 col-md-10 socials">
                             <SlSocialInstagram className='text-light' />
                             <SlSocialFacebook className='text-light' />

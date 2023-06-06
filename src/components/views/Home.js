@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react'
+import { Link } from 'react-router-dom'
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -89,7 +90,7 @@ const Home = () => {
             <div className="col-5 col-md-6">
               <h1 className="main-heading">Take your <span className='bn-txt'>brand to new heights.</span></h1>
               <p>We are a digital agency focused on <strong>Brand</strong>, <strong>Web Design</strong> & <strong>Digital Marketing.</strong></p>
-              <button className='btn rounded-pill text-light'>Get Started</button>
+              <Link to="/services"><button className='btn rounded-pill text-light'>Get Started</button></Link>
             </div>
             <div className="col-7 col-md-6"></div>
           </div>
@@ -190,7 +191,7 @@ const Home = () => {
               {/* <h2 class="m-auto">We design & build frontend apps for brands who want to break barriers and accelerate growth.</h2> */}
               <h2 class="m-auto">We design & build </h2>
               <h2 class="m-auto">frontend apps for brands who want to break barriers and accelerate growth.</h2>
-              <button class="btn rounded-pill light m-auto text-light">Let's Talk</button>
+              <Link to="/contact_us"><button class="btn rounded-pill light m-auto text-light">Let's Talk</button></Link>
             </div>
           </div>
           <div className="row m-auto cards text-center card-row">
@@ -431,7 +432,7 @@ const Home = () => {
             <div className="col-12 col-md-6">
               <h2>Developing digital everything for ambitious brands.</h2>
               <p className='mt-3'>We are a digital agency in Melbourne, helping organisations and eCommerce brands in building their brand with a user-centric designed website accompanied with multi-channel digital marketing strategies. We are a digital agency in Melbourne, helping organisations and eCommerce brands in building their brand with a user-centric designed website accompanied with multi-channel digital marketing strategies.</p>
-              <button class="btn rounded-pill light m-auto text-light mt-3">More about us</button>
+              <Link to="about"><button class="btn rounded-pill light m-auto text-light mt-3">More about us</button></Link>
             </div>
             <div className="col-12 col-md-6 about-img">
               <img src={aboutImg} alt="" className='w-100' />

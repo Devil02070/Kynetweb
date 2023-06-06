@@ -33,32 +33,32 @@ const Courses = () => {
                         <div className="course-card w-32">
                             <img src={icon} alt="" />
                             {/* <div className="csl-img d-flex align-items-center justify-content-center"><h3>html</h3></div> */}
-                            <h4 className='mt-2'>Course Name</h4>
+                            <h4 className='mt-4'>Web Development</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aspernatur saepe ut incidunt dolorum fugit assumenda nostrum, nobis architecto voluptas.</p>
                         </div>
                         <div className="course-card w-32">
                             <img src={icon} alt="" />
-                            <h4 className='mt-2'>Course Name</h4>
+                            <h4 className='mt-4'>Ux/UI Design</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aspernatur saepe ut incidunt dolorum fugit assumenda nostrum, nobis architecto voluptas.</p>
                         </div>
                         <div className="course-card w-32">
                             <img src={icon} alt="" />
-                            <h4 className='mt-2'>Course Name</h4>
+                            <h4 className='mt-4'>PHP</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aspernatur saepe ut incidunt dolorum fugit assumenda nostrum, nobis architecto voluptas.</p>
                         </div>
                         <div className="course-card w-32">
                             <img src={icon} alt="" />
-                            <h4 className='mt-2'>Course Name</h4>
+                            <h4 className='mt-4'>My SQL</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aspernatur saepe ut incidunt dolorum fugit assumenda nostrum, nobis architecto voluptas.</p>
                         </div>
                         <div className="course-card w-32">
                             <img src={icon} alt="" />
-                            <h4 className='mt-2'>Course Name</h4>
+                            <h4 className='mt-4'>HTML/CSS</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aspernatur saepe ut incidunt dolorum fugit assumenda nostrum, nobis architecto voluptas.</p>
                         </div>
                         <div className="course-card w-32">
                             <img src={icon} alt="" />
-                            <h4 className='mt-2'>Course Name</h4>
+                            <h4 className='mt-4'>Javascript</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aspernatur saepe ut incidunt dolorum fugit assumenda nostrum, nobis architecto voluptas.</p>
                         </div>
                     </div>
