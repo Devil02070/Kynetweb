@@ -19,6 +19,7 @@ const Courses = () => {
                         <div className="col-12 col-md-6">
                             <h2 className='inner'>What We Offer.</h2>
                             <p className='mt-3'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi doloremque nulla sequi omnis nobis itaque cumque fugiat officia perspiciatis tempora nihil veniam, architecto fugit minima minus impedit odit quibusdam nam, et sint earum? Beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iure reiciendis quibusdam ducimus nostrum autem unde recusandae animi minus ea, repellendus sequi eos. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, error! Eaque unde, at eveniet ipsam molestias aliquam quae a suscipit perspiciatis voluptatibus, repellendus consequatur! Officia nesciunt recusandae atque assumenda laudantium.</p>
+                            <p className='mt-3'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi doloremque nulla sequi omnis nobis itaque cumque fugiat officia perspiciatis tempora nihil veniam, architecto fugit minima minus impedit odit quibusdam nam, et sint earum? Beatae. Lorem ipsum sit amet consectetur adipisicing elit. Maxime iure reiciendis </p>
                         </div>
                         <div className="col-12 col-md-6 about-img">
                             <img src={aboutImg} alt="" className='w-100' />

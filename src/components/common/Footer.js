@@ -45,19 +45,20 @@ const Footer = () => {
                                 <div className="col-6"><Link to="/"><img src={Logo} alt="" className='footer-logo'/></Link></div>
                                 <div className="col-6 text-end"><img src={letsGo} alt="" className='lets-go'/></div>
                             </div>
-                            {/* <div className="row mt-5">
+                            <div className="row mt-5">
                                 <div className="col-12 footer-menu">
+                                    <hr />
                                     <ul className='d-flex m-0 p-0'>
                                         <Link to='/' className="text-light text-decoration-none"><li>Home</li></Link>
                                         <Link to='/about' className="text-light text-decoration-none"><li>About Us</li></Link>
                                         <Link to='/cs' className="text-light text-decoration-none"><li>Case Studies</li></Link>
                                         <Link to='/services' className="text-light text-decoration-none"><li>Services</li></Link>
                                         <Link to='/courses' className="text-light text-decoration-none"><li>Courses</li></Link>
-                                        <Link to='/insights' className="text-light text-decoration-none"><li>Insights</li></Link>
+                                        {/* <Link to='/insights' className="text-light text-decoration-none"><li>Insights</li></Link> */}
                                         <Link to='/contact_us' className="text-light text-decoration-none"><li>Contact Us</li></Link>
                                     </ul>
                                 </div>
-                            </div> */}
+                            </div>
 
                         </div>
                     </div>
@@ -79,13 +80,14 @@ const Footer = () => {
             <section className='ft-reviews bg-dark text-light'>
                 <div className="container">
                     <div className="row">
-                        <div className="col">
+                        <div className="col-12 col-md-5">
                             <img src={reviews} alt="" />
                             <p className='mt-1 ms-1 p-0 m-0'>Read our <strong><Link to='https://www.google.com/search?client=firefox-b-d&q=kynet+web.com#lrd=0x3904e224ed86ce59:0x4dedbc29bd9dfc98,1,,,,'>32 Reviews <MdKeyboardArrowRight /></Link> </strong></p>
                         </div>
-                        <div className="col text-end terms">
-                        <p className='m-0'>@ 2022 Kynet Web Solutions. All rights reserved.</p>
-                        <p className='m-0 mt-1'>Terms & Conditions | Privacy Policy</p>
+                        <div className="col-12 col-md-7 text-end terms d-flex align-items-center justify-content-end">
+                        {/* <p className='m-0'>@ 2022 Kynet Web Solutions. All rights reserved.</p>
+                        <p className='m-0 mt-1'>Terms & Conditions | Privacy Policy</p> */}
+                        <p className='m-0'>@ 2022 Kynet Web Solutions. All rights reserved. Terms & Conditions | Privacy Policy</p>
                         </div>
                     </div>
                     
