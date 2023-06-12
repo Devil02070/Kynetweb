@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom'
 
 import lineImg from '../../assets/images/Line 12(1).png'
 import Logo from '../../assets/images/Group 19.png'
-import letsGo from '../../assets/images/Group 123.png'
+// import letsGo from '../../assets/images/Group 123.png'
 import reviews from '../../assets/images/reviews.png'
 
 // ICONS
@@ -17,6 +17,13 @@ import { SlSocialLinkedin } from 'react-icons/sl'
 import { MdKeyboardArrowRight } from 'react-icons/md'
 
 const Footer = () => {
+    useEffect(() => {
+        const text = document.querySelector('.text p');
+        text.innerHTML = text.innerText.split('').map(
+            (char, i) =>
+                `<span style="transform:rotate(${i * 5.5}deg)">${char}</span>`
+        ).join('')
+    }, [])
     return (
         <>
             <section className='footer text-light'>
@@ -42,8 +49,17 @@ const Footer = () => {
                         </div>
                         <div className="col right-col">
                             <div className="row align-items-center">
-                                <div className="col-6"><Link to="/"><img src={Logo} alt="" className='footer-logo'/></Link></div>
-                                <div className="col-6 text-end"><img src={letsGo} alt="" className='lets-go'/></div>
+                                <div className="col-6">
+                                    <Link to="/"><img src={Logo} alt="" className='footer-logo' /></Link>
+                                </div>
+                                <div className="col-6 text-end">
+                                    {/* <img src={letsGo} alt="" className='lets-go' /> */}
+                                    <div className="circle">
+                                        <div className="text">
+                                            <p>LET'S GO - LET'S GO - LET'S GO - LET'S GO - </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div className="row mt-5">
                                 <div className="col-12 footer-menu">
@@ -85,14 +101,14 @@ const Footer = () => {
                             <p className='mt-1 ms-1 p-0 m-0'>Read our <strong><Link to='https://www.google.com/search?client=firefox-b-d&q=kynet+web.com#lrd=0x3904e224ed86ce59:0x4dedbc29bd9dfc98,1,,,,'>32 Reviews <MdKeyboardArrowRight /></Link> </strong></p>
                         </div>
                         <div className="col-12 col-md-7 text-end terms d-flex align-items-center justify-content-end">
-                        {/* <p className='m-0'>@ 2022 Kynet Web Solutions. All rights reserved.</p>
+                            {/* <p className='m-0'>@ 2022 Kynet Web Solutions. All rights reserved.</p>
                         <p className='m-0 mt-1'>Terms & Conditions | Privacy Policy</p> */}
-                        <p className='m-0'>@ 2022 Kynet Web Solutions. All rights reserved. Terms & Conditions | Privacy Policy</p>
+                            <p className='m-0'>@ 2022 Kynet Web Solutions. All rights reserved. Terms & Conditions | Privacy Policy</p>
                         </div>
                     </div>
-                    
+
                 </div>
-            </section> 
+            </section>
             {/* <section className='ft-terms bg-dark text-light text-end pe-3'>
                 <p className='m-0'>@ 2022 Kynet Web Solutions. All rights reserved. | Terms & Conditions | Privacy Policy</p>
             </section>
