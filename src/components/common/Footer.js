@@ -23,6 +23,34 @@ const Footer = () => {
             (char, i) =>
                 `<span style="transform:rotate(${i * 5.5}deg)">${char}</span>`
         ).join('')
+
+        // const dots = document.querySelectorAll('.dots');
+        // dots.forEach((dot, i) => {
+        //     dot.style.animationDelay = `${i * 0.1}s`;
+        // })
+        window.addEventListener('mousemove', (e) => {
+            let xcord = e.clientX;
+            let ycord = e.clientY;
+            console.log(xcord + ',' + ycord)
+
+            // const c1 = document.getElementsByClassName('.c1');
+            // c1.style.left = xcord ;
+
+            // var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+            // var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+
+            let dots = document.querySelectorAll('.dots');
+            dots.forEach(dot => {
+
+            //     // var dotX = Math.min(Math.max(xcord, 0), viewportWidth);
+            //     // var dotY = Math.min(Math.max(ycord, 0), viewportHeight);
+
+            //     dot.style.left = calc(xcord *1 );
+            //     dot.style.top = calc(ycord *1);
+                dot.style.left = xcord + 'px';
+                dot.style.top = ycord + 'px';
+            })
+        })
     }, [])
     return (
         <>
@@ -118,6 +146,22 @@ const Footer = () => {
                     <p className='mt-1 ms-1 p-0 m-0'>Read our <strong>32 Reviews <MdKeyboardArrowRight className='text-light' /></strong></p>
                 </div>
             </section> */}
+
+            <section class='cursor-follow'>
+
+                <div className="md1 dots"></div>
+
+                <div className="c1 dots" id="dot1"></div>
+                <div className="c2 dots"></div>
+                <div className="c3 dots"></div>
+                <div className="c4 dots"></div>
+                <div className="c5 dots"></div>
+                <div className="c6 dots"></div>
+                {/* <div className="c7 dots"></div> */}
+                {/* <div className="c8 dots"></div> */}
+                {/* <div className="c9 dots"></div> */}
+                {/* <div className="c10 dots"></div> */}
+            </section>
         </>
     )
 }

@@ -8,6 +8,9 @@ const Contact = () => {
 
     const [contact1, setContact1] = useState({ project_detail: [], name: '', email: '', message: '' });
 
+    // const [contact2, setContact2] = useState({ training_det: [], name: '', email: '', message: '' });
+    const [contact3, setContact3] = useState({ name: '', email: '', phone:'', reason:'', message: '' });
+
     const handleInput = (e) => {
         let field = e.target.name;
         let value = e.target.value;
@@ -28,11 +31,16 @@ const Contact = () => {
             value = checkedItems;
         }
         setContact1({ ...contact1, [field]: value });
+        setContact3({...contact3, [field]:value})
     }
 
     const projectForm = (e) => {
         e.preventDefault();
         console.log(contact1)
+    }
+    const other = (e) => {
+        e.preventDefault();
+        console.log(contact3)
     }
 
 
@@ -163,16 +171,16 @@ const Contact = () => {
                             </form>
 
                             {/* ------------------OTHER------------ */}
-                            <form action="" className='contact-form tab-content' id="other">
+                            <form onSubmit={other} className='contact-form tab-content' id="other">
                                 <div className="row">
-                                    <div className="col"><input type="text" className='form-control mb-4 p-3 bg-transparent text-light' placeholder="Name" /></div>
-                                    <div className="col"><input type="text" className='form-control mb-4 p-3 bg-transparent text-light' placeholder="Email" /></div>
+                                    <div className="col"><input type="text" name="name" onChange={handleInput} className='form-control mb-4 p-3 bg-transparent text-light' placeholder="Name" /></div>
+                                    <div className="col"><input type="text" name="email" onChange={handleInput} className='form-control mb-4 p-3 bg-transparent text-light' placeholder="Email" /></div>
                                 </div>
                                 <div className="row">
-                                    <div className="col"><input type="text" className='form-control mb-4 p-3 bg-transparent text-light' placeholder="Mobile" /></div>
-                                    <div className="col"><input type="text" className='form-control mb-4 p-3 bg-transparent text-light' placeholder="Reason for Contact" /></div>
+                                    <div className="col"><input type="text" name="phone" onChange={handleInput} className='form-control mb-4 p-3 bg-transparent text-light' placeholder="Mobile" /></div>
+                                    <div className="col"><input type="text" name="reason" onChange={handleInput} className='form-control mb-4 p-3 bg-transparent text-light' placeholder="Reason for Contact" /></div>
                                 </div>
-                                <textarea name="" id="" cols="30" rows="5" className='form-control mb-4 p-3 bg-transparent text-light' placeholder="Message"></textarea>
+                                <textarea id="" cols="30" rows="5" name="message" className='form-control mb-4 p-3 bg-transparent text-light' placeholder="Message"></textarea>
                                 <input type="submit" className='btn btn_submit rounded-pill ms-3 text-light' value="Send Request" />
                             </form>
                         </div>
