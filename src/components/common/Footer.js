@@ -24,33 +24,21 @@ const Footer = () => {
                 `<span style="transform:rotate(${i * 5.5}deg)">${char}</span>`
         ).join('')
 
-        // const dots = document.querySelectorAll('.dots');
-        // dots.forEach((dot, i) => {
-        //     dot.style.animationDelay = `${i * 0.1}s`;
-        // })
+
+        // cursor
         window.addEventListener('mousemove', (e) => {
             let xcord = e.clientX;
             let ycord = e.clientY;
-            console.log(xcord + ',' + ycord)
-
-            // const c1 = document.getElementsByClassName('.c1');
-            // c1.style.left = xcord ;
-
-            // var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-            // var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+            // console.log(xcord + ',' + ycord)
 
             let dots = document.querySelectorAll('.dots');
             dots.forEach(dot => {
-
-            //     // var dotX = Math.min(Math.max(xcord, 0), viewportWidth);
-            //     // var dotY = Math.min(Math.max(ycord, 0), viewportHeight);
-
-            //     dot.style.left = calc(xcord *1 );
-            //     dot.style.top = calc(ycord *1);
                 dot.style.left = xcord + 'px';
                 dot.style.top = ycord + 'px';
             })
         })
+        //cursor-end
+        
     }, [])
     return (
         <>
@@ -147,20 +135,27 @@ const Footer = () => {
                 </div>
             </section> */}
 
-            <section class='cursor-follow'>
-
-                <div className="md1 dots"></div>
-
-                <div className="c1 dots" id="dot1"></div>
-                <div className="c2 dots"></div>
-                <div className="c3 dots"></div>
-                <div className="c4 dots"></div>
-                <div className="c5 dots"></div>
-                <div className="c6 dots"></div>
-                {/* <div className="c7 dots"></div> */}
-                {/* <div className="c8 dots"></div> */}
-                {/* <div className="c9 dots"></div> */}
-                {/* <div className="c10 dots"></div> */}
+            <section class='cursor-follow' id='cursor'>
+                <span className="c1 dots"></span>
+                <span className="c2 dots"></span>
+                <span className="c3 dots"></span>
+                <span className="c4 dots"></span>
+                <span className="c5 dots"></span>
+                <span className="c6 dots"></span>
+                <span className="c7 dots"></span>
+                <span className="c8 dots"></span>
+                <span className="c9 dots"></span>
+                <span className="c10 dots"></span>
+                <span className="c11 dots"></span>
+                <span className="c12 dots"></span>
+                <span className="c13 dots"></span>
+                <span className="c14 dots"></span>
+                <span className="c15 dots"></span>
+                <span className="c16 dots"></span>
+                <span className="c17 dots"></span>
+                <span className="c18 dots"></span>
+                <span className="c19 dots"></span>
+                <span className="c20 dots"></span>
             </section>
         </>
     )
