@@ -15,10 +15,10 @@ import Footer from './components/common/Footer';
 import Home from './components/views/Home';
 import About from './components/views/About';
 import CaseStudies from './components/views/CaseStudies';
-import Services from './components/views/Services'
-import Contact from './components/views/Contact'
-import Courses from './components/views/Courses'
-
+import Services from './components/views/Services';
+import Contact from './components/views/Contact';
+import Courses from './components/views/Courses';
+import Tryouts from './components/views/Tryouts';
 
 function Routing() {
   return (
@@ -29,6 +29,7 @@ function Routing() {
       <Route exact path='/services' element={<Services />}></Route>
       <Route exact path='/courses' element={<Courses />}></Route>
       <Route exact path='/contact_us' element={<Contact />}></Route>
+      <Route exact path='/tryouts' element={<Tryouts />}></Route>
     </Routes>
   );
 }

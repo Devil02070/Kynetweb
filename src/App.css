@@ -207,6 +207,8 @@ p.role{font-weight: 300;font-size: 16px;}
 .team-row{flex-wrap:wrap; padding-top:30px;}
 .team-row .st-card{width:25% !important;padding: 15px;}
 .team .container{overflow: hidden;}
+.st-card .profile-img{height:300px}
+.st-card .profile-img img{height:100%;object-fit: cover;}
 
 /* cs */
 .projects{padding-top:50px}
@@ -629,3 +631,4 @@ p.role{font-weight: 300;font-size: 16px;}
 .c20{transition: all 0.23s ease;transform:scale(0.05,0.05)}
 
 .c2{animation:moves 2s linear infinite}
+
