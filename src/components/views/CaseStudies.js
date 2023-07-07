@@ -60,7 +60,7 @@ const CaseStudies = () => {
                   <p>Hair Styling</p>
                 </div>
                 <div className="col-12 col-md-5 text-end">
-                  <button class="btn rounded-pill light m-auto text-light mt-3 view-cs-btn">View Case Study</button>
+                  {/* <button class="btn rounded-pill light m-auto text-light mt-3 view-cs-btn">View Case Study</button> */}
                 </div>
               </div>
             </div>
@@ -81,7 +81,7 @@ const CaseStudies = () => {
                   <p>Buy/Sell Homes</p>
                 </div>
                 <div className="col-12 col-md-5 text-end">
-                  <button class="btn rounded-pill light m-auto text-light mt-3 view-cs-btn">View Case Study</button>
+                  {/* <button class="btn rounded-pill light m-auto text-light mt-3 view-cs-btn">View Case Study</button> */}
                 </div>
               </div>
             </div>
@@ -103,7 +103,7 @@ const CaseStudies = () => {
                   <p>Roofing</p>
                 </div>
                 <div className="col-12 col-md-5 text-end">
-                  <button class="btn rounded-pill light m-auto text-light mt-3 view-cs-btn">View Case Study</button>
+                  {/* <button class="btn rounded-pill light m-auto text-light mt-3 view-cs-btn">View Case Study</button> */}
                 </div>
               </div>
 
@@ -126,7 +126,7 @@ const CaseStudies = () => {
                   <p>HVAC Services</p>
                 </div>
                 <div className="col-12 col-md-5 text-end">
-                  <button class="btn rounded-pill light m-auto text-light mt-3 view-cs-btn">View Case Study</button>
+                  {/* <button class="btn rounded-pill light m-auto text-light mt-3 view-cs-btn">View Case Study</button> */}
                 </div>
               </div>
             </div>

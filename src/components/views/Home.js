@@ -127,7 +127,7 @@ const Home = () => {
                     <h2>An illuminating shopping experience.</h2>
                     <h4>Light My Bricks</h4>
                     <p className='meta'>E-commerce</p>
-                    <button className='btn vcs-btn rounded-pill'>View Case Study</button>
+                    <Link to='/case_studies'><button className='btn vcs-btn rounded-pill'>View Case Study</button></Link>
                   </div>
                 </div>
               </div>
@@ -147,7 +147,7 @@ const Home = () => {
                     <h2>An illuminating shopping experience.</h2>
                     <h4>Light My Bricks</h4>
                     <p className='meta'>E-commerce</p>
-                    <button className='btn vcs-btn rounded-pill'>View Case Study</button>
+                    <Link to='/case_studies'><button className='btn vcs-btn rounded-pill'>View Case Study</button></Link>
                   </div>
                 </div>
               </div>
@@ -167,7 +167,7 @@ const Home = () => {
                     <h2>An illuminating shopping experience.</h2>
                     <h4>Light My Bricks</h4>
                     <p className='meta'>E-commerce</p>
-                    <button className='btn vcs-btn rounded-pill'>View Case Study</button>
+                    <Link to='/case_studies'><button className='btn vcs-btn rounded-pill'>View Case Study</button></Link>
                   </div>
                 </div>
               </div>
@@ -332,7 +332,7 @@ const Home = () => {
             <div className="col-12 col-md-6 pt-5">
               <h2>We trust our work process that makes us to achieve outstanding results.</h2>
               <p className='mt-3 w-75'>The first place a potential customer will notice you is on the web. So it is imperative that your website be professional, beautiful, and easily navigable. That's where we come in. We make sure your first impression is a lasting one. In a good way.</p>
-              <button class="btn rounded-pill light m-auto text-light mt-3">Get a Quote</button>
+              <Link to='/contact_us'><button class="btn rounded-pill light m-auto text-light mt-3">Get a Quote</button></Link>
             </div>
             <div className="col-12 col-md-6">
               <div className="row">
