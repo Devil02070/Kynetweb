@@ -189,6 +189,12 @@ const Tryouts = () => {
                 </div>
             </section>
 
+            {/* section-3 */}
+            <section className='py-120'>
+                <div className="container">
+                    <h2 className='anm-heading'>Hello <span classname='animated-text'>World</span></h2>
+                </div>
+            </section>
             {/* ***************************************************************************** */}
             {/* ***************************************************************************** */}
         </>

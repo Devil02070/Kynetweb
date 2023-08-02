@@ -632,3 +632,29 @@ p.role{font-weight: 300;font-size: 16px;}
 
 .c2{animation:moves 2s linear infinite}
 
+.anm-heading{
+  font-size: 130px;
+  font-weight: 900;
+}
+h2 span {
+  background: linear-gradient(-45deg,#ffa63d,#ff3d77,#338aff,#3cf0c5);
+  background-size: 200%;
+  -webkit-animation: gradientspin 4s linear infinite;
+  animation: gradientspin 4s linear infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradientspin{
+  0%, 100% {
+    background-position: 0 50%;
+  }
+  50% {
+  background-position: 100% 50%;
+  }
+}
+
+
+
+
