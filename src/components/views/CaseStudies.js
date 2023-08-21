@@ -1,5 +1,7 @@
 import React, {useEffect} from 'react'
 
+import Loaderanimation from '../common/Loaderanimation'
+
 // import aboutImg from '../../assets/images/Rectangle 27.png'
 import project1 from '../../assets/images/pj1.png'
 import project2 from '../../assets/images/pj2.png'
@@ -20,7 +22,8 @@ const CaseStudies = () => {
   },[])
   return (
     <>
-      {/* -----------------------------------------------------ABOUT--------------------------------------------------------- */}
+    <Loaderanimation title='Case Study' />
+      {/* -----------------------------------------------------Case study--------------------------------------------------------- */}
       {/* -------------------------------------------------------------------------------------------------------------------- */}
       <section className='cs page-banner bg-dark animate-up text-light' id="cs">
         <h3 className="bg-text">case studies</h3>
@@ -155,21 +158,6 @@ const CaseStudies = () => {
           <div className='mrq-text'>Developers</div><div className='dash'></div>
         </div>
       </section>
-
-
-      <section className="loader">
-        <div className="line line1"></div>
-        <div className="line line2"></div>
-        <div className="line line3"></div>
-        <div className="line line4"></div>
-        <div className="line line5 text-light d-flex justify-content-center fs-1">Case Study</div>
-        <div className="line line6"></div>
-        <div className="line line7"></div>
-        <div className="line line8"></div>
-        <div className="line line9"></div>
-      </section>
-
-
     </>
   )
 }

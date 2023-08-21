@@ -6,14 +6,13 @@ import logo from '../../assets/images/image 1 (1).png';
 import { RxHamburgerMenu } from 'react-icons/rx';
 
 const Navbar = () => {
-
     return (
         <>
             <section className='header text-light border' id="header">
                 <div className="container">
                     <div className="row">
                         <div className="col-5 col-md-2 nav-logo">
-                            <Link to='/' className="text-light text-decoration-none"><img src={logo} alt=""  /></Link>
+                            <Link to='/' className="text-light text-decoration-none"><img src={logo} alt="" /></Link>
                         </div>
                         <div className="col-7 col-md-10 nav-menu">
                             <nav class="navbar navbar-expand-lg justify-content-end">
@@ -27,7 +26,6 @@ const Navbar = () => {
                                         <Link to='/services' className="text-light text-decoration-none menu-item"><li>Services</li></Link>
                                         <Link to='/courses' className="text-light text-decoration-none menu-item"><li>Courses</li></Link>
                                         {/* <Link to='/insights' className="text-light text-decoration-none menu-item"><li>Insights</li></Link> */}
-                                      
                                         <Link to='/contact_us' className="text-light text-decoration-none menu-item mtb"><button className='btn border rounded-pill text-light ms-3 nav-btn'>Contact</button></Link>
                                     </ul>
                                 </div>
@@ -41,19 +39,12 @@ const Navbar = () => {
                             <Link to='/services' className="text-light text-decoration-none"><li>Services</li></Link>
                             <Link to='/courses' className="text-light text-decoration-none"><li>Courses</li></Link>
                             {/* <Link to='/insights' className="text-light text-decoration-none"><li>Insights</li></Link> */}
-
-                            {/* <a href='/#about' className="text-light text-decoration-none"><li>About</li></a>
-                            <a href='/' className="text-light text-decoration-none"><li>Case Studies</li></a>
-                            <a href='/#services' className="text-light text-decoration-none"><li>Services</li></a>
-                            <a href='/#courses' className="text-light text-decoration-none"><li>Courses</li></a>
-                            <a href='/' className="text-light text-decoration-none"><li>Insights</li></a> */}
                             <Link to='/contact_us' className="text-light text-decoration-none"><button className='btn border rounded-pill text-light ms-3 nav-btn'>Contact</button></Link>
                         </ul>
                     </div>
                 </div>
             </section>
             <hr className='m-0 text-light' />
-
         </>
     )
 }

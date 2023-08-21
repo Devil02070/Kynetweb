@@ -1,10 +1,12 @@
 import React from 'react'
+import Loaderanimation from '../common/Loaderanimation'
 
 import icon from '../../assets/images/Oval.png'
 import aboutImg from '../../assets/images/Rectangle 27.png'
 const Courses = () => {
     return (
         <>
+        <Loaderanimation title='Courses'/>
             <section className='bg-dark page-banner animate-up text-light' >
                 <h3 class="bg-text">courses</h3>
                 <div className="vectors">
@@ -83,18 +85,6 @@ const Courses = () => {
                     <div className='mrq-text'>Responsive Design</div><div className='dash'></div>
                     <div className='mrq-text'>Live Websites</div><div className='dash'></div>
                 </div>
-            </section>
-
-            <section className="loader">
-                <div className="line line1"></div>
-                <div className="line line2"></div>
-                <div className="line line3"></div>
-                <div className="line line4"></div>
-                <div className="line line5 text-light d-flex justify-content-center fs-1">Courses</div>
-                <div className="line line6"></div>
-                <div className="line line7"></div>
-                <div className="line line8"></div>
-                <div className="line line9"></div>
             </section>
         </>
     )

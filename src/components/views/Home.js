@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
+import Loaderanimation from '../common/Loaderanimation'
+
 //Banner
 import bannervc1 from '../../assets/images/Rectangle 45.png'
 import bannervc2 from '../../assets/images/Rectangle 40.png'
@@ -74,6 +76,7 @@ const Home = () => {
 
   return (
     <>
+    <Loaderanimation title='Home'/>
       {/* -----------------------------------------------------Banner--------------------------------------------------------- */}
       {/* -------------------------------------------------------------------------------------------------------------------- */}
       <section className='banner text-light' id="banner">
@@ -510,19 +513,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="loader">
-        <div className="line line1"></div>
-        <div className="line line2"></div>
-        <div className="line line3"></div>
-        <div className="line line4"></div>
-        <div className="line line5 text-light d-flex justify-content-center fs-1">Home</div>
-        <div className="line line6"></div>
-        <div className="line line7"></div>
-        <div className="line line8"></div>
-        <div className="line line9"></div>
-      </section>
-
-
     </>
   )
 }

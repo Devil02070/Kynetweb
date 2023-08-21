@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Loaderanimation from '../common/Loaderanimation'
 
 import { AiOutlineMail } from 'react-icons/ai'
 import { BsTelephone } from 'react-icons/bs'
@@ -85,7 +86,8 @@ const Contact = () => {
     }, []);
     return (
         <>
-            {/* -----------------------------------------------------ABOUT--------------------------------------------------------- */}
+        <Loaderanimation title='Contact'/>
+            {/* -----------------------------------------------------Contact--------------------------------------------------------- */}
             {/* -------------------------------------------------------------------------------------------------------------------- */}
             <section className='text-light contact'>
                 <h3 class="bg-text">contact us</h3>
@@ -187,17 +189,6 @@ const Contact = () => {
                     </div>
                 </div>
             </section >
-            <section className="loader">
-            <div className="line line1"></div>
-            <div className="line line2"></div>
-            <div className="line line3"></div>
-            <div className="line line4"></div>
-            <div className="line line5 text-light d-flex justify-content-center fs-1">Contact</div>
-            <div className="line line6"></div>
-            <div className="line line7"></div>
-            <div className="line line8"></div>
-            <div className="line line9"></div>
-            </section>
         </>
     )
 }

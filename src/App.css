@@ -269,7 +269,15 @@ p.role{font-weight: 300;font-size: 16px;}
   0%{transform:rotate(0deg)}
   100%{transform:rotate(360deg)}
 }
-
+/* Error page */
+.errpage{
+  height: 50vh;
+  }
+  .er404 {
+    margin-top: 50px;
+    font-size: 230px;
+    font-weight: 900;
+  }
 
 
 
@@ -524,8 +532,12 @@ p.role{font-weight: 300;font-size: 16px;}
   .contact-form .row{display: block;}
   .contact-form .col-5{width:95%;}
   .contact-form .col{width:100%;}
-}
 
+  .errpage{height: 40vh;}
+  .er404 {margin-top: 90px;font-size: 80px;}
+
+  .cursor-follow{display: none;}
+}
 
 
 
@@ -631,6 +643,7 @@ p.role{font-weight: 300;font-size: 16px;}
 .c20{transition: all 0.23s ease;transform:scale(0.05,0.05)}
 
 .c2{animation:moves 2s linear infinite}
+
 
 .anm-heading{
   font-size: 130px;
