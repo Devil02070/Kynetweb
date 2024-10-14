@@ -17,6 +17,10 @@ import en305 from '../../assets/employees/en-305.jpg'
 import en306 from '../../assets/employees/en-306.jpg'
 import en307 from '../../assets/employees/en-307.jpg'
 import en308 from '../../assets/employees/en-308.jpg'
+import en309 from '../../assets/employees/en-309.jpeg'
+import en310 from '../../assets/employees/en-310.png'
+import en311 from '../../assets/employees/en-311.png'
+import en312 from '../../assets/employees/en-312.JPEG'
 const About = () => {
   return (
     <>
@@ -55,7 +59,7 @@ const About = () => {
           <div className="row team-row" >
             <div className="st-card">
               <div classname='profile-img'>
-                <img src={emp2} alt="" className='w-100' />
+                <img src={en311} alt="" className='w-100' />
               </div>
               <h4 className='mt-3'>Rekha Sharma</h4>
               <p classNamae='role mt-3'>Founder</p>
@@ -69,17 +73,17 @@ const About = () => {
             </div>
             <div className="st-card">
               <div className='profile-img'>
-                <img src={emp1} alt="" className='w-100' />
+                <img src={en310} alt="" className='w-100' />
               </div>
               <h4 className='mt-3'>Sunil Kumar</h4>
               <p classNamae='role mt-3'>Full-Stack Developer</p>
             </div>
             <div className="st-card">
               <div className='profile-img'>
-                <img src={emp1} alt="" className='w-100' />
+                <img src={en312} alt="" className='w-100' />
               </div>
               <h4 className='mt-3'>Ajay Kumar</h4>
-              <p classNamae='role mt-3'>Full-Stack Developer</p>
+              <p classNamae='role mt-3'>Web Developer</p>
             </div>
             <div className="st-card">
               <div className='profile-img'>
@@ -87,13 +91,6 @@ const About = () => {
               </div>
               <h4 className='mt-3'>Komal Thakur</h4>
               <p classNamae='role mt-3'>Frontend Developer</p>
-            </div>
-            <div className="st-card">
-              <div className='profile-img'>
-                <img src={en302} alt="" className='w-100' />
-              </div>
-              <h4 className='mt-3'>Satish Thakur</h4>
-              <p classNamae='role mt-3'>Full-Stack Developer</p>
             </div>
             <div className="st-card">
               <div className='profile-img'>
@@ -132,7 +129,7 @@ const About = () => {
             </div>
             <div className="st-card">
               <div className='profile-img'>
-                <img src={emp1} alt="" className='w-100' />
+                <img src={en309} alt="" className='w-100' />
               </div>
               <h4 className='mt-3'>Nikhil Saini</h4>
               <p classNamae='role mt-3'>UX/UI Designer</p>
