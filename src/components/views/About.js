@@ -8,6 +8,15 @@ import Loaderanimation from '../common/Loaderanimation'
 import emp1 from '../../assets/images/umang-fun.jpg'
 import emp2 from '../../assets/images/eliza-fun.jpg'
 import aboutImg from '../../assets/images/Rectangle 27.png'
+
+import en301 from '../../assets/employees/en-301.jpg'
+import en302 from '../../assets/employees/en-302.jpg'
+import en303 from '../../assets/employees/en-303.jpg'
+import en304 from '../../assets/employees/en-304.jpg'
+import en305 from '../../assets/employees/en-305.jpg'
+import en306 from '../../assets/employees/en-306.jpg'
+import en307 from '../../assets/employees/en-307.jpg'
+import en308 from '../../assets/employees/en-308.jpg'
 const About = () => {
   return (
     <>
@@ -59,78 +68,78 @@ const About = () => {
               <p classNamae='role mt-3'>Manager</p>
             </div>
             <div className="st-card">
-              <div classname='profile-img'>
+              <div className='profile-img'>
                 <img src={emp1} alt="" className='w-100' />
               </div>
               <h4 className='mt-3'>Sunil Kumar</h4>
               <p classNamae='role mt-3'>Full-Stack Developer</p>
             </div>
             <div className="st-card">
-              <div classname='profile-img'>
+              <div className='profile-img'>
                 <img src={emp1} alt="" className='w-100' />
               </div>
               <h4 className='mt-3'>Ajay Kumar</h4>
               <p classNamae='role mt-3'>Full-Stack Developer</p>
             </div>
             <div className="st-card">
-              <div classname='profile-img'>
-                <img src={emp2} alt="" className='w-100' />
+              <div className='profile-img'>
+                <img src={en307} alt="" className='w-100' />
               </div>
               <h4 className='mt-3'>Komal Thakur</h4>
               <p classNamae='role mt-3'>Frontend Developer</p>
             </div>
             <div className="st-card">
-              <div classname='profile-img'>
-                <img src={emp1} alt="" className='w-100' />
+              <div className='profile-img'>
+                <img src={en302} alt="" className='w-100' />
               </div>
               <h4 className='mt-3'>Satish Thakur</h4>
               <p classNamae='role mt-3'>Full-Stack Developer</p>
             </div>
             <div className="st-card">
-              <div classname='profile-img'>
-                <img src={emp1} alt="" className='w-100' />
+              <div className='profile-img'>
+                <img src={en306} alt="" className='w-100' />
               </div>
               <h4 className='mt-3'>Rajesh Sharma</h4>
               <p classNamae='role mt-3'>Full-Stack Developer</p>
             </div>
             <div className="st-card">
-              <div classname='profile-img'>
-                <img src={emp2} alt="" className='w-100' />
+              <div className='profile-img'>
+                <img src={en303} alt="" className='w-100' />
               </div>
               <h4 className='mt-3'>Pooja Sharma</h4>
               <p classNamae='role mt-3'>Full-Stack Developer</p>
             </div>
             <div className="st-card">
-              <div classname='profile-img'>
-                <img src={emp1} alt="" className='w-100' />
+              <div className='profile-img'>
+                <img src={en301} alt="" className='w-100' />
               </div>
               <h4 className='mt-3'>Mayank Thakur</h4>
               <p classNamae='role mt-3'>Web Developer</p>
             </div>
             <div className="st-card">
-              <div classname='profile-img'>
-                <img src={emp1} alt="" className='w-100' />
+              <div className='profile-img'>
+                <img src={en308} alt="" className='w-100' />
               </div>
               <h4 className='mt-3'>Tarun Thakur</h4>
               <p classNamae='role mt-3'>Web Developer</p>
             </div>
             <div className="st-card">
-              <div classname='profile-img'>
-                <img src={emp1} alt="" className='w-100' />
+              <div className='profile-img'>
+                <img src={en304} alt="" className='w-100' />
               </div>
               <h4 className='mt-3'>Pankaj Sharma</h4>
               <p classNamae='role mt-3'>Web Developer</p>
             </div>
             <div className="st-card">
-              <div classname='profile-img'>
+              <div className='profile-img'>
                 <img src={emp1} alt="" className='w-100' />
               </div>
               <h4 className='mt-3'>Nikhil Saini</h4>
               <p classNamae='role mt-3'>UX/UI Designer</p>
             </div>
             <div className="st-card">
-              <div classname='profile-img'>
-                <img src={emp2} alt="" className='w-100' />
+              <div className='profile-img'>
+                <img src={en305} alt="" className='w-100' />
               </div>
               <h4 className='mt-3'>Poonam Thakur</h4>
               <p classNamae='role mt-3'>UX/UI Designer</p>

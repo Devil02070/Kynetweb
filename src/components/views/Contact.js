@@ -114,7 +114,7 @@ const Contact = () => {
                                         </div>
                                         <div className="col-11">
                                             <h3 className='txt-primary'>Phone:</h3>
-                                            <p>7856746756</p>
+                                            <p>9459050795</p>
                                         </div>
                                     </div>
                                 </div>

@@ -51,11 +51,11 @@ const Footer = () => {
                             <div className="row contact-details">
                                 <div className="col">
                                     <h5>Drop us a line</h5>
-                                    <p>91 98732 19808</p>
+                                    <p>9459050795</p>
                                 </div>
                                 <div className="col">
                                     <h5>Shoot us a message</h5>
-                                    <p>info@kynetweb.com</p>
+                                    <p>contact@kynetweb.com</p>
                                 </div>
                                 <div className="col">
                                     <h5>Come and Visit</h5>
