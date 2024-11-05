@@ -117,7 +117,7 @@ const Footer = () => {
                             <p className='mt-1 ms-1 p-0 m-0'>Read our <strong><Link to='https://www.google.com/search?client=firefox-b-d&q=kynet+web.com#lrd=0x3904e224ed86ce59:0x4dedbc29bd9dfc98,1,,,,' className='txt-primary'>24 Reviews <MdKeyboardArrowRight /></Link> </strong></p>
                         </div>
                         <div className="col-12 col-md-7 text-end terms d-flex align-items-center justify-content-end">
-                            <p className='m-0'>@ 2022 Kynet Web Solutions. All rights reserved. <Link to="/terms" className='txt-primary'>Terms & Conditions</Link> | <Link to="/privacy_policy" className='txt-primary'>Privacy Policy</Link></p>
+                            <p className='m-0'>@2024 Kynet Web Solutions Pvt. Ltd. All rights reserved. <Link to="/terms" className='txt-primary'>Terms & Conditions</Link> | <Link to="/privacy_policy" className='txt-primary'>Privacy Policy</Link></p>
                         </div>
                     </div>
 
