@@ -1,6 +1,8 @@
 import React, {useEffect} from 'react'
 
 import Loaderanimation from '../common/Loaderanimation'
+import Marquee from '../common/Marquee'
+import Bannervectors from '../common/Bannervectors';
 
 // import aboutImg from '../../assets/images/Rectangle 27.png'
 import project1 from '../../assets/images/pj1.png'
@@ -27,13 +29,7 @@ const CaseStudies = () => {
       {/* -------------------------------------------------------------------------------------------------------------------- */}
       <section className='cs page-banner bg-dark animate-up text-light' id="cs">
         <h3 className="bg-text">case studies</h3>
-        <div className="vectors">
-          <div className='bg-vector ip-bvc1 p-0'></div>
-          <div className='bg-vector ip-bvc2 p-0'></div>
-          <div className='bg-vector ip-bvc3 p-0'></div>
-          <div className='bg-vector ip-bvc4 p-0'></div>
-          <div className='bg-vector ip-bvc5 p-0'></div>
-        </div>
+        <Bannervectors />
         <div className="container page-heading">
           <div className="row">
             <div className="col-12 col-md-12 w-50 m-0 p-0 wm-100">
@@ -136,28 +132,7 @@ const CaseStudies = () => {
           </div>
         </div>
       </section>
-
-      <section className='scroll-main'>
-        <div className="scroll-left d-flex align-items-center py-2">
-          <div className='mrq-text'>Videographers</div><div className='dash'></div>
-          <div className='mrq-text'>Developers</div><div className='dash'></div>
-          <div className='mrq-text'>Content Planners</div><div className='dash'></div>
-          <div className='mrq-text'>Copywriters</div><div className='dash'></div>
-          <div className='mrq-text'>Designers</div><div className='dash'></div>
-          <div className='mrq-text'>Videographers</div><div className='dash'></div>
-          <div className='mrq-text'>Developers</div><div className='dash'></div>
-        </div>
-        <div className="gap"></div>
-        <div className="scroll-right d-flex align-items-center py-1">
-          <div className='mrq-text'>Videographers</div><div className='dash'></div>
-          <div className='mrq-text'>Developers</div><div className='dash'></div>
-          <div className='mrq-text'>Content Planners</div><div className='dash'></div>
-          <div className='mrq-text'>Copywriters</div><div className='dash'></div>
-          <div className='mrq-text'>Designers</div><div className='dash'></div>
-          <div className='mrq-text'>Videographers</div><div className='dash'></div>
-          <div className='mrq-text'>Developers</div><div className='dash'></div>
-        </div>
-      </section>
+      <Marquee/>
     </>
   )
 }

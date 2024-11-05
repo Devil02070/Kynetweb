@@ -1,48 +1,26 @@
 import React from 'react'
 import 'react-multi-carousel/lib/styles.css';
-
 import Loaderanimation from '../common/Loaderanimation'
-
-// import { useEffect, useRef, useState } from 'react';
-
-import emp1 from '../../assets/images/umang-fun.jpg'
-import emp2 from '../../assets/images/eliza-fun.jpg'
+import Marquee from '../common/Marquee';
+import Bannervectors from '../common/Bannervectors';
+import { team } from '../../utils/constants';
 import aboutImg from '../../assets/images/Rectangle 27.png'
-
-import en301 from '../../assets/employees/en-301.jpg'
-import en302 from '../../assets/employees/en-302.jpg'
-import en303 from '../../assets/employees/en-303.jpg'
-import en304 from '../../assets/employees/en-304.jpg'
-import en305 from '../../assets/employees/en-305.jpg'
-import en306 from '../../assets/employees/en-306.jpg'
-import en307 from '../../assets/employees/en-307.jpg'
-import en308 from '../../assets/employees/en-308.jpg'
-import en309 from '../../assets/employees/en-309.jpeg'
-import en310 from '../../assets/employees/en-310.png'
-import en311 from '../../assets/employees/en-311.png'
-import en312 from '../../assets/employees/en-312.JPEG'
+import { Link } from 'react-router-dom';
 const About = () => {
   return (
     <>
-    <Loaderanimation title='About'/>
+      <Loaderanimation title='About' />
       {/* -----------------------------------------------------ABOUT--------------------------------------------------------- */}
       {/* -------------------------------------------------------------------------------------------------------------------- */}
       <section className='about bg-dark page-banner animate-up text-light' id="about">
         <h3 className="bg-text">about</h3>
-        <div className="vectors">
-          <div className='bg-vector ip-bvc1 p-0'></div>
-          <div className='bg-vector ip-bvc2 p-0'></div>
-          <div className='bg-vector ip-bvc3 p-0'></div>
-          <div className='bg-vector ip-bvc4 p-0'></div>
-          <div className='bg-vector ip-bvc5 p-0'></div>
-        </div>
+        <Bannervectors />
         <div className="container page-heading">
           <div className="row">
             <div className="col-12 col-md-6">
               <h2>Developing digital everything for ambitious brands.</h2>
-              <p className='mt-3'>We are a digital agency in Melbourne, helping organisations and eCommerce brands in building their brand with a user-centric designed website accompanied with multi-channel digital marketing strategies. We are a digital agency in Melbourne, helping organisations and eCommerce brands in building their brand with a user-centric designed website accompanied with multi-channel digital marketing strategies.</p>
-              <p className='mt-3'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi doloremque nulla sequi omnis nobis itaque cumque fugiat officia perspiciatis tempora nihil veniam, architecto fugit minima minus impedit odit quibusdam nam, et sint earum? Beatae. Lorem ipsum sit amet consectetur adipisicing elit. Maxime iure reiciendis lorem5
-              </p>
+              <p className='mt-3'>Welcome to Kynet Web Solutions Private Limited, where we transform ideas into impactful digital experiences. As a trusted partner in web development and design, we specialize in crafting unique, user-friendly websites that elevate brands and drive growth.</p>
+              <p className='mt-3'>With expertise in both frontend and backend development, we offer a full range of web solutions to meet the evolving needs of businesses today. From engaging web design to robust backend architecture, our team of experienced developers is skilled in creating custom, scalable websites tailored to your vision. We excel in WordPress development, delivering intuitive sites with seamless functionality that are easy to manage and built to last.</p>
             </div>
             <div className="col-12 col-md-6 about-img">
               <img src={aboutImg} alt="" className='w-100' />
@@ -50,125 +28,57 @@ const About = () => {
           </div>
         </div>
       </section>
-
-      {/* -----------------------------------------------------TEAM--------------------------------------------------------- */}
-      {/* -------------------------------------------------------------------------------------------------------------------- */}
-      <section className="py-120 team">
+      <section className='bg-secondary pb-120 websites'>
         <div className="container">
-          <h2 className='inner'>Our digital team is experienced, curious & eager to work on your project.</h2>
-          <div className="row team-row" >
-            <div className="st-card">
-              <div classname='profile-img'>
-                <img src={en311} alt="" className='w-100' />
-              </div>
-              <h4 className='mt-3'>Rekha Sharma</h4>
-              <p classNamae='role mt-3'>Founder</p>
+          <h3 className="text-md-light">Pricing</h3>
+          <div className="row">
+            <div className="col-12 col-md-6 pe-4">
+              <h2>Our Pricing Structure</h2>
+              <p>Our pricing structure depends on the scope, complexity, and specific needs of each project. Below is a general outline:</p>
+              <ul className="list-unstyled mt-5">
+                <li className='mt-3 fs-5'><strong>Website Design:</strong> Starting at <span className="price">$500</span></li>
+                <li className='mt-3 fs-5'><strong>Website Development:</strong> Starting at <span className="price">$1000</span></li>
+                <li className='mt-3 fs-5'><strong>E-commerce Solutions:</strong> Starting at <span className="price">$1500</span></li>
+                <li className='mt-3 fs-5'><strong>Custom WordPress Development:</strong> Starting at <span className="price">$1200</span></li>
+              </ul>
+              <p>Contact us for a detailed quote tailored to your requirements.</p>
+              <Link to='/contact_us'><button className='btn vcs-btn rounded-pill'>Contact Us</button></Link>
+
             </div>
-            <div className="st-card">
-              <div classname='profile-img'>
-                <img src={emp1} alt="" className='w-100' />
-              </div>
-              <h4 className='mt-3'>Prashant Thakur</h4>
-              <p classNamae='role mt-3'>Manager</p>
-            </div>
-            <div className="st-card">
-              <div className='profile-img'>
-                <img src={en310} alt="" className='w-100' />
-              </div>
-              <h4 className='mt-3'>Sunil Kumar</h4>
-              <p classNamae='role mt-3'>Full-Stack Developer</p>
-            </div>
-            <div className="st-card">
-              <div className='profile-img'>
-                <img src={en312} alt="" className='w-100' />
-              </div>
-              <h4 className='mt-3'>Ajay Kumar</h4>
-              <p classNamae='role mt-3'>Web Developer</p>
-            </div>
-            <div className="st-card">
-              <div className='profile-img'>
-                <img src={en307} alt="" className='w-100' />
-              </div>
-              <h4 className='mt-3'>Komal Thakur</h4>
-              <p classNamae='role mt-3'>Frontend Developer</p>
-            </div>
-            <div className="st-card">
-              <div className='profile-img'>
-                <img src={en306} alt="" className='w-100' />
-              </div>
-              <h4 className='mt-3'>Rajesh Sharma</h4>
-              <p classNamae='role mt-3'>Full-Stack Developer</p>
-            </div>
-            <div className="st-card">
-              <div className='profile-img'>
-                <img src={en303} alt="" className='w-100' />
-              </div>
-              <h4 className='mt-3'>Pooja Sharma</h4>
-              <p classNamae='role mt-3'>Full-Stack Developer</p>
-            </div>
-            <div className="st-card">
-              <div className='profile-img'>
-                <img src={en301} alt="" className='w-100' />
-              </div>
-              <h4 className='mt-3'>Mayank Thakur</h4>
-              <p classNamae='role mt-3'>Web Developer</p>
-            </div>
-            <div className="st-card">
-              <div className='profile-img'>
-                <img src={en308} alt="" className='w-100' />
-              </div>
-              <h4 className='mt-3'>Tarun Thakur</h4>
-              <p classNamae='role mt-3'>Web Developer</p>
-            </div>
-            <div className="st-card">
-              <div className='profile-img'>
-                <img src={en304} alt="" className='w-100' />
-              </div>
-              <h4 className='mt-3'>Pankaj Sharma</h4>
-              <p classNamae='role mt-3'>Web Developer</p>
-            </div>
-            <div className="st-card">
-              <div className='profile-img'>
-                <img src={en309} alt="" className='w-100' />
-              </div>
-              <h4 className='mt-3'>Nikhil Saini</h4>
-              <p classNamae='role mt-3'>UX/UI Designer</p>
-            </div>
-            <div className="st-card">
-              <div className='profile-img'>
-                <img src={en305} alt="" className='w-100' />
-              </div>
-              <h4 className='mt-3'>Poonam Thakur</h4>
-              <p classNamae='role mt-3'>UX/UI Designer</p>
+            <div className="col-12 col-md-6 text-end pm-0">
+              <img src={aboutImg} alt="Demo" className='w-100' />
             </div>
           </div>
         </div>
       </section>
 
-      {/* ***************************************************************************** */}
-      {/* ***************************************************************************** */}
+      {/* -----------------------------------------------------TEAM--------------------------------------------------------- */}
+      {/* -------------------------------------------------------------------------------------------------------------------- */}
+      <section className="py-120 team d-none">
+        <div className="container">
+          <h2 className='inner'>Our digital team is experienced, curious & eager to work on your project.</h2>
+          <div className="row team-row" >
+            {
+              team.map((tm, i) => {
+                return (
+                  <div key={i} className="st-card">
+                    <div classname='profile-img'>
+                      <img src={tm.profile} alt="" className='w-100' />
+                    </div>
+                    <h4 className='mt-3'>{tm.name}</h4>
+                    <p classNamae='role mt-3'>{tm.role}</p>
+                  </div>
+                )
+              })
+            }
 
-      <section className='scroll-main'>
-        <div className="scroll-left d-flex align-items-center py-2">
-          <div className='mrq-text'>Videographers</div><div className='dash'></div>
-          <div className='mrq-text'>Developers</div><div className='dash'></div>
-          <div className='mrq-text'>Content Planners</div><div className='dash'></div>
-          <div className='mrq-text'>Copywriters</div><div className='dash'></div>
-          <div className='mrq-text'>Designers</div><div className='dash'></div>
-          <div className='mrq-text'>Videographers</div><div className='dash'></div>
-          <div className='mrq-text'>Developers</div><div className='dash'></div>
-        </div>
-        <div className="gap"></div>
-        <div className="scroll-right d-flex align-items-center py-1">
-          <div className='mrq-text'>Videographers</div><div className='dash'></div>
-          <div className='mrq-text'>Developers</div><div className='dash'></div>
-          <div className='mrq-text'>Content Planners</div><div className='dash'></div>
-          <div className='mrq-text'>Copywriters</div><div className='dash'></div>
-          <div className='mrq-text'>Designers</div><div className='dash'></div>
-          <div className='mrq-text'>Videographers</div><div className='dash'></div>
-          <div className='mrq-text'>Developers</div><div className='dash'></div>
+          </div>
         </div>
       </section>
+
+      <Marquee />
+
+
     </>
   )
 }

@@ -274,61 +274,6 @@ const Home = () => {
 
       {/* -----------------------------------------------------GRID CARD--------------------------------------------------------- */}
       {/* -------------------------------------------------------------------------------------------------------------------- */}
-      {/* <section className='sec-6 text-light'>
-        <div className="container">
-          <div className="row">
-            <div className="col-12 col-md-6 d-flex align-items-end">
-              <h2>We trust our work process that makes us to achieve outstanding results.</h2>
-            </div>
-            <div className="col-12 col-md-6">
-              <div className="row">
-                <div className="col card-grad grad-1 me-3">
-                  <span className='number'>1</span>
-                  <h4 className='text-center'>Ideate</h4>
-                  <ul>
-                    <li>Questionnaire</li>
-                    <li>Research</li>
-                    <li>Consulting</li>
-                    <li>Planning</li>
-                    <li>Build Strategy</li>
-                  </ul>
-                </div>
-                <div className="col card-grad grad-2 me-3">
-                <span className='number'>2</span>
-                  <h4 className='text-center'>Design</h4>
-                  <ul>
-                    <li>User Research</li>
-                    <li>Target Audience</li>
-                    <li>Interviews</li>
-                    <li>User Experience Flows</li>
-                    <li>User Interface Design</li>
-                    <li>Prototyping</li>
-                    <li>Testing</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12 col-md-5">
-              <p className='mt-3'>The first place a potential customer will notice you is on the web. So it is imperative that your website be professional, beautiful, and easily navigable. That's where we come in. We make sure your first impression is a lasting one. In a good way.</p>
-              <button class="btn rounded-pill light m-auto text-light mt-3">Get a Quote</button>
-            </div>
-            <div className="col-12 col-md-4">
-              <div className="card-grad grad-3 mt-3">
-              <span className='number'>3</span>
-                <h4 className='text-center'>Frontend Development</h4>
-                <ul>
-                  <li>HTML / CSS</li>
-                  <li>Responsive to all screens</li>
-                  <li>Quality Check</li>
-                  <li>Speed Optimization</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
       <section className='sec-6 text-light'>
         <div className="container">
           <div className="row">
@@ -434,7 +379,7 @@ const Home = () => {
           <div className="row">
             <div className="col-12 col-md-6">
               <h2>Developing digital everything for ambitious brands.</h2>
-              <p className='mt-3'>We are a digital agency in Melbourne, helping organisations and eCommerce brands in building their brand with a user-centric designed website accompanied with multi-channel digital marketing strategies. We are a digital agency in Melbourne, helping organisations and eCommerce brands in building their brand with a user-centric designed website accompanied with multi-channel digital marketing strategies.</p>
+              <p className='mt-3'>With expertise in both frontend and backend development, we offer a full range of web solutions to meet the evolving needs of businesses today. From engaging web design to robust backend architecture, our team of experienced developers is skilled in creating custom, scalable websites tailored to your vision. We excel in WordPress development, delivering intuitive sites with seamless functionality that are easy to manage and built to last.</p>
               <Link to="about"><button class="btn rounded-pill light m-auto text-light mt-3">More about us</button></Link>
             </div>
             <div className="col-12 col-md-6 about-img">
@@ -458,7 +403,7 @@ const Home = () => {
                 <img src={test1} alt="" class="m-auto" />
                 <div className="content">
                   <img src={quote} alt="" />
-                  <p>Big or small, Blank Theory is the company to speak to when it comes to website and marketing needs. </p>
+                  <p>From design to launch, Kynet Web Solutions Private Limited's expertise makes them a trusted choice for web solutions.</p>
                   <div className="name-bg">
                     <h3>LEGEAR</h3>
                     <h6>USA - Client</h6>
@@ -469,7 +414,7 @@ const Home = () => {
                 <img src={test2} alt="" />
                 <div className="content">
                   <img src={quote} alt="" />
-                  <p>Big or small, Blank Theory is the company to speak to when it comes to website and marketing needs. </p>
+                  <p>Kynet Web Solutions Private Limited builds reliable websites, perfectly tailored to each client's unique vision.</p>
                   <div className="name-bg">
                     <h3>MONILLA</h3>
                     <h6>Russia - Client</h6>
@@ -480,7 +425,7 @@ const Home = () => {
                 <img src={test3} alt="" />
                 <div className="content">
                   <img src={quote} alt="" />
-                  <p>Big or small, Blank Theory is the company to speak to when it comes to website and marketing needs. </p>
+                  <p>Kynet Web Solutions Private Limited offers high-quality web solutions that meet all business needs precisely.</p>
                   <div className="name-bg">
                     <h3>SOEL DEHA</h3>
                     <h6>USA - Client</h6>
@@ -491,7 +436,7 @@ const Home = () => {
                 <img src={test2} alt="" />
                 <div className="content">
                   <img src={quote} alt="" />
-                  <p>Big or small, Blank Theory is the company to speak to when it comes to website and marketing needs. </p>
+                  <p>From design to launch, Kynet Web Solutions Private Limited's expertise makes them a trusted choice for web solutions.</p>
                   <div className="name-bg">
                     <h3>BRIANT YOUN</h3>
                     <h6>USA - Client</h6>
@@ -502,7 +447,7 @@ const Home = () => {
                 <img src={test3} alt="" />
                 <div className="content">
                   <img src={quote} alt="" />
-                  <p>Big or small, Blank Theory is the company to speak to when it comes to website and marketing needs. </p>
+                  <p>Kynet Web Solutions Private Limited offers high-quality web solutions that meet all business needs precisely.</p>
                   <div className="name-bg">
                     <h3>LEGEAR</h3>
                     <h6>USA - Client</h6>

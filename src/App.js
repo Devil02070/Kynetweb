@@ -19,6 +19,8 @@ import Services from './components/views/Services';
 import Contact from './components/views/Contact';
 import Courses from './components/views/Courses';
 import Error404 from './components/views/Error404';
+import TermsConditions from './components/views/Terms_Conditions';
+import PrivacyPolicy from './components/views/PrivacyPolicy';
 // import Tryouts from './components/views/Tryouts';
 
 function Routing() {
@@ -30,6 +32,8 @@ function Routing() {
       <Route exact path='/services' element={<Services />}></Route>
       <Route exact path='/courses' element={<Courses />}></Route>
       <Route exact path='/contact_us' element={<Contact />}></Route>
+      <Route exact path='/terms' element={<TermsConditions />}></Route>
+      <Route exact path='/privacy_policy' element={<PrivacyPolicy />}></Route>
       <Route path ='/*' element={<Error404 />}></Route>
       {/* <Route exact path='/tryouts' element={<Tryouts />}></Route> */}
     </Routes>

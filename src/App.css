@@ -271,13 +271,16 @@ p.role{font-weight: 300;font-size: 16px;}
 }
 /* Error page */
 .errpage{
-  height: 50vh;
-  }
-  .er404 {
-    margin-top: 50px;
-    font-size: 230px;
-    font-weight: 900;
-  }
+height: 50vh;
+}
+.er404 {
+  margin-top: 50px;
+  font-size: 230px;
+  font-weight: 900;
+}
+.terms.page-banner{
+  height: unset !important;
+}
 
 
 
